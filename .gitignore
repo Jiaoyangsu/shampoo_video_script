@@ -12,3 +12,5 @@ models/
 *.log
 .nohup*
 .cache/
+!evaluation/logs/
+!evaluation/logs/*.log

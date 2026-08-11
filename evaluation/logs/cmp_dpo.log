@@ -1,0 +1,183 @@
+===== MODEL: DPO (/root/autodl-tmp/outputs/gemma3_dpo/final) =====
+Loading base (bf16)...
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:05,  1.46s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:03,  1.28s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:03<00:02,  1.21s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:04<00:01,  1.16s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.10s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:05<00:00,  1.16s/it]
+You have set `use_cache` to `False`, but cache_implementation is set to hybrid. cache_implementation will have no effect.
+Loading adapter...
+
+======================================================================
+PROMPT: 帮我生成一个海飞丝洗发水的带货短视频分镜脚本，核心卖点是去屑，需要展示头皮清洁的痛点。
+RAW:
+```json
+[
+  {
+    "time_axis": "0:00-0:03",
+    "shot_type": "CU",
+    "visual_description": "特写：一个女生对着镜子，无奈地挠头皮，脸上表情痛苦，头发凌乱。",
+    "voiceover": "是不是也经常感觉头皮痒痒的，挠了还痒？",
+    "music": "轻快活泼的音乐，突然变得低沉压抑"
+  },
+  {
+    "time_axis": "0:03-0:06",
+    "shot_type": "MS",
+    "visual_description": "中景：女生用手抓头皮，镜头聚焦在头皮上，若隐若现地呈现头皮屑。",
+    "voiceover": "是不是总有头皮屑，影响形象，还让人尴尬？",
+    "music": "继续低沉压抑"
+  },
+  {
+    "time_axis": "0:06-0:09",
+    "shot_type": "CU",
+    "visual_description": "特写：女生深吸一口气，略带沮丧。",
+    "voiceover": "这些都是头皮问题的信号，别忽视了！",
+    "music": "音乐渐弱"
+  },
+  {
+    "time_axis": "0:09-0:12",
+    "shot_type": "WS",
+    "visual_description": "广角：展示海飞丝洗发水的包装，产品突出显示。",
+    "voiceover": "现在，有了海飞丝去屑洗发水，这些问题都能轻松解决！",
+    "music": "音乐转为积极向上，节奏加快"
+  },
+  {
+    "time_axis": "0:12-0:15",
+    "shot_type": "MS",
+    "visual_description": "中景：女生将海飞丝洗发水倒在手心，泡沫丰富细腻。",
+    "voiceover": "海飞丝蕴含专业去屑成分，深层清洁头皮。",
+    "music": "积极向上"
+  },
+  {
+    "time_axis": "0:15-0:20",
+    "shot_type": "CU",
+    "visual_description": "特写：女生将洗发水涂抹在头皮上，仔细按摩，泡沫覆盖整个头皮。",
+    "voiceover": "温和配方，清洁毛囊，有效抑制头皮屑。",
+    "music": "积极向上"
+  },
+  {
+    "time_axis": "0:20-0:24",
+    "shot_type": "MS",
+    "visual_description": "中景：女生冲洗头发，水流冲刷掉泡沫，头皮看起来干净清爽。",
+    "voiceover": "冲洗后，头皮清爽，告别瘙痒烦恼。",
+    "music": "积极向上"
+  },
+  {
+    "time_axis": "0:2
+----------------------------------------------------------------------
+JSON VALID: False, complete_shot_objs=7
+======================================================================
+
+======================================================================
+PROMPT: 设计一个婴儿洗发水视频脚本，强调无泪配方和温和，妈妈放心。
+RAW:
+```json
+[
+  {
+    "time_axis": "0:00-0:03",
+    "shot_type": "Close-up",
+    "visual_description": "婴儿蓝色的眼睛，清澈明亮，聚焦。",
+    "voiceover": "宝宝的眼睛，是妈妈最珍贵的宝贝。",
+    "music": "轻柔舒缓的钢琴曲，如梦似幻"
+  },
+  {
+    "time_axis": "0:03-0:06",
+    "shot_type": "Medium Shot",
+    "visual_description": "妈妈温柔地用手轻轻擦拭宝宝的眼角。",
+    "voiceover": "洗头的时候，妈妈总是担心会伤害到它们。",
+    "music": "钢琴曲持续"
+  },
+  {
+    "time_axis": "0:06-0:10",
+    "shot_type": "Product Shot",
+    "visual_description": "洗发水瓶子展示，突出产品名称和“无泪配方”标识，特写。",
+    "voiceover": "现在，有了[产品名称]，妈妈再也不用担心啦！",
+    "music": "音乐稍微加强，加入一些活泼的元素"
+  },
+  {
+    "time_axis": "0:10-0:15",
+    "shot_type": "Medium Shot",
+    "visual_description": "妈妈正在给宝宝洗头，宝宝表情放松舒适，没有哭闹。",
+    "voiceover": "我们的无泪配方，温和不刺激，就像妈妈的关怀一样。",
+    "music": "轻柔的音乐，加入一些水流的声音"
+  },
+  {
+    "time_axis": "0:15-0:18",
+    "shot_type": "Close-up",
+    "visual_description": "洗发水在宝宝头发上起泡，泡沫细腻。",
+    "voiceover": "细腻的泡沫，轻轻包裹，温和清洁。",
+    "music": "音乐稍快，突出泡沫的轻盈感"
+  },
+  {
+    "time_axis": "0:18-0:22",
+    "shot_type": "Medium Shot",
+    "visual_description": "妈妈正在用湿毛巾轻轻擦拭宝宝的头发，宝宝看起来很舒服。",
+    "voiceover": "冲洗干净后，头发柔顺不打结。",
+    "music": "音乐回归舒缓"
+  },
+  {
+    "time_axis": "0:22-0:25",
+    "shot_type": "Close-up",
+    "visual_description": "宝宝的头发在阳光下闪耀，水珠滚动。",
+    "voiceover": "让宝宝拥有健康柔顺的秀发。",
+    "music": "加入一些自然的声音，如鸟鸣"
+  },
+  {
+    "time_axis": "0:25-0:28",
+    "shot_type": "Medium Shot",
+    "visual_description": "妈妈
+----------------------------------------------------------------------
+JSON VALID: False, complete_shot_objs=7
+======================================================================
+
+======================================================================
+PROMPT: 做一个控油蓬松男士洗发水的带货脚本，目标用户是油性头皮、发量扁塌的上班族，预算有限，需要突出性价比和即时效果。
+RAW:
+```json
+[
+  {
+    "time_axis": "0:00-0:03",
+    "shot_type": "CU",
+    "visual_description": "一个油腻、扁塌的男士头发特写，头皮泛光，显得非常油腻。镜头缓慢摇晃。",
+    "voiceover": "还在为油腻扁塌的头发烦恼吗？",
+    "music": "低沉、压抑的音乐，逐渐转为轻快"
+  },
+  {
+    "time_axis": "0:03-0:06",
+    "shot_type": "MS",
+    "visual_description": "上班族（28岁左右，略显憔悴）对着镜子整理头发，无奈地皱着眉头，显得非常沮丧。",
+    "voiceover": "每天早上都要花半小时整理头发，效果却不尽人意？",
+    "music": "轻快音乐持续"
+  },
+  {
+    "time_axis": "0:06-0:09",
+    "shot_type": "CU",
+    "visual_description": "产品展示：控油蓬松男士洗发水瓶身特写，突出产品名称、控油、蓬松等关键词。",
+    "voiceover": "现在，有了它，这些问题都将迎刃而解！",
+    "music": "轻快音乐稍作加强"
+  },
+  {
+    "time_axis": "0:09-0:15",
+    "shot_type": "VS",
+    "visual_description": "洗发过程：男士正在使用洗发水，泡沫丰富，清洗头皮的过程。重点展示洗发水质地轻盈，容易起泡。",
+    "voiceover": "这款控油蓬松男士洗发水，蕴含天然植物精华，温和清洁头皮，深层清洁毛囊。",
+    "music": "轻快、舒缓的音乐"
+  },
+  {
+    "time_axis": "0:15-0:21",
+    "shot_type": "CU",
+    "visual_description": "清水冲洗，泡沫快速消失，头皮干净清爽。",
+    "voiceover": "快速去除多余油脂，不留痕迹，告别油腻烦恼！",
+    "music": "音乐节奏加快"
+  },
+  {
+    "time_axis": "0:21-0:27",
+    "shot_type": "MS",
+    "visual_description": "男士吹干头发，头发明显蓬松，发根挺立，造型感十足。与之前的扁塌形象形成鲜明对比。",
+    "voiceover": "蓬松效果立显，发根强挺，告别扁塌，瞬间提升自信！",
+    "music": "轻快、充满活力的音乐"
+  },
+  {
+    "time_axis": "0:27-0:30",
+    "shot_type": "CU",
+    "visual_description": "男士
+----------------------------------------------------------------------
+JSON VALID: False, complete_shot_objs=6
+======================================================================
+ALL_TEST_DONE
