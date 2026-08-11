@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+outputs/
+logs/
+models/
+*.pt
+*.bin
+*.gguf
+.DS_Store
+*.log
+.nohup*
+.cache/
