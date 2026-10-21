@@ -1,0 +1,17 @@
+[project]
+name = "shampoo-video-script"
+version = "0.2.0"
+description = "Gemma 3 shampoo short-video script SFT + DPO pipeline"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = ["legacy", "evaluation/legacy"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

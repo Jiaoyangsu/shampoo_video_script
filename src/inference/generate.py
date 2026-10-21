@@ -1,66 +1,102 @@
-"""
-模型推理模块
-"""
-import json
-from unsloth import FastLanguageModel
+"""Inference helper used by ``scripts/run_inference.py``.
 
-SYSTEM_PROMPT = """你是一位经验丰富的带货短视频导演。你的任务是分析用户指令，生成可直接用于拍摄的高质量带货短视频分镜脚本。
-脚本中的每个镜头必须包含：time_axis（时间轴）、shot_type（镜头类型）、visual_description（画面描述）、voiceover（口播）、music（背景音乐）。
-输出格式为 JSON 列表。只输出 JSON，禁止任何额外文本。"""
+This replaces the old unsloth-only implementation, which passed ``temperature``
+without ``do_sample=True`` (so sampling options were ignored) and forced
+``use_cache=True`` on a 24GB card (the exact OOM path documented in README).
+"""
+
+from __future__ import annotations
+
+import json
+from typing import Any, Dict, List, Optional
+
+from src.inference.backends import Backend, TransformersBackend, read_system_prompt
+from src.script_schema import ScriptValidationError, extract_json, validate_script
 
 
 class ScriptGenerator:
-    def __init__(self, model_path: str, max_seq_length: int = 2048):
-        print(f"加载模型: {model_path}")
-        self.model, self.tokenizer = FastLanguageModel.from_pretrained(
-            model_name=model_path,
-            max_seq_length=max_seq_length,
-            dtype=None,
-            load_in_4bit=False,
-        )
-        FastLanguageModel.for_inference(self.model)
-        self.prompt_template = SYSTEM_PROMPT + "\n\n### Instruction:\n{INPUT}\n\n### Response:\n"
-        self.max_seq_length = max_seq_length
-
-    def generate(self, product_input: str, max_new_tokens: int = 2048,
-                 temperature: float = 0.7, top_p: float = 0.95) -> str:
-        prompt = self.prompt_template.replace("{INPUT}", product_input)
-        inputs = self.tokenizer([prompt], return_tensors="pt").to("cuda")
-
-        outputs = self.model.generate(
-            input_ids=inputs.input_ids,
+    def __init__(
+        self,
+        backend: Optional[Backend] = None,
+        *,
+        base_model: Optional[str] = None,
+        merged_model: Optional[str] = None,
+        sft_adapter: Optional[str] = None,
+        dpo_adapter: Optional[str] = None,
+        system_prompt: Optional[str] = None,
+        use_cache: bool = False,
+        max_new_tokens: int = 700,
+    ) -> None:
+        self.backend = backend or TransformersBackend(
+            base_model=base_model,
+            merged_model=merged_model,
+            sft_adapter=sft_adapter,
+            dpo_adapter=dpo_adapter,
+            use_cache=use_cache,
             max_new_tokens=max_new_tokens,
-            use_cache=True,
+        )
+        self.system_prompt = system_prompt or read_system_prompt()
+        self.max_new_tokens = max_new_tokens
+
+    def generate(
+        self,
+        product_input: str,
+        max_new_tokens: Optional[int] = None,
+        temperature: float = 0.7,
+        top_p: float = 0.9,
+        seed: Optional[int] = 42,
+    ) -> str:
+        result = self.backend.generate(
+            self.system_prompt,
+            product_input,
+            max_new_tokens=max_new_tokens or self.max_new_tokens,
             temperature=temperature,
             top_p=top_p,
+            seed=seed,
         )
-        response = self.tokenizer.batch_decode(outputs)[0]
-        if "### Response:" in response:
-            response = response.split("### Response:")[1]
-        return response.strip()
+        return result.text
 
-    def generate_json(self, product_input: str, **kwargs) -> list:
+    def generate_json(self, product_input: str, **kwargs: Any) -> List[Dict[str, str]]:
         raw = self.generate(product_input, **kwargs)
-        try:
-            return json.loads(raw)
-        except json.JSONDecodeError:
-            import re
-            match = re.search(r'```json\s*(.*?)\s*```', raw, re.DOTALL)
-            if match:
-                return json.loads(match.group(1))
-            raise
+        parsed = extract_json(raw)
+        validation = validate_script(
+            parsed, min_shots=1, require_music=True, enforce_pacing=False
+        )
+        if not validation.ok:
+            raise ScriptValidationError(
+                "model output failed validation: %s" % "; ".join(validation.errors[:8])
+            )
+        return validation.shots
+
+
+def main() -> None:
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--merged-model", default=None)
+    parser.add_argument("--base-model", default=None)
+    parser.add_argument("--sft-adapter", default=None)
+    parser.add_argument("--dpo-adapter", default=None)
+    parser.add_argument("--prompt", default=None)
+    parser.add_argument("--max-new-tokens", type=int, default=700)
+    parser.add_argument("--use-cache", action="store_true")
+    args = parser.parse_args()
+
+    generator = ScriptGenerator(
+        base_model=args.base_model,
+        merged_model=args.merged_model,
+        sft_adapter=args.sft_adapter,
+        dpo_adapter=args.dpo_adapter,
+        use_cache=args.use_cache,
+        max_new_tokens=args.max_new_tokens,
+    )
+    prompts = [
+        args.prompt
+        or "请为海飞丝去屑洗发水设计 30 秒带货短视频脚本，核心卖点是去屑和清凉感。"
+    ]
+    for prompt in prompts:
+        print(json.dumps(generator.generate_json(prompt), ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
-    gen = ScriptGenerator("../models/shampoo_lora")
-
-    test_cases = [
-        "请为海飞丝去屑洗发水设计带货短视频脚本，核心卖点是去屑和清凉感，目标用户是有头屑困扰的年轻人。",
-        "请为霸王防脱洗发水生成带货分镜脚本，突出中药成分和防脱生发效果，适合压力大脱发的上班族。",
-    ]
-    for q in test_cases:
-        print(f"\n{'='*60}")
-        print(f"问题: {q[:60]}...")
-        print(f"{'='*60}")
-        result = gen.generate_json(q)
-        print(json.dumps(result, ensure_ascii=False, indent=2)[:800])
+    main()

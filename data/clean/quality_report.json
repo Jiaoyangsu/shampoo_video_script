@@ -1,0 +1,67 @@
+{
+  "config": {
+    "min_shots": 5,
+    "require_music": true,
+    "max_chars_per_second": 4.0,
+    "enforce_pacing": false,
+    "seed": 3407,
+    "max_dpo_pairs": null
+  },
+  "sft": {
+    "train_raw": 1275,
+    "train_kept": 528,
+    "train_rejected": 735,
+    "train_duplicate_rows": 12,
+    "train_pass_rate": 0.4181,
+    "val_raw": 142,
+    "val_kept": 59,
+    "val_rejected": 83,
+    "val_duplicate_rows": 0,
+    "val_pass_rate": 0.4155,
+    "cross_split_duplicates_dropped": 0,
+    "rejection_reasons": {
+      "train": {
+        "quality gate": 735
+      },
+      "val": {
+        "quality gate": 83
+      }
+    },
+    "sha1": {
+      "train": "f75b9aae53014335865eb42c1ec58bf5fec9b9d9",
+      "val": "c62394f599179f1fb9037ed4ba6c448c342d2838"
+    }
+  },
+  "dpo": {
+    "train": {
+      "pairs": 528,
+      "skipped": 0,
+      "defect_counts": {
+        "empty_voiceover": 77,
+        "missing_music": 68,
+        "zero_duration": 83,
+        "broken_time": 79,
+        "wrong_shot_type": 65,
+        "shuffle_order": 75,
+        "duplicate_shot": 70,
+        "bad_pacing": 11
+      },
+      "seed": 3407
+    },
+    "val": {
+      "pairs": 59,
+      "skipped": 0,
+      "defect_counts": {
+        "empty_voiceover": 10,
+        "missing_music": 9,
+        "zero_duration": 9,
+        "broken_time": 6,
+        "wrong_shot_type": 8,
+        "shuffle_order": 5,
+        "duplicate_shot": 11,
+        "bad_pacing": 1
+      },
+      "seed": 3408
+    }
+  }
+}

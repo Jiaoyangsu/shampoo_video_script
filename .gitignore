@@ -14,3 +14,15 @@ models/
 .cache/
 !evaluation/logs/
 !evaluation/logs/*.log
+
+# generated evaluation outputs (keep the README)
+evaluation/results/*
+!evaluation/results/README.md
+!evaluation/results/.gitkeep
+
+# optional strict subset is generated locally
+data/clean_strict/
+
+# tooling caches
+.pytest_cache/
+.ruff_cache/

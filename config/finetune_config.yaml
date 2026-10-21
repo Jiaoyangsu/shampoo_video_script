@@ -1,12 +1,15 @@
-# 训练配置
+# Single source of truth for the Gemma 3 SFT + DPO pipeline.
+# Override paths on the server with CLI flags, e.g.
+#   python src/finetune/gemma3/finetune_sft.py --base-model /root/.../gemma-3-12b-it
 model:
-  name: "unsloth/DeepSeek-R1-Distill-Qwen-1.5B"   # 基础模型
-  use_4bit: true                                   # QLoRA 量化
+  base_model: "google/gemma-3-12b-it"
   max_seq_length: 2048
+  load_in_4bit: true
+  attn_implementation: "sdpa"
 
 lora:
   r: 16
-  alpha: 16
+  alpha: 32
   dropout: 0.1
   target_modules:
     - "q_proj"
@@ -17,23 +20,38 @@ lora:
     - "up_proj"
     - "down_proj"
 
-training:
-  batch_size: 2
-  gradient_accumulation: 4          # 等效 batch = 2*4 = 8
-  epochs: 4
-  learning_rate: 1.0e-4
+data:
+  # Output of: python scripts/clean_data.py
+  train_file: "data/clean/shampoo_train.json"
+  val_file: "data/clean/shampoo_val.json"
+  dpo_train_file: "data/clean/dpo_train.json"
+  dpo_val_file: "data/clean/dpo_val.json"
+
+sft:
+  output_dir: "outputs/gemma3_sft"
+  epochs: 2
+  batch_size: 1
+  grad_accum: 8
+  learning_rate: 2.0e-4
   warmup_ratio: 0.1
   weight_decay: 0.01
-  logging_steps: 10
+  logging_steps: 5
   eval_steps: 50
-  save_steps: 100
-  output_dir: "./outputs"
-
-data:
-  train_file: "data/train/shampoo_train.json"
-  val_file: "data/val/shampoo_val.json"
+  save_steps: 50
+  save_total_limit: 3
 
 dpo:
-  beta: 0.1                         # DPO 温度参数
+  output_dir: "outputs/gemma3_dpo"
+  epochs: 1
+  batch_size: 1
+  grad_accum: 8
   learning_rate: 5.0e-6
-  epochs: 3
+  beta: 0.1
+  warmup_ratio: 0.1
+  max_length: 1536
+  max_prompt_length: 768
+  precompute_ref_batch_size: 1
+  logging_steps: 5
+  eval_steps: 50
+  save_steps: 50
+  save_total_limit: 3

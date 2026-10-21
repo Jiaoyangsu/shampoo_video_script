@@ -5,36 +5,33 @@ echo  洗发水视频脚本项目 - 环境安装
 echo ========================================
 echo.
 
-:: 检查 Python
 python --version >nul 2>&1
 if %errorlevel% neq 0 (
     echo [错误] 未找到 Python，请先安装 Python 3.10+
     pause
     exit /b 1
 )
-
-:: 检查 CUDA
-python -c "import torch; print('CUDA:', torch.cuda.is_available())" 2>nul
+python -c "import sys; sys.exit(0 if sys.version_info >= (3,10) else 1)"
 if %errorlevel% neq 0 (
-    echo [提示] 未检测到 CUDA，将使用 CPU 训练（极慢）
+    echo [错误] 需要 Python 3.10+（Gradio 5+）
+    pause
+    exit /b 1
 )
 
-:: 创建虚拟环境
-echo [1/3] 创建虚拟环境...
 if not exist venv (
     python -m venv venv
 )
 call venv\Scripts\activate.bat
 
-:: 安装依赖
-echo [2/3] 安装依赖...
-pip install -r requirements.txt -q
+echo [1/2] 安装核心依赖（数据清洗 / 评测 / UI）...
+pip install -r requirements-dev.txt -q
 
-echo [3/3] 安装完成！
+echo [2/2] 完成。GPU 训练请在服务器上额外安装：
+echo   pip install -r requirements-train.txt
 echo.
 echo 可用命令:
-echo   python scripts/run_finetune.py    运行微调
-echo   python scripts/run_inference.py   模型推理
-echo   python scripts/run_app.py         启动 Web 界面
+echo   python scripts/clean_data.py
+echo   python scripts/run_eval.py --backend mock --limit 3 --out-dir evaluation/results/mock
+echo   python scripts/run_app.py
 echo.
 pause

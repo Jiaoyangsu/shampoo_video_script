@@ -1,0 +1,5016 @@
+[
+  {
+    "input": "需要制作一条儿童洗发水的带货视频脚本，要求包含时间轴、镜头类型、画面描述、配音和背景音乐。产品为「无硅油儿童专用洗发水」，核心卖点包括金盏花成分、温和氨基酸配方、绵密泡沫、深层清洁、柔顺光泽、花果香氛以及大容量。需重点解决家长对孩子头发干枯、成人产品刺激的担忧，强调妈妈社群推荐的爆款特性，并通过画面展示产品在日常护发中的使用场景。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "产品展示",
+        "visual_description": "两瓶儿童洗发水放置在背景为绿色植物的桌面上，一瓶站立，一瓶横卧。镜头展示两瓶洗发水的整体外观。",
+        "voiceover": "我也不想买啊，可是妈妈们都在分享。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:04",
+        "shot_type": "产品使用评价",
+        "visual_description": "镜头聚焦到站立的洗发水瓶，旁边有一朵黄色向日葵。",
+        "voiceover": "孩子们都在用，",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:08",
+        "shot_type": "产品成分展示",
+        "visual_description": "手持洗发水瓶，展示瓶身背面的成分表。",
+        "voiceover": "洗完头发很柔顺，金盏花精粹和多种氨基酸表活，这一瓶里都有。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:09",
+        "shot_type": "产品特性",
+        "visual_description": "两瓶洗发水并排展示。",
+        "voiceover": "而且无硅油。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:11",
+        "shot_type": "产品泡沫展示",
+        "visual_description": "挤出洗发水泡沫在手掌上，展示泡沫的绵密程度。",
+        "voiceover": "很温和，泡沫绵密细腻。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:13",
+        "shot_type": "产品清洗效果",
+        "visual_description": "两瓶洗发水碰撞在一起。",
+        "voiceover": "洗得干净。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:15",
+        "shot_type": "产品香味展示",
+        "visual_description": "两瓶洗发水碰撞在一起。",
+        "voiceover": "洗完还有淡淡的花果香，",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:15-00:17",
+        "shot_type": "产品容量展示",
+        "visual_description": "两瓶洗发水放置在桌面上，旁边有一些麦穗。",
+        "voiceover": "这么大瓶能用很久，",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:19",
+        "shot_type": "产品推荐",
+        "visual_description": "手持洗发水瓶，展示瓶身图案。",
+        "voiceover": "给孩子养护发丝，一定要选儿童专用的。",
+        "music": "轻柔的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 19,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 6,
+      "pacing_checked": 9,
+      "mean_chars_per_second": 5.06,
+      "max_chars_per_second": 8.0,
+      "distinct_shot_types": 9,
+      "duplicate_descriptions": 1
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 7.5 chars/sec exceeds 4.0",
+      "shot 2: 6.5 chars/sec exceeds 4.0",
+      "shot 3: 5.0 chars/sec exceeds 4.0",
+      "shot 4: 4.5 chars/sec exceeds 4.0",
+      "shot 6: 5.0 chars/sec exceeds 4.0",
+      "shot 8: 8.0 chars/sec exceeds 4.0",
+      "1 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "请编写百雀羚三生花精油洗发露的15秒带货分镜脚本，需包含时间轴/镜头类型/画面/旁白/音乐。产品特性：①玫瑰茉莉精华深层滋养 ②山茶花香48小时持久 ③无硅油配方改善分叉。目标用户场景：长发人士日常护理、办公室头发打理、约会前造型准备。需通过视觉化呈现解决‘发尾毛躁’‘香气易散’‘频繁喷香水’等使用痛点。",
+    "output": [
+      {
+        "time_axis": "00:00-00:03",
+        "shot_type": "产品展示",
+        "visual_description": "手持百雀羚三生花精油香氛洗发露，展示瓶身正反面，强调其竖条纹设计和产品信息标签。",
+        "voiceover": "百雀羚三生花精油，香氛清柔顺滑洗发水，",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:07",
+        "shot_type": "产品成分展示",
+        "visual_description": "洗发露从瓶中倒出，展示其质地。",
+        "voiceover": "融合玫瑰茉莉油与香草成分，",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:11",
+        "shot_type": "产品功效",
+        "visual_description": "洗发露从瓶中倒出，展示其质地。",
+        "voiceover": "深层滋养干枯发质，令头发柔顺亮泽，",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:17",
+        "shot_type": "产品香气",
+        "visual_description": "手持洗发露，展示产品外观。",
+        "voiceover": "独特山茶花香气，持久48小时，无需额外香水，",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:22",
+        "shot_type": "产品特点总结",
+        "visual_description": "手持洗发露，旋转展示。",
+        "voiceover": "无硅油配方温和修护，改善毛躁分叉，适合长发及追求香氛体验的用户，国风包装，搭配国际调香师调制，兼具颜值与实力。",
+        "music": "舒缓背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 22,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 2,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 5.08,
+      "max_chars_per_second": 9.8,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 1
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 5.7 chars/sec exceeds 4.0",
+      "shot 4: 9.8 chars/sec exceeds 4.0",
+      "1 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "需要制作一段海飞丝洗发水的视频脚本，需包含大品牌质量背书、超大规格装的性价比优势，以及官方自营渠道的正品保证。要解决用户担心错过促销的心理，同时覆盖网购下单和日常洗发的使用场景，语言风格需具备促销感染力。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "产品促销",
+        "visual_description": "手持海飞丝洗发水瓶子，背景是洗手台。",
+        "voiceover": "快快快，",
+        "music": "促销音乐"
+      },
+      {
+        "time_axis": "00:02-00:04",
+        "shot_type": "产品促销",
+        "visual_description": "手持海飞丝洗发水瓶子，展示产品包装。",
+        "voiceover": "海飞丝这大羊毛赶紧薅。",
+        "music": "促销音乐"
+      },
+      {
+        "time_axis": "00:04-00:06",
+        "shot_type": "产品促销",
+        "visual_description": "手持海飞丝洗发水瓶子，展示产品规格。",
+        "voiceover": "一公斤装的才这个价。",
+        "music": "促销音乐"
+      },
+      {
+        "time_axis": "00:06-00:07",
+        "shot_type": "产品特点介绍",
+        "visual_description": "手持海飞丝洗发水瓶子，展示产品logo。",
+        "voiceover": "大品牌品质就不用说了。",
+        "music": "舒缓音乐"
+      },
+      {
+        "time_axis": "00:07-00:09",
+        "shot_type": "产品购买渠道",
+        "visual_description": "手持海飞丝洗发水瓶子，展示产品购买渠道。",
+        "voiceover": "官方旗舰店发货。",
+        "music": "舒缓音乐"
+      },
+      {
+        "time_axis": "00:09-00:10",
+        "shot_type": "产品促销",
+        "visual_description": "手持海飞丝洗发水瓶子，展示产品促销信息。",
+        "voiceover": "库存不多，",
+        "music": "促销音乐"
+      },
+      {
+        "time_axis": "00:10-00:11",
+        "shot_type": "产品促销",
+        "visual_description": "手持海飞丝洗发水瓶子，展示产品促销信息。",
+        "voiceover": "买到就是赚到。",
+        "music": "促销音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 7,
+      "total_duration_sec": 11,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 7,
+      "mean_chars_per_second": 4.93,
+      "max_chars_per_second": 10.0,
+      "distinct_shot_types": 3,
+      "duplicate_descriptions": 1
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 1: 5.0 chars/sec exceeds 4.0",
+      "shot 2: 4.5 chars/sec exceeds 4.0",
+      "shot 3: 10.0 chars/sec exceeds 4.0",
+      "shot 6: 6.0 chars/sec exceeds 4.0",
+      "1 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "帮我构思一个短视频带货脚本，产品是P&O发胶。需要包含时间轴、镜头类型、画面描述、画外音和背景音乐。这款发胶价格亲民，特别适合头发稀少、发量少的人，能轻松打造蓬松发型。用户常遇到头发不蓬松和预算不足的问题，日常造型时需要增加发量感，这些都能通过本产品解决。",
+    "output": [
+      {
+        "time_axis": "00:00-00:06",
+        "shot_type": "场景介绍和产品推荐",
+        "visual_description": "主播站在背景板前介绍产品，背景板上有“发胶”字样，主播挥手示意，画面下方展示两款P&O发胶产品，以及使用该发胶的两位年轻男士照片。",
+        "voiceover": "讲实在一点啊，这不能说送啊，要说是买，但是这个价格啊，跟白送也差不多啦。",
+        "music": "欢快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:09",
+        "shot_type": "产品特写",
+        "visual_description": "一只手拿着P&O发胶产品，镜头聚焦于产品瓶身标签。",
+        "voiceover": "福利款福利品福利价给到各位同学，就是非常福利的体验啦。",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:11",
+        "shot_type": "卡通人物使用产品",
+        "visual_description": "卡通人物将发胶按压在手上。",
+        "voiceover": "为湿发少头多追蓬松的克尔们安排。",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:13",
+        "shot_type": "卡通人物使用产品",
+        "visual_description": "卡通人物在手中挤压发胶",
+        "voiceover": "就用这一款。",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:16",
+        "shot_type": "产品特写",
+        "visual_description": "一只手拿着P&O发胶产品，镜头聚焦于产品瓶身标签。",
+        "voiceover": "然后",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:20",
+        "shot_type": "卡通人物使用产品后效果",
+        "visual_description": "展示卡通人物使用发胶后的各种发型，突出蓬松和造型效果。",
+        "voiceover": "安心放心靠谱划算的商品。",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:20-00:26",
+        "shot_type": "主播总结推荐",
+        "visual_description": "主播再次出镜，指向镜头，进行总结推荐。",
+        "voiceover": "喜欢的可以直接拍，因为小黄车里面的东西呢都已经价格给大家安排好了。",
+        "music": "欢快活泼的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 7,
+      "total_duration_sec": 26,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 7,
+      "mean_chars_per_second": 4.58,
+      "max_chars_per_second": 8.33,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 1
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 5.2 chars/sec exceeds 4.0",
+      "shot 1: 8.3 chars/sec exceeds 4.0",
+      "shot 2: 7.5 chars/sec exceeds 4.0",
+      "shot 6: 5.2 chars/sec exceeds 4.0",
+      "1 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "需要制作飞虎儿童洗发水的带货短视频脚本，要求包含时间轴、镜头类型、画面描述、旁白及背景音乐。产品特点：添加头皮护理成分，啫喱质地温和，有效控制油性头发。用户痛点：儿童发质油腻、脱发严重，普通洗发水无效。需重点表现孕妇及儿童适用性，展示家庭场景下的产品优势与安全性。",
+    "output": [
+      {
+        "time_axis": "00:00-00:05",
+        "shot_type": "情景引入",
+        "visual_description": "一位化着淡妆的年轻女性对着镜头说话，表情无奈。",
+        "voiceover": "姐妹们我真的是无语了，我老公因为我穷疯了，居然跟小朋友抢洗发水用。",
+        "music": "日常对话背景音"
+      },
+      {
+        "time_axis": "00:05-00:08",
+        "shot_type": "痛点展示",
+        "visual_description": "女性用手指着自己的头发顶部，展示头发蓬起来的状态。",
+        "voiceover": "你看，这是我洗了三天的头发，它还是蓬起来的。",
+        "music": "日常对话背景音"
+      },
+      {
+        "time_axis": "00:08-00:11",
+        "shot_type": "对比展示",
+        "visual_description": "女性展示自己柔顺的头发。",
+        "voiceover": "我那些上百的成人洗发水。",
+        "music": "日常对话背景音"
+      },
+      {
+        "time_axis": "00:11-00:15",
+        "shot_type": "用户痛点",
+        "visual_description": "展示油腻的头发和梳头掉发的情况。",
+        "voiceover": "特别是跟我一样大油头，然后一挠呢还会下雪花的，甚至啊是越洗越少的。",
+        "music": "日常对话背景音"
+      },
+      {
+        "time_axis": "00:15-00:18",
+        "shot_type": "产品展示",
+        "visual_description": "女性拿着飞虎儿童洗发水。",
+        "voiceover": "那你真的可以去试试这个飞虎的儿童洗发水。",
+        "music": "日常对话背景音"
+      },
+      {
+        "time_axis": "00:18-00:21",
+        "shot_type": "产品成分展示",
+        "visual_description": "展示洗发水的成分图。",
+        "voiceover": "因为它里面添加了这些成分，就是针对缓解头皮的这些小问题啊。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:26",
+        "shot_type": "使用过程",
+        "visual_description": "展示啫喱质地的洗发水和洗发过程。",
+        "voiceover": "它挤出来是这种啫喱的质地，它的泡沫很丰富，然后呢也非常的温和。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:26-00:30",
+        "shot_type": "产品特点",
+        "visual_description": "女性拿着洗发水。",
+        "voiceover": "在清洁方面它也是做到这个，它还可以从根源帮助我们控油。",
+        "music": "日常对话背景音"
+      },
+      {
+        "time_axis": "00:30-00:33",
+        "shot_type": "品牌介绍",
+        "visual_description": "展示飞虎品牌和产品信息。",
+        "voiceover": "飞虎是专门做儿童洗护的，然后呢它还是弱酸配方。",
+        "music": "强调产品特性的音效"
+      },
+      {
+        "time_axis": "00:33-00:36",
+        "shot_type": "产品特点",
+        "visual_description": "女性展示洗后的柔顺的头发。",
+        "voiceover": "温和到呢孕妈妈都是可以放心用的。",
+        "music": "日常对话背景音"
+      },
+      {
+        "time_axis": "00:36-00:41",
+        "shot_type": "价格和推荐",
+        "visual_description": "女性对着镜头，展示柔顺的头发，手拿洗发水。",
+        "voiceover": "而且你看现在到手两瓶才什么价，像家里有小孩呀，你都可以一起用。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 11,
+      "total_duration_sec": 41,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 10,
+      "pacing_checked": 11,
+      "mean_chars_per_second": 6.21,
+      "max_chars_per_second": 9.0,
+      "distinct_shot_types": 10,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "shot 0: 6.0 chars/sec exceeds 4.0",
+      "shot 1: 6.3 chars/sec exceeds 4.0",
+      "shot 3: 7.5 chars/sec exceeds 4.0",
+      "shot 4: 6.3 chars/sec exceeds 4.0",
+      "shot 5: 9.0 chars/sec exceeds 4.0",
+      "shot 6: 5.6 chars/sec exceeds 4.0",
+      "shot 7: 6.2 chars/sec exceeds 4.0",
+      "shot 8: 7.0 chars/sec exceeds 4.0",
+      "shot 9: 5.0 chars/sec exceeds 4.0",
+      "shot 10: 5.6 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要生成清扬男士洗发水的短视频销售分镜，要求包含时间轴、镜头类型、画面内容、画外音和背景音乐。产品信息：该产品已售出超百万瓶，获得K总重点推荐，主打高效成分与性价比优势。需解决消费者对售后处理不完善、购买渠道不可靠、男性洗发水效果存疑的问题，目标受众为追求高性价比、成分安全及可靠售后保障的男性消费者。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "主播口播",
+        "visual_description": "主播戴着卡通头饰，面对镜头，介绍产品热销情况。",
+        "voiceover": "热销100万加哈，K总专属。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:12",
+        "shot_type": "产品展示",
+        "visual_description": "展示蓝色瓶身的清扬男士洗发水，手部旋转展示产品包装，详细介绍产品成分和功效。",
+        "voiceover": "你在K总这里买到的任何东西，如果官方不理你，官方处理得不满意，找我，我给你退。直播间30万人我直接讲出来了。我只是卖点觉得我自己觉得好的东西给大家。",
+        "music": "产品展示音效"
+      },
+      {
+        "time_axis": "00:12-00:14",
+        "shot_type": "主播口播",
+        "visual_description": "主播面对镜头，强调选品原则。",
+        "voiceover": "确实是在我觉得合理的范围内，我就上了呀。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:22",
+        "shot_type": "产品演示",
+        "visual_description": "展示蓝色瓶身的清扬男士洗发水，手部挤出洗发水，展示质地。",
+        "voiceover": "我是这么个选品方式，但是我只会选择性价比稍微好一点点，我又觉得OK的，我就上了。",
+        "music": "产品展示音效"
+      },
+      {
+        "time_axis": "00:22-00:26",
+        "shot_type": "主播推荐",
+        "visual_description": "主播面对镜头，强调对产品质量负责。",
+        "voiceover": "这个KK实名制推荐大家买。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 26,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 5.84,
+      "max_chars_per_second": 9.0,
+      "distinct_shot_types": 4,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 6.0 chars/sec exceeds 4.0",
+      "shot 1: 6.7 chars/sec exceeds 4.0",
+      "shot 2: 9.0 chars/sec exceeds 4.0",
+      "shot 3: 4.5 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请生成贝德美蓝甘菊洗发露的短视频营销脚本框架，包含时间分段、镜头类型、视觉元素、配音文案和音乐风格。产品卖点需突出：①蓝甘菊成分强韧发根 ②红山茶精华控油护理 ③洗后蓬松不油腻。用户场景：3-6岁儿童头发易扁塌，妈妈需要安全有效洗护方案。请用问题-方案-效果的三段式结构呈现",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "痛点展示",
+        "visual_description": "小女孩脸上画着两行眼泪，双手抓头发，表情痛苦",
+        "voiceover": "宝贝油扁塌，自己闻了都嫌弃",
+        "music": "悲伤音效"
+      },
+      {
+        "time_axis": "00:01-00:04",
+        "shot_type": "产品展示",
+        "visual_description": "手从气泡膜中拿出“贝德美蓝甘菊洗发露”",
+        "voiceover": "快换上贝德美蓬松洗发露洗洗吧",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:07",
+        "shot_type": "使用演示",
+        "visual_description": "将洗发露倒在头发上，用手揉搓起泡",
+        "voiceover": "含有植物蓬松因子，强韧发根，提升发根支撑力",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:10",
+        "shot_type": "使用演示",
+        "visual_description": "清洁头发",
+        "voiceover": "搭配红山茶花精粹，清洁油腻，滋养头皮",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:13",
+        "shot_type": "效果展示",
+        "visual_description": "洗完头后，头发蓬松",
+        "voiceover": "洗完秀发清爽蓬松，闻着还有好闻植物香",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:15",
+        "shot_type": "产品展示",
+        "visual_description": "水龙头下放置两瓶洗发露",
+        "voiceover": "宝妈快给头小宝宝备上吧",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 6,
+      "total_duration_sec": 15,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 6,
+      "pacing_checked": 6,
+      "mean_chars_per_second": 6.58,
+      "max_chars_per_second": 12.0,
+      "distinct_shot_types": 4,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 12.0 chars/sec exceeds 4.0",
+      "shot 1: 4.7 chars/sec exceeds 4.0",
+      "shot 2: 6.3 chars/sec exceeds 4.0",
+      "shot 3: 5.3 chars/sec exceeds 4.0",
+      "shot 4: 5.7 chars/sec exceeds 4.0",
+      "shot 5: 5.5 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请为半亩花田洗发水设计短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音及背景音乐。产品核心卖点是玫瑰纯露成分、蓬松效果和限时优惠价，目标用户是发质细软易塌、头皮易出油且清爽感不足的人群。请重点突出产品如何解决用户头发扁塌、控油和头皮护理问题，并自然融入促销信息。",
+    "output": [
+      {
+        "time_axis": "00:00-00:05",
+        "shot_type": "产品展示和促销",
+        "visual_description": "女士手持三瓶半亩花田洗发水，并配有“啊”和“99.9到手3瓶”的文字特效。",
+        "voiceover": "啊！现在99.9到手三瓶半亩花田的洗发水，快看我这个链接，三瓶三瓶，收到手才多少钱。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:08",
+        "shot_type": "产品使用前发质展示",
+        "visual_description": "女士侧身展示使用洗发水前的头发状态。",
+        "voiceover": "要不是我用了一段时间，我真的不敢把它推荐给你们。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:12",
+        "shot_type": "使用体验描述及蓬松效果展示",
+        "visual_description": "女士展示洗发水，并用手拨弄头发，展示蓬松效果。",
+        "voiceover": "用它洗完之后头皮就巨清爽，而且发根也很蓬松。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:15",
+        "shot_type": "三天未洗头发状态展示",
+        "visual_description": "女士展示三天没洗的头发状态。",
+        "voiceover": "你看我三天没洗的头发能保持这种状态，真的只有它。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:15-00:19",
+        "shot_type": "成分展示",
+        "visual_description": "女士展示洗发水成分表，并用手指点出玫瑰纯露。",
+        "voiceover": "跟别的洗发水排名第一位是水不一样，它里面添加的是玫瑰纯露。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:19-00:24",
+        "shot_type": "玫瑰纯露介绍",
+        "visual_description": "展示玫瑰和玫瑰园的特写镜头。",
+        "voiceover": "要知道玫瑰纯露就是能够滋养咱们的头皮屏障的，半亩花田就是做玫瑰起家的。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:24-00:30",
+        "shot_type": "产品质地展示",
+        "visual_description": "女士将洗发水倒在手上，展示其质地。",
+        "voiceover": "用的还是格拉斯提取的玫瑰纯露，直接给咱哐哐灌半瓶进去，用它洗完头啊，简直是一种享受。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:30-00:35",
+        "shot_type": "促销信息强调",
+        "visual_description": "女士再次展示三瓶洗发水，并强调促销信息。",
+        "voiceover": "现在这个链接上架就是为了冲销量，不知道什么时候这个链接就会被下掉。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:35-00:39",
+        "shot_type": "适用人群及购买建议",
+        "visual_description": "展示细软塌、爱出油发质的图片。",
+        "voiceover": "特别是细软塌头发爱出油，发尾还干的姐妹，如果你们刷到还有货。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:39-00:42",
+        "shot_type": "赠品展示及保证",
+        "visual_description": "展示洗发水和赠品（代言人照片卡片），并给出购买保证。",
+        "voiceover": "这波羊毛要是不好的话，我都会替你们难过的。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 10,
+      "total_duration_sec": 42,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 10,
+      "pacing_checked": 10,
+      "mean_chars_per_second": 6.58,
+      "max_chars_per_second": 7.33,
+      "distinct_shot_types": 10,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "shot 0: 7.2 chars/sec exceeds 4.0",
+      "shot 1: 7.3 chars/sec exceeds 4.0",
+      "shot 2: 5.0 chars/sec exceeds 4.0",
+      "shot 3: 7.3 chars/sec exceeds 4.0",
+      "shot 4: 6.8 chars/sec exceeds 4.0",
+      "shot 5: 6.6 chars/sec exceeds 4.0",
+      "shot 6: 6.3 chars/sec exceeds 4.0",
+      "shot 7: 6.2 chars/sec exceeds 4.0",
+      "shot 8: 6.8 chars/sec exceeds 4.0",
+      "shot 9: 6.3 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要制作一段洗发水推广视频的分镜方案，要求明确标注时间轴、镜头类型、画面内容、旁白台词和背景音乐。产品卖点需突出：家庭装优惠价、温和细腻质地、绵密泡沫体验。需解决用户对高价的顾虑，强调限时优惠的紧迫感，并展示产品在家用和个人护理中的适用性。",
+    "output": [
+      {
+        "time_axis": "00:00-00:06",
+        "shot_type": "主播口播",
+        "visual_description": "主播对着镜头说话，背景是商品信息，下方有“K总精选”字样。",
+        "voiceover": "他们官网店比我这边要贵，我这边是便宜的，但是也只有这段时间，他给我的是低价的家人们，我是破价的，因为他们喜欢我。",
+        "music": "轻松的背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:11",
+        "shot_type": "产品展示",
+        "visual_description": "展示浅绿色和粉色的洗发水瓶子，瓶身上有品牌logo和产品名称。",
+        "voiceover": "进来了，直播间是不是买的品都是一家人啦。一家人的话能不能送我一包。",
+        "music": "轻快的背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:14",
+        "shot_type": "主播口播",
+        "visual_description": "主播对着镜头说话，有直播间的互动弹幕。",
+        "voiceover": "一家人有的时候也要讲两句好话的嘛。",
+        "music": "轻松的背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:17",
+        "shot_type": "产品质地展示",
+        "visual_description": "展示洗发水的膏体，是白色乳状质地。展示洗发水打出的泡沫，绵密丰富。",
+        "voiceover": "不开心逗我开心，我就买东西，幸福开心家人们，一步。开心一点内。",
+        "music": "舒缓的背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:23",
+        "shot_type": "产品展示",
+        "visual_description": "展示浅绿色的洗发水瓶子，瓶身上有品牌logo和产品名称，背景是其他洗护产品和装饰物。切换到所有颜色的产品排在一起的展示。",
+        "voiceover": "这玩意都买一点啊，是不是，买了又不会破产，不买又发不了财。",
+        "music": "轻快的背景音乐"
+      },
+      {
+        "time_axis": "00:23-00:26",
+        "shot_type": "产品质地展示",
+        "visual_description": "展示洗发水打出的泡沫，绵密丰富。",
+        "voiceover": "能不能卖一块钱，你要这样子的话。",
+        "music": "强调产品特性的音效"
+      },
+      {
+        "time_axis": "00:26-00:30",
+        "shot_type": "主播口播",
+        "visual_description": "主播对着镜头说话，有直播间的互动弹幕，下方有“K总精选”字样。",
+        "voiceover": "啊，别怪我引用名人名言啦，是不是自己不努力啊。",
+        "music": "轻松的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 7,
+      "total_duration_sec": 30,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 7,
+      "pacing_checked": 7,
+      "mean_chars_per_second": 6.02,
+      "max_chars_per_second": 8.67,
+      "distinct_shot_types": 3,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 8.3 chars/sec exceeds 4.0",
+      "shot 1: 6.0 chars/sec exceeds 4.0",
+      "shot 2: 5.3 chars/sec exceeds 4.0",
+      "shot 3: 8.7 chars/sec exceeds 4.0",
+      "shot 4: 4.2 chars/sec exceeds 4.0",
+      "shot 5: 4.7 chars/sec exceeds 4.0",
+      "shot 6: 5.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要创建一个带货短视频的分镜头方案，要求明确标注时间轴、镜头类型、画面内容、旁白文案及背景音乐。产品为绿色泡沫洗发水，主打1%二硫化硒温和控屑，同时添加蜂蜜保湿和薄荷清凉成分。目标用户痛点是因洗发频率低导致的头皮屑、瘙痒和油腻，需通过场景化展示解决这些问题，并突出产品在日常洗护中的独特优势。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "痛点展示",
+        "visual_description": "一位女士的背部，头发上覆盖着厚厚的绿色泡沫，有人拿着一个红色大齿梳子，泡沫从梳子缝隙中滴落。",
+        "voiceover": "你要是头发没什么雪花的",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:03",
+        "shot_type": "产品使用前的状态",
+        "visual_description": "一位穿着白色浴袍的女士，中长发，头发略显油腻。",
+        "voiceover": "那就三天洗一次",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:06",
+        "shot_type": "产品特写",
+        "visual_description": "一只手挤出绿色的洗发水，展示洗发水的质地。",
+        "voiceover": "里面添加了1%的二硫化硒",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:13",
+        "shot_type": "使用演示",
+        "visual_description": "女士将洗发水涂抹在头发上，揉搓出泡沫，然后从后背展示涂抹泡沫的状态。",
+        "voiceover": "可以温和调理你的头皮环境，缓解头屑头痒问题，还添加了滋润蜂蜜和清爽薄荷",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:16",
+        "shot_type": "洗后效果展示",
+        "visual_description": "女士用吹风机吹干头发，展示洗发后的头发效果。",
+        "voiceover": "洗的时候记得充分按摩再冲洗",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:18",
+        "shot_type": "洗后效果展示",
+        "visual_description": "女士展示洗发后的头发，头发柔顺有光泽。",
+        "voiceover": "效果不会让你失望的",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 6,
+      "total_duration_sec": 18,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 6,
+      "mean_chars_per_second": 5.34,
+      "max_chars_per_second": 11.0,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 11.0 chars/sec exceeds 4.0",
+      "shot 3: 4.7 chars/sec exceeds 4.0",
+      "shot 4: 4.3 chars/sec exceeds 4.0",
+      "shot 5: 4.5 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "设计屑康王洗发液的15秒短视频分镜脚本，需覆盖时间轴、镜头类型、画面描述、画外音及背景音乐。产品信息：专利土茯苓配方，可根治头皮螨虫引发的头屑问题，使用后头发蓬松顺滑且控油效果长达72小时。用户痛点描述：每日洗头仍无法抑制头屑，头皮泛红瘙痒影响社交，尝试过药用洗发水未见效。请通过可视化对比（如显微镜头展示螨虫减少）和用户证言形式呈现，结尾强调限时优惠信息。",
+    "output": [
+      {
+        "time_axis": "00:00-00:04",
+        "shot_type": "痛点展示",
+        "visual_description": "手拿着一盒“屑康王”洗发液，配文：我头皮总是很痒，还有小疙瘩",
+        "voiceover": "我头皮总是很痒，还有小疙瘩",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:08",
+        "shot_type": "产品展示和痛点描述",
+        "visual_description": "展示两瓶“屑康王”洗发液，配文：头屑也多的吓人，用了各种洗发水都不管用",
+        "voiceover": "头屑也多的吓人，用了各种洗发水都不管用",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:12",
+        "shot_type": "产品介绍",
+        "visual_description": "展示两瓶“屑康王”洗发液，配文：还好我发现了这款屑康王洗发水，它含有土茯苓成分",
+        "voiceover": "还好我发现了这款屑康王洗发水，它含有土茯苓成分",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:17",
+        "shot_type": "产品功效",
+        "visual_description": "展示两瓶“屑康王”洗发液，配文：能有效去除螨止痒，让头发变得柔顺，简直是去屑神器！",
+        "voiceover": "能有效去除螨止痒，让头发变得柔顺，简直是去屑神器！",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:25",
+        "shot_type": "用户体验和购买引导",
+        "visual_description": "展示两瓶“屑康王”洗发液，配文：每次洗完头，我都感觉头皮非常清爽，而且头发蓬松，秒变高颅顶美女，它的效果真的超级持久，完全不用天天洗头了，有同样烦恼的朋友们赶紧下单购买吧",
+        "voiceover": "每次洗完头，我都感觉头皮非常清爽，而且头发蓬松，秒变高颅顶美女，它的效果真的超级持久，完全不用天天洗头了，有同样烦恼的朋友们赶紧下单购买吧",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 25,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 5.05,
+      "max_chars_per_second": 7.88,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 1: 4.5 chars/sec exceeds 4.0",
+      "shot 2: 5.5 chars/sec exceeds 4.0",
+      "shot 3: 4.4 chars/sec exceeds 4.0",
+      "shot 4: 7.9 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要创建一个产品推广视频的分镜大纲，要求包含五个要素：时间分段、镜头形式、画面内容、配音文案和背景音乐类型。产品信息如下：泰国黑姜洗发水，核心优势是让头发呈现自然蓬松感，解决洗后头发贴头皮、频繁掉发的困扰，适合上班族、学生党等需要维持良好形象的人群。请设计从问题呈现到解决方案的叙事结构，并突出使用后的视觉效果变化。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "情景展示",
+        "visual_description": "一位长发女士在超市的乳品区购物，推着购物车，旁边跟着一个小女孩。字幕：我突然意识到生活中的那些小确幸",
+        "voiceover": "我突然意识到生活中的那些小确幸",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:04",
+        "shot_type": "产品展示",
+        "visual_description": "展示几瓶泰国黑姜洗发水，周围有花朵和玩具熊装饰。",
+        "voiceover": "有时候就源自一瓶不起眼的洗发水",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:06",
+        "shot_type": "产品展示",
+        "visual_description": "展示两瓶泰国黑姜洗发水的正面标签。",
+        "voiceover": "在遇见泰国黑姜洗发水之前",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:11",
+        "shot_type": "痛点展示",
+        "visual_description": "近距离展示头皮，头发油腻扁塌。",
+        "voiceover": "我每天都在和自己的头发“打仗”，早上刚洗完头，下午头发已经开始“打蔫”",
+        "music": "低落背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:14",
+        "shot_type": "痛点展示",
+        "visual_description": "展示洗头后浴室地板上的大量掉发。",
+        "voiceover": "每次洗头头发在卫生间里，就是不在头上",
+        "music": "低落背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:17",
+        "shot_type": "产品展示",
+        "visual_description": "展示泰国黑姜洗发水瓶身。",
+        "voiceover": "闺蜜推荐的泰国黑姜洗发水",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:19",
+        "shot_type": "产品使用展示",
+        "visual_description": "展示洗发水的质地，并涂抹在湿发上。",
+        "voiceover": "抱着试一试的心态，洗完真的被惊艳到了",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:19-00:21",
+        "shot_type": "使用效果展示",
+        "visual_description": "展示洗发后的蓬松发根。",
+        "voiceover": "蓬松轻盈发根高高挺立",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:23",
+        "shot_type": "整体效果展示",
+        "visual_description": "女士展示洗发后的柔顺长发，阳光明媚。",
+        "voiceover": "整个人的气质焕然一新",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 23,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 8,
+      "pacing_checked": 9,
+      "mean_chars_per_second": 6.11,
+      "max_chars_per_second": 8.5,
+      "distinct_shot_types": 6,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 7.5 chars/sec exceeds 4.0",
+      "shot 1: 7.5 chars/sec exceeds 4.0",
+      "shot 2: 6.0 chars/sec exceeds 4.0",
+      "shot 3: 5.8 chars/sec exceeds 4.0",
+      "shot 4: 5.7 chars/sec exceeds 4.0",
+      "shot 6: 8.5 chars/sec exceeds 4.0",
+      "shot 7: 5.0 chars/sec exceeds 4.0",
+      "shot 8: 5.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "设计一个短视频的分镜脚本，需包括时间轴、镜头类型、画面描述、画外音及背景音乐。产品为三生花精油香氛洗发露，以天然植物成分如侧柏叶和姜根油，解决头发脆弱、脱落及头皮敏感问题，适用于脱发困扰和天然护发需求的用户。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "产品展示",
+        "visual_description": "一只手拿着一瓶浅蓝色瓶子的三生花精油香氛洗发露，瓶身有竖条纹设计，瓶口为金色泵头。",
+        "voiceover": "三生花精油香氛洗发露护根润发。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:04",
+        "shot_type": "产品卖点",
+        "visual_description": "旋转瓶身，展示瓶身不同侧面。",
+        "voiceover": "每一滴都是自然馈赠。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:09",
+        "shot_type": "成分展示",
+        "visual_description": "展示瓶身背面的产品成分信息，镜头逐渐拉近。",
+        "voiceover": "侧柏叶精华深润毛囊，姜根油强韧发芯。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:11",
+        "shot_type": "产品功效",
+        "visual_description": "旋转瓶身，展示瓶身不同侧面。",
+        "voiceover": "三重植物精油协同修护，减少断发脱落。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:13",
+        "shot_type": "产品特点",
+        "visual_description": "旋转瓶身，展示瓶身不同侧面。",
+        "voiceover": "绵密泡沫温和清洁，洗后发丝柔韧蓬松。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:17",
+        "shot_type": "产品优势",
+        "visual_description": "展示瓶身正面，镜头向上移动至泵头。",
+        "voiceover": "48小时持久留香，无硅油配方呵护头皮健康。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:19",
+        "shot_type": "产品总结",
+        "visual_description": "展示瓶身正面。",
+        "voiceover": "让秀发强韧如初，从三生花开始。",
+        "music": "舒缓背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 7,
+      "total_duration_sec": 19,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 6,
+      "pacing_checked": 7,
+      "mean_chars_per_second": 5.99,
+      "max_chars_per_second": 8.0,
+      "distinct_shot_types": 7,
+      "duplicate_descriptions": 2
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 7.0 chars/sec exceeds 4.0",
+      "shot 1: 4.5 chars/sec exceeds 4.0",
+      "shot 3: 8.0 chars/sec exceeds 4.0",
+      "shot 4: 8.0 chars/sec exceeds 4.0",
+      "shot 5: 4.8 chars/sec exceeds 4.0",
+      "shot 6: 6.5 chars/sec exceeds 4.0",
+      "2 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "请设计一个短视频分镜脚本，包含时间轴、镜头类型、画面描述、旁白和背景音乐。产品是袋鼠妈妈孕产妇专用洗护三件套，产品特点包括无水杨酸配方，富含15种氨基酸和小麦胚芽，护发乳修复受损发丝，洗发露温和清洁。目标用户是怀孕或产后女性，她们因担心普通洗发水对胎儿或身体有害，需要安全的洗护产品。请通过画面和语言突出产品温和性与专业性。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "商品痛点展示",
+        "visual_description": "一个婴儿的3D渲染图，蜷缩着身体，暗示怀孕状态。",
+        "voiceover": "大怀孕后就不能用普通洗发水了？",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:03",
+        "shot_type": "商品痛点展示",
+        "visual_description": "一位穿着睡衣的女士，弯腰在浴室的淋浴下洗头。",
+        "voiceover": "他们会对造成我不可逆的影响",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:07",
+        "shot_type": "产品特写",
+        "visual_description": "三个袋鼠妈妈品牌的产品，包括洗发露、护发乳和沐浴露，被手拿着展示。",
+        "voiceover": "妈妈可以入手这款袋鼠妈妈孕产妇专用洗护",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:12",
+        "shot_type": "产品特写",
+        "visual_description": "镜头聚焦于袋鼠妈妈护发乳的包装，展示产品名称和成分。",
+        "voiceover": "棉棉不含水杨酸，还贴心为妈妈添加了15种氨基酸和小麦胚芽成分",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:15",
+        "shot_type": "使用效果展示",
+        "visual_description": "一位女士背对镜头，用手抚摸她乌黑亮丽的长发，展示使用后的效果。",
+        "voiceover": "乌黑又亮",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:15-00:17",
+        "shot_type": "产品特写",
+        "visual_description": "镜头聚焦于袋鼠妈妈沐浴露的包装，展示产品名称和成分。",
+        "voiceover": "护发素可以滋润头皮，修复受损发丝",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:21",
+        "shot_type": "产品促销信息",
+        "visual_description": "三个产品再次同时出现，强调一套的价格优势。",
+        "voiceover": "一套还两倍数价格，让妈妈孕期从头清爽到脚",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 7,
+      "total_duration_sec": 21,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 6,
+      "pacing_checked": 7,
+      "mean_chars_per_second": 6.38,
+      "max_chars_per_second": 14.0,
+      "distinct_shot_types": 4,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 14.0 chars/sec exceeds 4.0",
+      "shot 1: 6.5 chars/sec exceeds 4.0",
+      "shot 2: 4.8 chars/sec exceeds 4.0",
+      "shot 3: 5.8 chars/sec exceeds 4.0",
+      "shot 5: 7.5 chars/sec exceeds 4.0",
+      "shot 6: 4.8 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请规划一款发胶蓬松喷雾的短视频带货分镜方案，需标注时间轴、镜头类型、画面内容、配音和音乐类型。产品优势：空气感蓬松效果、持妆12小时不塌、喷头精准定位。目标人群痛点：发根扁塌显老气、运动后发型变形、发量少想假装浓密。建议使用场景：约会前急救造型、健身前固定发髻、日常通勤快速打理。",
+    "output": [
+      {
+        "time_axis": "00:00-00:05",
+        "shot_type": "产品痛点展示",
+        "visual_description": "一个男性正在整理发型，显得比较杂乱无章。",
+        "voiceover": "这个我得站起来了，表示一下我的敬意。这个折扣太狠了，我个人印象里从来没见过这么低的折扣。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:07",
+        "shot_type": "造型前后的对比",
+        "visual_description": "一位女士正在展示造型前后的对比， 使用产品前头发比较服帖。",
+        "voiceover": "这是一个特别爆款的。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:10",
+        "shot_type": "产品特写",
+        "visual_description": "手持产品进行展示，强调产品的外包装。",
+        "voiceover": "我们直播间卖了很多次的一个爆款。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:12",
+        "shot_type": "造型展示",
+        "visual_description": "女士展示蓬松的造型。",
+        "voiceover": "这个产品只要有用过的， 是很早之前就已经在很多旗舰店里面选出来的。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:14",
+        "shot_type": "产品特写",
+        "visual_description": "产品放置在洗手台上，背景虚化。",
+        "voiceover": "蓬松喷雾。并不是已经是咱们的第13次或者14次返场国民推荐。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:17",
+        "shot_type": "使用产品的搞笑展示",
+        "visual_description": "一位男性套着塑料瓶子，正在进行喷雾定型",
+        "voiceover": "这个性价比真的是， 真的没话说，你知道我用就告诉你。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:20",
+        "shot_type": "产品特写",
+        "visual_description": "手持产品进行展示，展示产品的外包装。",
+        "voiceover": "这么多年都能卖爆的产品。你要是觉得不好用，你直接看这个价格直接下单就可以了。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:20-00:23",
+        "shot_type": "产品特写",
+        "visual_description": "两个产品放置在一起，展示产品。",
+        "voiceover": "这个价格是拿货价良心了",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:23-00:26",
+        "shot_type": "造型展示",
+        "visual_description": "一位男性正在展示造型效果。",
+        "voiceover": "这个价格的来说，你知道有多么的",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:26-00:30",
+        "shot_type": "造型展示",
+        "visual_description": "一位男性展示使用产品后的蓬松发型。",
+        "voiceover": "发胶蓬松定型喷雾。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 10,
+      "total_duration_sec": 30,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 8,
+      "pacing_checked": 10,
+      "mean_chars_per_second": 7.58,
+      "max_chars_per_second": 15.0,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "shot 0: 8.0 chars/sec exceeds 4.0",
+      "shot 1: 4.5 chars/sec exceeds 4.0",
+      "shot 2: 5.0 chars/sec exceeds 4.0",
+      "shot 3: 15.0 chars/sec exceeds 4.0",
+      "shot 4: 14.0 chars/sec exceeds 4.0",
+      "shot 5: 7.3 chars/sec exceeds 4.0",
+      "shot 6: 11.7 chars/sec exceeds 4.0",
+      "shot 8: 4.7 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要制作一段产品推广短视频的分镜方案，要求明确标注时间轴、镜头类型、画面内容、配音文案和背景音乐。产品是欧莱雅专业线云朵瓶洗发水，核心卖点包括：24小时控油不塌、轻盈蓬松感、温和不刺激、用量省且泡沫绵密。目标用户为面临头发扁塌、出油快、发型易塌陷问题的消费者，适合日常护理和重要场合使用。",
+    "output": [
+      {
+        "time_axis": "00:00-00:04",
+        "shot_type": "产品展示",
+        "visual_description": "五个不同颜色的L'Oréal Professionnel洗发水瓶子排列在白色台子上，背景有鲜花装饰。镜头稳定，展示所有产品。",
+        "voiceover": "欧莱雅Pro云朵瓶",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:07",
+        "shot_type": "产品特写和用户体验",
+        "visual_description": "手持蓝绿色瓶子的L'Oréal Professionnel Scalp Advanced洗发水，展示产品正面标签。然后画面切换到头皮，显示蓬松的头发。",
+        "voiceover": "这款主打长效控油蓬松，护肤级别的洗发水，使用感很nice，可以轻松get高颅顶。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:08",
+        "shot_type": "产品功能介绍",
+        "visual_description": "再次手持蓝绿色瓶子的洗发水。",
+        "voiceover": "还是可以两天发根不塌的。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:11",
+        "shot_type": "质地展示",
+        "visual_description": "洗发水倒在手背上，展示透明的液体质地。双手揉搓，展示丰富的泡沫。",
+        "voiceover": "它是凝露质地，一抹化水，一点点就可以搓出很多绵密泡沫，用量省。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:17",
+        "shot_type": "产品特点总结",
+        "visual_description": "再次手持蓝绿色瓶子的洗发水，镜头稳定。",
+        "voiceover": "没有刺激感，很温和，还有淡淡的高级法式木香，洗完一整天都是香香的，很舒适。",
+        "music": "舒缓背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 17,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 7.92,
+      "max_chars_per_second": 12.0,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 1: 12.0 chars/sec exceeds 4.0",
+      "shot 2: 11.0 chars/sec exceeds 4.0",
+      "shot 3: 9.0 chars/sec exceeds 4.0",
+      "shot 4: 5.3 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请制作康王洗发水带货视频的分镜方案，需包含时间轴、镜头类型、画面描述、旁白及背景音乐。产品特点：包装印有二硫化硒和水杨酸成分，质地金黄无臭味。用户痛点为假货横行、成分不透明，目标用户是头皮屑多、敏感或油性发质人群。需设计真假对比、成分特写和使用效果展示环节。",
+    "output": [
+      {
+        "time_axis": "00:00-00:05",
+        "shot_type": "问题提出",
+        "visual_description": "女士穿着睡袍对着镜头说话，镜头分割为两部分，一部分是女士的画面，另一部分是3瓶康王洗发水。女士拿着一瓶假冒的康王洗发水。",
+        "voiceover": "这假的假的，全是假的。你敢相信现在很火的这个康王洗发水，盗版的它居然比正版还要猖狂。",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:14",
+        "shot_type": "真假对比",
+        "visual_description": "女士拿着正版和盗版的康王洗发水进行对比。正版康王洗发水的包装显示",
+        "voiceover": "这个才是康王正版的包装，其他全部都是假的。你别看它的这个包装丑不拉几的，但是人家是真的好用啊。不然为啥这个盗版的敢蹭的如此猖狂。",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:17",
+        "shot_type": "成分介绍",
+        "visual_description": "特写正版康王洗发水的产品包装，成分和功效直接印在包装上面。",
+        "voiceover": "它的成分和功效是直接给你印在这个包装上面的。",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:23",
+        "shot_type": "成分强调",
+        "visual_description": "女士再次拿着正版和盗版的康王洗发水进行对比，强调正品洗发水的成分。",
+        "voiceover": "里面主要的成分就是二硫化硒和水杨酸，就这两个加在一起强强联合，就像这个头皮的吸尘器一样的存在。",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:23-00:28",
+        "shot_type": "使用场景",
+        "visual_description": "女士在洗手池洗头，头发上有很多泡沫。",
+        "voiceover": "不仅能针对我们的头皮做定制化方案，甚至大油头，红红，敏敏，屑屑的你都能用它。",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:28-00:33",
+        "shot_type": "产品质地展示",
+        "visual_description": "女士将正版康王洗发水倒在手上，展示洗发水的质地，是金黄色的膏体。",
+        "voiceover": "而且这个正版的二硫化硒，闻起来它是不会臭的，没有油漆味。",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:33-00:38",
+        "shot_type": "使用效果",
+        "visual_description": "女士展示洗完后的头发，蓬松且顺滑。",
+        "voiceover": "洗完的头发真的就是清爽又蓬松，尤其是这个头皮，真的就是巨舒服。",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:38-00:42",
+        "shot_type": "总结推荐",
+        "visual_description": "女士拿着正版康王洗发水对着镜头总结。",
+        "voiceover": "这哪里是洗发水，这简直就是我们高颅顶蓬松的秘密武器呀。",
+        "music": "无背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 8,
+      "total_duration_sec": 42,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 8,
+      "pacing_checked": 8,
+      "mean_chars_per_second": 6.49,
+      "max_chars_per_second": 7.6,
+      "distinct_shot_types": 8,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 7.6 chars/sec exceeds 4.0",
+      "shot 1: 6.6 chars/sec exceeds 4.0",
+      "shot 2: 7.0 chars/sec exceeds 4.0",
+      "shot 3: 7.3 chars/sec exceeds 4.0",
+      "shot 4: 6.6 chars/sec exceeds 4.0",
+      "shot 5: 5.0 chars/sec exceeds 4.0",
+      "shot 6: 5.6 chars/sec exceeds 4.0",
+      "shot 7: 6.2 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "设计一个短视频分镜脚本，要求包含时间轴、镜头类型、画面描述、画外音及背景音乐配置。产品为白云山二硫化硒去屑止痒洗发水，需重点传达：①二硫化硒成分的去屑止痒功效 ②草本植萃的温和护理 ③泡沫绵密的使用体验。脚本需通过镜头语言对比展示：使用前头发油腻打结、头皮屑堆积 vs 使用后蓬松柔顺的效果。目标受众为25-40岁面临头皮健康问题的都市人群，需营造轻松自然的场景氛围。",
+    "output": [
+      {
+        "time_axis": "00:00-00:08",
+        "shot_type": "痛点展示",
+        "visual_description": "女士手持洗发水瓶，展示产品。镜头切换至头顶特写，显示头皮油腻，头发成绺。",
+        "voiceover": "省吃俭用用大牌不如跟着国货走啊，洗发水呢是咱们每个家庭必备。但是洗发水的选择呀是关键，不然你也像我一样啊，大油头，头发隔天不洗啊，就油的一绺一绺的哈。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:16",
+        "shot_type": "痛点展示",
+        "visual_description": "镜头切换至头顶特写，显示大量头皮屑。",
+        "voiceover": "头顶飘雪花，痒得只想抓啊，就像我这样子，你去抠，去挠的时候啊，指甲里面呢，有一层白泥啊，闻起来呢，还有一股难闻的味道。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:25",
+        "shot_type": "产品特写",
+        "visual_description": "女士手持洗发水瓶，展示产品包装和产品质地。展示产品瓶身，强调“二硫化硒去屑止痒洗发水”字样。展示洗发水质地，为黄色粘稠液体。",
+        "voiceover": "那这个时候一定要重视起来，可以试一下这款白云山二硫化硒的去屑止痒洗发水，它里面添加了二硫化硒和多种草本植萃，泡沫绵密啊。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:25-00:29",
+        "shot_type": "使用演示",
+        "visual_description": "女士在淋浴房中使用洗发水，揉搓出丰富泡沫，然后冲洗干净，用毛巾擦拭。",
+        "voiceover": "在深层清洁咱们头皮的同时呢，能够带走依附在咱们头皮上的油脂和脏东西。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:29-00:36",
+        "shot_type": "效果展示和促销信息",
+        "visual_description": "女士展示洗发后的头发，蓬松柔顺。展示两瓶洗发水。",
+        "voiceover": "头发呢也是特别的清爽蓬松哈，如果你也有头油头屑头痒的困扰，给国货一个机会。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 36,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 5,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 6.77,
+      "max_chars_per_second": 8.5,
+      "distinct_shot_types": 4,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 8.5 chars/sec exceeds 4.0",
+      "shot 1: 6.2 chars/sec exceeds 4.0",
+      "shot 2: 6.2 chars/sec exceeds 4.0",
+      "shot 3: 8.0 chars/sec exceeds 4.0",
+      "shot 4: 4.9 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请设计一个短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品是Yeehoo英氏轻盈洗发水，核心卖点包括：成人级品质却专为青少年打造的高性价比；采用无酸温和配方，避免刺激头皮；特别添加何首乌等养发成分。目标用户是头发易出油、发尾干枯、蓬松度差的人群。场景需突出解决头皮问题和干枯发质的需求。",
+    "output": [
+      {
+        "time_axis": "00:00-00:05",
+        "shot_type": "痛点展示",
+        "visual_description": "一位女士穿着黑色睡衣，手持洗发水，蓬乱的头发在空中甩动。她看起来很苦恼，似乎对自己的头发状况不满意。",
+        "voiceover": "啊！能劝一个是, 我是真不敢再用了。我怕你们和我一样，洗完好几天, 蓬的都不想洗头。",
+        "music": "活泼的背景音乐，略带夸张的音效"
+      },
+      {
+        "time_axis": "00:05-00:09",
+        "shot_type": "产品介绍及对比",
+        "visual_description": "女士展示黑色的Yeehoo英氏轻盈洗发水瓶身，并用手势强调头发的蓬松感。背后是干净的室内环境。",
+        "voiceover": "说实话哈, 咱成人的洗发水，也想达到这种洗感，价格至少要翻上好几倍。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:12",
+        "shot_type": "问题提出",
+        "visual_description": "女士展示自己头皮油腻、发尾枯燥的头发状态，并用手指指出问题所在。",
+        "voiceover": "如果说你跟我一样，头皮油，发尾枯的, 那你赶紧去试一试。",
+        "music": "舒缓的背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:14",
+        "shot_type": "使用展示",
+        "visual_description": "展示将洗发水涂抹在湿发上，并揉搓出丰富泡沫的过程。",
+        "voiceover": "这个英氏的青少年洗发水。",
+        "music": "轻快的背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:18",
+        "shot_type": "成分介绍",
+        "visual_description": "洗发水倒在手上特写，展示洗发水透明质地。女士用手在头发上揉搓出泡泡，进行清洗。",
+        "voiceover": "毕竟是给小孩子用的，它里面就是一个很简单的无酸配方，就能很温和的帮我们清洁头皮。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:18-00:21",
+        "shot_type": "成分特写",
+        "visual_description": "屏幕上出现洗发水成分图示，包括尿囊素、甘油、何首乌根提取物、姜根提取物等。",
+        "voiceover": "里面还添加了何首乌、姜根，来帮咱们养护头皮。",
+        "music": "舒缓的背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:27",
+        "shot_type": "效果展示",
+        "visual_description": "女士展示使用洗发水后的头发状态，蓬松、顺滑。",
+        "voiceover": "就用它洗完哈，整个头包脸巨蓬松, 发丝都是根根分明的，而且头发丝也很顺滑, 一点也不打结。",
+        "music": "轻快的背景音乐"
+      },
+      {
+        "time_axis": "00:27-00:37",
+        "shot_type": "产品推荐及促销",
+        "visual_description": "女士再次展示洗发水瓶身，并放在浴室的置物架上。最后对着镜头微笑。",
+        "voiceover": "咱们成人的洗发水，但凡给力一点, 我也不可能去跟小孩子抢洗发水用啊，而且这个价格这么大一瓶啊，你们赶紧去薅上一瓶, 全家老小都能一起去用。",
+        "music": "欢快的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 8,
+      "total_duration_sec": 37,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 8,
+      "pacing_checked": 8,
+      "mean_chars_per_second": 6.9,
+      "max_chars_per_second": 9.25,
+      "distinct_shot_types": 8,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 6.8 chars/sec exceeds 4.0",
+      "shot 1: 7.2 chars/sec exceeds 4.0",
+      "shot 2: 7.7 chars/sec exceeds 4.0",
+      "shot 3: 5.5 chars/sec exceeds 4.0",
+      "shot 4: 9.2 chars/sec exceeds 4.0",
+      "shot 5: 6.3 chars/sec exceeds 4.0",
+      "shot 6: 6.3 chars/sec exceeds 4.0",
+      "shot 7: 6.1 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要制作一款洁面产品的短视频脚本，请根据以下信息：产品名称《半亩花田氨基酸洁面慕斯》，产品优势包含：支持无理由退换的售后政策、针对出油肌和毛孔粗大的清洁效果、绵密如云朵的泡沫触感、500ml大容量正品非临期、添加神经酰胺等保湿成分实现清洁保湿二合一。用户需求痛点：普通洗面奶清洁力不足导致皮肤暗沉、担心刺激性成分或价格超出预算。适用场景：适合追求清爽控油的油皮及混合肌日常洁面使用",
+    "output": [
+      {
+        "time_axis": "00:00-00:09",
+        "shot_type": "产品介绍",
+        "visual_description": "阿文站在镜头前，背景是网格墙，展示半亩花田洗面奶的宣传海报，海报上有产品图片和产品特点介绍。",
+        "voiceover": "阿文一而再再而三的返场呢，希望给大家带来的是真的你满意的，好用的产品。先用再说嘛，是不是？反正喜欢就留，不喜欢就退。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:17",
+        "shot_type": "用户体验+产品展示",
+        "visual_description": "一位女士在卫生间使用半亩花田氨基酸洁面慕斯洗面奶，脸上是洗面奶的泡沫，像吸尘器一样清洁皮肤，展示使用后的清爽效果，并用毛巾擦拭脸部。",
+        "voiceover": "洗面奶就得买便宜的，就这个半亩花田氨基酸洁面慕斯洗面奶，它就像吸尘器一样，无论是出油还是草莓鼻，用完它都感觉清清爽爽的。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:21",
+        "shot_type": "效果展示+泡沫特写",
+        "visual_description": "洗完脸后，整个皮肤都通透了。展示洗面奶打出来的泡沫，就像云朵一样绵密。",
+        "voiceover": "整个皮肤一下都通透了，它打出来的泡沫就像云朵一样绵密。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:27",
+        "shot_type": "产品展示",
+        "visual_description": "展示半亩花田洗面奶的瓶身，展示了两瓶产品，并特写了瓶底的生产日期，以及瓶身的容量。",
+        "voiceover": "就算是一碰就红的脸也照样能用，你看一下我现在的链接，到手才啥价，真的低到我都不敢说，而且不是临期也不是小样。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:27-00:38",
+        "shot_type": "成分介绍+使用展示",
+        "visual_description": "展示了500克的大正装，特写瓶身，介绍里面的成分，透明质酸钠和5%的大米发酵精华。挤出洗面奶，展示泡沫。",
+        "voiceover": "而是500克的大正装，它可不是普通的洁面慕斯啊，它里面添加了神经酰胺，透明质酸钠和5%的大米发酵精华，就是在深层清洁肌肤的同时，还能使肌肤保持水润。",
+        "music": "舒缓背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 38,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 5,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 6.63,
+      "max_chars_per_second": 8.17,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 5.7 chars/sec exceeds 4.0",
+      "shot 1: 6.9 chars/sec exceeds 4.0",
+      "shot 2: 6.2 chars/sec exceeds 4.0",
+      "shot 3: 8.2 chars/sec exceeds 4.0",
+      "shot 4: 6.2 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请为浅香洗护套装撰写短视频营销分镜方案，要求明确标注时间轴、镜头形式、画面呈现、配音内容及配乐选择。产品卖点需突出：①氨基酸温和配方 ②绵密泡沫技术 ③pH值平衡功能 ④控油蓬松效果 ⑤发丝柔顺养护。需针对性解决消费者对护理效果不理想和售后问题的担忧，场景设定聚焦于日常洗发护发需求，特别是油性发质的蓬松管理场景。",
+    "output": [
+      {
+        "time_axis": "00:00-00:03",
+        "shot_type": "产品展示",
+        "visual_description": "女士手持两瓶浅紫色洗发护发套装，正对镜头展示。",
+        "voiceover": "浅香洗护套装，浅香的洗护套装快来安排上吧",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:05",
+        "shot_type": "产品特写",
+        "visual_description": "浅紫色洗发护发套装全家桶展示，包括洗发水、护发素、小样等。",
+        "voiceover": "它里面蕴含氨基酸成分",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:07",
+        "shot_type": "使用演示",
+        "visual_description": "手部挤出洗发水，展示质地。",
+        "voiceover": "起泡绵密，还能平衡头皮的pH值",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:10",
+        "shot_type": "使用演示",
+        "visual_description": "女士正在洗头发，泡沫丰富。",
+        "voiceover": "香氛萦绕，控油蓬松，护发素",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:12",
+        "shot_type": "使用演示",
+        "visual_description": "手部挤出护发素，展示质地。",
+        "voiceover": "柔顺润泽每一丝头发",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:17",
+        "shot_type": "使用演示",
+        "visual_description": "手部涂抹护发素，展示质地。",
+        "voiceover": "洗护搭配蓬松加倍，还是三段式的香氛留香",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:19",
+        "shot_type": "效果展示",
+        "visual_description": "使用洗护套装后的头发效果展示。",
+        "voiceover": "这款洗护不要错过哦",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:19-00:24",
+        "shot_type": "产品信息",
+        "visual_description": "女士正对镜头再次展示两瓶浅紫色洗发护发套装。",
+        "voiceover": "并且它还是浅香官方旗舰店发货，保障正品",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:24-00:32",
+        "shot_type": "售后承诺",
+        "visual_description": "浅紫色洗发护发套装全家桶再次展示。",
+        "voiceover": "官方旗舰店发货，假一赔十，如果有售后问题，都是浅香官方旗舰店来处理，请大家完全放心",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 32,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 6,
+      "pacing_checked": 9,
+      "mean_chars_per_second": 4.76,
+      "max_chars_per_second": 7.0,
+      "distinct_shot_types": 6,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 6.3 chars/sec exceeds 4.0",
+      "shot 1: 5.0 chars/sec exceeds 4.0",
+      "shot 2: 7.0 chars/sec exceeds 4.0",
+      "shot 4: 4.5 chars/sec exceeds 4.0",
+      "shot 6: 4.5 chars/sec exceeds 4.0",
+      "shot 8: 4.6 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要编写一个15秒短视频脚本框架，包含时间轴、镜头类型、画面描述、旁白和背景音乐。产品：白云山二硫化硒洗发露。重点呈现：①油头用户的日常困扰（如头发黏腻、发际线明显） ②产品独特卖点（药用级二硫化硒配方） ③使用后效果（头发蓬松度提升、头皮屑减少）。请采用问题-方案-效果的黄金结构，并在结尾加入促销信息（如买二送一）。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "痛点展示",
+        "visual_description": "女士用手拨弄头发，头发毛躁，头皮屑明显，有雪花状物质掉落，特写镜头展示头皮屑。",
+        "voiceover": "头发噼里啪啦掉雪花的大油头",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:05",
+        "shot_type": "产品展示",
+        "visual_description": "女士展示白云山二硫化硒去屑洗发露，白色瓶身，蓝色瓶盖，红色文字，镜头对准产品包装。",
+        "voiceover": "大油头，细软塌，就用白云山这个洗发水。",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:06",
+        "shot_type": "质地展示",
+        "visual_description": "洗发水被挤出，展示洗发水的质地，呈淡黄色。",
+        "voiceover": "已经把我的头皮屑都吃没了",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:08",
+        "shot_type": "痛点展示",
+        "visual_description": "女士用手指甲抠头皮，展示指甲缝里的白色污垢。",
+        "voiceover": "随便一抠，指甲缝里面都是白泥",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:10",
+        "shot_type": "痛点展示",
+        "visual_description": "女士头发毛躁，凌乱，表情无奈。",
+        "voiceover": "闻起来还臭臭的，那你一定就是脂溢皮了",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:14",
+        "shot_type": "痛点展示",
+        "visual_description": "女士拨开头发，展示头皮屑、红疹。",
+        "voiceover": "两天没洗呢，头皮又油又痒，甚至呢，还会长小红包包",
+        "music": "无背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:21",
+        "shot_type": "产品介绍",
+        "visual_description": "展示白云山二硫化硒去屑洗发露的产品包装和成分信息。",
+        "voiceover": "白云山的二硫化硒呢，就是专门的针对这个问题。别看它包装丑啊，人家呢，直接敢把这些印在包装上，还添加了何首乌和人参的提取物。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:25",
+        "shot_type": "使用演示",
+        "visual_description": "女士正在使用洗发水洗头，然后冲洗干净。展示蓬松干净的头发。",
+        "voiceover": "专门针对细软塌发质。洗出来的头发呢，蓬松干净又力挺。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:25-00:30",
+        "shot_type": "效果展示",
+        "visual_description": "展示洗后蓬松柔顺的头发，女士面带微笑。",
+        "voiceover": "而且可以维持好几天的这个蓬松度。洗完，不拔干，很水润，轻松打造头包脸的效果。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:30-00:38",
+        "shot_type": "产品推荐",
+        "visual_description": "女士拿着洗发水，推荐产品。",
+        "voiceover": "洗发水呢，换了一瓶又一瓶，依旧拿不到结果的，白云山的二硫化硒就是你的终点站。还得是我们老国货啊，更加了解我们中国人的头皮。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:38-00:41",
+        "shot_type": "促销信息",
+        "visual_description": "展示两瓶洗发水，强调促销活动。",
+        "voiceover": "良心价格啊，到手两瓶的话才什么价格？活动链接还在的话赶紧冲",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 11,
+      "total_duration_sec": 41,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 11,
+      "pacing_checked": 11,
+      "mean_chars_per_second": 7.29,
+      "max_chars_per_second": 12.0,
+      "distinct_shot_types": 8,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "shot 0: 6.5 chars/sec exceeds 4.0",
+      "shot 1: 5.3 chars/sec exceeds 4.0",
+      "shot 2: 12.0 chars/sec exceeds 4.0",
+      "shot 3: 6.5 chars/sec exceeds 4.0",
+      "shot 4: 8.5 chars/sec exceeds 4.0",
+      "shot 5: 5.2 chars/sec exceeds 4.0",
+      "shot 6: 7.9 chars/sec exceeds 4.0",
+      "shot 7: 5.8 chars/sec exceeds 4.0",
+      "shot 8: 6.6 chars/sec exceeds 4.0",
+      "shot 9: 6.9 chars/sec exceeds 4.0",
+      "shot 10: 9.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请编写三生花精油香氛莹亮洗发水的短视频脚本框架，需明确标注时间轴、镜头类型、画面内容、旁白文案和背景音乐。产品特点包括：天然三生花精油成分、修复烫染损伤、改善毛躁问题、持久香氛效果。请通过镜头切换和旁白结合，突出产品在护理受损发质方面的优势。",
+    "output": [
+      {
+        "time_axis": "00:00-00:04",
+        "shot_type": "产品展示",
+        "visual_description": "一只手拿着粉色香氛精油洗发露，在百叶窗背景前展示。",
+        "voiceover": "三生花精油香氛莹亮。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:07",
+        "shot_type": "产品成分介绍",
+        "visual_description": "手部转动洗发露，展示正面标签。",
+        "voiceover": "修护洗发水以三生花精油为核心，融合天然香氛与滋养成分",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:11",
+        "shot_type": "产品成分介绍",
+        "visual_description": "手部转动洗发露，展示背面标签，镜头拉近，展示成分。",
+        "voiceover": "深层修复受损发质，增强光泽。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:15",
+        "shot_type": "产品功效介绍",
+        "visual_description": "手部拿着洗发露，展示正面标签",
+        "voiceover": "改善干枯毛躁，适合烫染后及追求香氛体验的用户。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:15-00:20",
+        "shot_type": "使用方法及搭配推荐",
+        "visual_description": "手部拿着洗发露，展示正面标签。",
+        "voiceover": "洗发时，轻柔按摩头皮，搭配护发素效果更佳。",
+        "music": "舒缓背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 20,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 2,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 4.49,
+      "max_chars_per_second": 8.33,
+      "distinct_shot_types": 4,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 1: 8.3 chars/sec exceeds 4.0",
+      "shot 3: 5.2 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "我需要为一款解决头发打理难题的梳妆套装制作短视频脚本，要求分镜包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品包含气囊梳（带按摩颗粒）、镂空梳（长梳齿贴头皮）、直发梳（短发专用）、卷发梳（造型实用）。请通过镜头语言展示用户从需要多工具到使用套装后的便捷体验，强调日常家居使用场景。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "产品展示",
+        "visual_description": "四把浅黄色梳子和一把浅黄色梳子并排放置在浅灰色背景上。梳子包括气囊梳、镂空梳、直发梳和卷发梳。背景有相框、植物和书。",
+        "voiceover": "女生打理头发，有这些就够了。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:06",
+        "shot_type": "产品特写",
+        "visual_description": "一只手拿着气囊梳，展示梳子的细节，梳子上有圆点按摩颗粒。然后，手掌托着梳子，展示梳子的整体形态。",
+        "voiceover": "首先是软软的气囊梳，有圆点按摩颗粒，梳头很舒服。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:10",
+        "shot_type": "产品特写+使用演示",
+        "visual_description": "一只手拿着镂空梳，展示梳子的细节。长发女子用镂空梳梳头，展示梳头效果。",
+        "voiceover": "下来是镂空圆盘梳，长梳齿的造型，梳头时特别贴合头皮。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:13",
+        "shot_type": "产品特写+使用演示",
+        "visual_description": "一只手拿着直发梳，展示梳子的细节。短发女子用直发梳梳头，展示梳头效果。",
+        "voiceover": "这个是直发梳，平时打理头发也好用。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:16",
+        "shot_type": "产品特写",
+        "visual_description": "一只手拿着卷发梳，展示梳子的细节。",
+        "voiceover": "最后的卷发梳，能用来给头发做造型。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:18",
+        "shot_type": "总结",
+        "visual_description": "一只手拿着四把梳子的套装，装在透明塑料袋中。",
+        "voiceover": "有了它们，打理太方便了。",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 6,
+      "total_duration_sec": 18,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 6,
+      "pacing_checked": 6,
+      "mean_chars_per_second": 6.16,
+      "max_chars_per_second": 12.0,
+      "distinct_shot_types": 4,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 12.0 chars/sec exceeds 4.0",
+      "shot 1: 4.2 chars/sec exceeds 4.0",
+      "shot 2: 5.8 chars/sec exceeds 4.0",
+      "shot 3: 5.0 chars/sec exceeds 4.0",
+      "shot 4: 5.0 chars/sec exceeds 4.0",
+      "shot 5: 5.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要制作Adolph洗发水的15秒短视频脚本，请按时间轴分镜，每个镜头需标注类型、画面内容、旁白和背景音乐。产品特点：奢华香调、快速去屑、温和配方。用户常见问题：洗后香味不持久、头皮屑反复困扰。请重点展示产品使用场景，突出适合追求精致护发和高级香气的消费群体。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "洗发过程",
+        "visual_description": "一位女士正在用洗发水洗头，头发上布满了泡沫。",
+        "voiceover": "楼上洗头，楼下香",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:01-00:04",
+        "shot_type": "产品展示",
+        "visual_description": "展示Adolph洗发水瓶子。手掌中展示丰富的泡沫。",
+        "voiceover": "像喷了贵价香水一样，",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:04-00:06",
+        "shot_type": "洗发效果展示",
+        "visual_description": "洗发后，展示柔顺有光泽的头发。",
+        "voiceover": "优雅高贵，又带着清冷疏离的大小姐香",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:06-00:07",
+        "shot_type": "产品展示",
+        "visual_description": "展示多个Adolph洗发水瓶子。",
+        "voiceover": "短期用能快速去屑",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:07-00:10",
+        "shot_type": "产品质地展示",
+        "visual_description": "用勺子舀起洗发水，展示其质地。",
+        "voiceover": "短期用能快速去屑",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:10-00:13",
+        "shot_type": "使用效果展示",
+        "visual_description": "展示洗发后的头发，发根蓬松。",
+        "voiceover": "不反复长屑",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:13-00:15",
+        "shot_type": "产品卖点展示",
+        "visual_description": "手掌中展示洗发水泡沫。",
+        "voiceover": "温和净屑",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:15-00:16",
+        "shot_type": "产品推荐",
+        "visual_description": "无",
+        "voiceover": "没有试过的就冲吧",
+        "music": "轻柔音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 8,
+      "total_duration_sec": 16,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 8,
+      "mean_chars_per_second": 5.04,
+      "max_chars_per_second": 8.0,
+      "distinct_shot_types": 7,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 7.0 chars/sec exceeds 4.0",
+      "shot 2: 8.0 chars/sec exceeds 4.0",
+      "shot 3: 8.0 chars/sec exceeds 4.0",
+      "shot 7: 8.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请为我设计一个短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品是CLEAR洗发水，主打高效清洁和适合多种发质。目标用户是因工作压力大而面临脱发困扰的城市年轻白领，需突出解决头发易油、传统洗发水效果差的问题。请用自然流畅的中文表达需求，保持专业性与亲和力。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "产品展示",
+        "visual_description": "白色和蓝色两瓶CLEAR洗发水并排展示，镜头轻微移动，展示更多同品牌产品。",
+        "voiceover": "（背景音乐）我可以陪你哭陪你笑...",
+        "music": "流行歌曲，节奏较快"
+      },
+      {
+        "time_axis": "00:02-00:04",
+        "shot_type": "产品展示",
+        "visual_description": "镜头聚焦白色瓶子的CLEAR洗发水，展示其包装和品牌。",
+        "voiceover": "（背景音乐）...我也可以转身把你忘掉",
+        "music": "流行歌曲，节奏较快"
+      },
+      {
+        "time_axis": "00:04-00:07",
+        "shot_type": "产品展示",
+        "visual_description": "镜头拉远，展示更多CLEAR洗发水和护发素，包括不同包装和颜色。",
+        "voiceover": "（背景音乐）我不是没人追没人聊...",
+        "music": "流行歌曲，节奏较快"
+      },
+      {
+        "time_axis": "00:07-00:09",
+        "shot_type": "产品展示",
+        "visual_description": "镜头再次拉远，展示更多CLEAR洗发水系列产品，包括小瓶装。",
+        "voiceover": "（背景音乐）...偏偏输你谁也不要",
+        "music": "流行歌曲，节奏较快"
+      },
+      {
+        "time_axis": "00:09-00:15",
+        "shot_type": "产品功能展示",
+        "visual_description": "手拿起白色瓶装CLEAR洗发水，展示其泵头设计和使用方法。",
+        "voiceover": "（背景音乐）...偏偏输你谁也不要",
+        "music": "流行歌曲，节奏较快"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 15,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 5.17,
+      "max_chars_per_second": 7.0,
+      "distinct_shot_types": 2,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 6.5 chars/sec exceeds 4.0",
+      "shot 1: 7.0 chars/sec exceeds 4.0",
+      "shot 2: 4.3 chars/sec exceeds 4.0",
+      "shot 3: 6.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "帮我生成一个短视频带货分镜脚本。脚本要包含四种信息：time_axis(时间轴)、shot_type(镜头类型)、visual_description(画面描述)、voiceover(画外音)、music(背景音乐)。以下为产品描述：产品名称：海飞丝无硅油净油去屑洗发水;产品卖点：成分很干净，泡沫绵密，去油去屑效果好，洗后头皮清爽不干痒;用户痛点：头发不浓密、不健康、缺乏光泽，影响整体气质和活力;适用场景：日常头发护理，特别适合需要提升形象或追求头皮健康的用户",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "引出痛点",
+        "visual_description": "美女展示一头浓密、健康、有光泽的黑长直头发，背景是衣帽间。",
+        "voiceover": "成为第一眼美女，一头浓密健康有光泽的头发，",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:04",
+        "shot_type": "痛点展示",
+        "visual_description": "美女在咖啡厅工作，背影展示一头乌黑亮丽的黑长直头发。",
+        "voiceover": "能够极大的提升整体的气质和活力。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:08",
+        "shot_type": "引出商品",
+        "visual_description": "美女面前展示一头乌黑亮丽的黑长直头发。",
+        "voiceover": "所以今天呢和大家分享一下，如何护理头发：在人群美得更有冲击力！",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:11",
+        "shot_type": "产品展示",
+        "visual_description": "手持海飞丝无硅油净油去屑洗发水展示，特写展示产品成分，强调成分干净。",
+        "voiceover": "就是这个海飞丝净。成分很干净，它就只有这包装上的9种",
+        "music": "舒缓的背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:15",
+        "shot_type": "产品使用",
+        "visual_description": "将洗发水倒在手上，展示洗发水质地，使用洗发水洗头，出现大量泡沫。",
+        "voiceover": "它的洗感很好，只萃表活，每次洗完呢都感觉头皮放松了下来，泡沫很绵密。",
+        "music": "舒缓的背景音乐"
+      },
+      {
+        "time_axis": "00:15-00:18",
+        "shot_type": "使用效果展示",
+        "visual_description": "洗完头发之后，用梳子分区展示头皮，展示头发柔顺效果。",
+        "voiceover": "而且去油去屑的效果呢我也是很满意的，洗完呢就感觉很清爽，头皮很干净。",
+        "music": "干净的背景音乐"
+      },
+      {
+        "time_axis": "00:18-00:24",
+        "shot_type": "总结推荐",
+        "visual_description": "美女拿着洗发水展示，强调蓬松效果，推荐这款产品。",
+        "voiceover": "不干也不痒，就刚吹完就是这种头包脸的效果。我觉得人到了一定的年纪，好像真的会爱上这种做减法的产品，简单好用才是王道！",
+        "music": "舒缓的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 7,
+      "total_duration_sec": 24,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 7,
+      "pacing_checked": 7,
+      "mean_chars_per_second": 8.38,
+      "max_chars_per_second": 10.33,
+      "distinct_shot_types": 7,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 9.5 chars/sec exceeds 4.0",
+      "shot 1: 7.5 chars/sec exceeds 4.0",
+      "shot 2: 7.0 chars/sec exceeds 4.0",
+      "shot 3: 8.0 chars/sec exceeds 4.0",
+      "shot 4: 7.5 chars/sec exceeds 4.0",
+      "shot 5: 10.3 chars/sec exceeds 4.0",
+      "shot 6: 8.8 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请设计一个短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品为欧莱雅玻尿酸洗发水，其卖点包括：大牌破价优惠、便携小瓶设计、高纯度玻尿酸与果酸复合成分、零硅油温和配方、绵密泡沫体验及香水级香氛设计。目标用户为因头发油腻、头皮敏感、发丝暗哑而困扰的年轻女性，需突出产品在性价比、护理效果及头皮清洁方面的优势。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "情景引入",
+        "visual_description": "博主手持三个紫色的欧莱雅玻尿酸洗发水小瓶，对着镜头展示。",
+        "voiceover": "给你一分钟，赶紧多借几个手机来薅。",
+        "music": "轻松活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:03",
+        "shot_type": "产品特写",
+        "visual_description": "镜头拉近，展示三个欧莱雅玻尿酸洗发水小瓶的正面标签信息。",
+        "voiceover": "欧莱雅玻尿酸洗发水的超级大羊毛。",
+        "music": "轻松活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:05",
+        "shot_type": "价格对比",
+        "visual_description": "博主手持三个洗发水小瓶，屏幕上叠加价格信息框，显示原价与实际价格的对比。",
+        "voiceover": "平常这一瓶正装都得要这个价的。",
+        "music": "轻松活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:07",
+        "shot_type": "产品信息展示",
+        "visual_description": "博主手持三个洗发水小瓶，镜头拉近展示产品规格：100ml。",
+        "voiceover": "但你看看我的链接，到手一瓶100毫升的才什么价？",
+        "music": "轻松活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:12",
+        "shot_type": "促销信息强调",
+        "visual_description": "博主手持三个洗发水小瓶，并展示品牌授权信息截图。",
+        "voiceover": "真的巨炸裂，薅个四瓶就是一个正装的量了，但这个价格差的可不是一星半点。替你们看过了都是品牌授权。",
+        "music": "轻快有节奏感的背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:14",
+        "shot_type": "正品保障",
+        "visual_description": "博主展示“品牌正品”的官方认证页面截图，强调“严格的资质审核”和“新鲜日期”。",
+        "voiceover": "新鲜日期给咱们发货，确保正品。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:17",
+        "shot_type": "痛点强调",
+        "visual_description": "展示油头的照片，发缝宽，头发油腻。",
+        "voiceover": "尤其是细扁塌发质，头发一天不洗就油的不行的姐妹。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:20",
+        "shot_type": "产品推荐总结",
+        "visual_description": "博主再次手持三个洗发水小瓶。",
+        "voiceover": "这真的是人手一瓶的程度，里面就添加了高纯度玻尿酸。",
+        "music": "轻快有节奏感的背景音乐"
+      },
+      {
+        "time_axis": "00:20-00:23",
+        "shot_type": "成分强调",
+        "visual_description": "展示产品成分图示，突出玻尿酸、果酸等成分。",
+        "voiceover": "里面就添加了高纯度玻尿酸和果酸等多重润养成分。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:23-00:26",
+        "shot_type": "产品功效展示",
+        "visual_description": "博主手持三个洗发水小瓶。",
+        "voiceover": "清洁头皮油脂污垢的同时，还能蓬松发根，调节水油平衡。",
+        "music": "轻快有节奏感的背景音乐"
+      },
+      {
+        "time_axis": "00:26-00:33",
+        "shot_type": "使用效果展示",
+        "visual_description": "展示使用该洗发水洗头、吹干的过程，以及使用后的柔顺效果。并出现产品宣传图。",
+        "voiceover": "零硅油的氨基酸表活配方，打出来的泡沫绵密丰富，和香水一样分前中后调，洗完的头发一整个柔顺丝滑，连发丝都是香香的。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:33-00:37",
+        "shot_type": "促销信息",
+        "visual_description": "博主再次手持三个洗发水小瓶。",
+        "voiceover": "唯一的缺点就是像这种大牌的破价羊毛不是经常有，刷到能薅赶紧薅。",
+        "music": "轻快有节奏感的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 12,
+      "total_duration_sec": 37,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 12,
+      "pacing_checked": 12,
+      "mean_chars_per_second": 8.36,
+      "max_chars_per_second": 15.0,
+      "distinct_shot_types": 12,
+      "duplicate_descriptions": 1
+    },
+    "quality_warnings": [
+      "shot 0: 15.0 chars/sec exceeds 4.0",
+      "shot 1: 7.5 chars/sec exceeds 4.0",
+      "shot 2: 7.0 chars/sec exceeds 4.0",
+      "shot 3: 11.0 chars/sec exceeds 4.0",
+      "shot 4: 8.8 chars/sec exceeds 4.0",
+      "shot 5: 6.5 chars/sec exceeds 4.0",
+      "shot 6: 7.3 chars/sec exceeds 4.0",
+      "shot 7: 7.7 chars/sec exceeds 4.0",
+      "shot 8: 7.3 chars/sec exceeds 4.0",
+      "shot 9: 7.7 chars/sec exceeds 4.0",
+      "shot 10: 7.3 chars/sec exceeds 4.0",
+      "shot 11: 7.2 chars/sec exceeds 4.0",
+      "1 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "需要为Room Plus护手霜制作15秒短视频脚本，请按时间轴分镜呈现。必须包含镜头类型、画面内容、配音文案和背景音乐类型。重点展示产品滋润修复效果和独特香气，针对用户冬季手部干燥粗糙的痛点，强调便携包装适合放入手提包随时使用。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "人物特写",
+        "visual_description": "一个戴着猫耳朵头饰的年轻男子对着镜头说话，背景模糊。",
+        "voiceover": "这个，KK，实名制推荐大家买",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:05",
+        "shot_type": "展示产品和促销信息",
+        "visual_description": "背景变为产品宣传海报，展示Room Plus护手霜的不同颜色和款式。",
+        "voiceover": "他给我的市破价的，家人们，我是破价的，因为他们喜欢我。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:11",
+        "shot_type": "产品展示特写",
+        "visual_description": "镜头切换到手持Room Plus护手霜的特写，展示包装和产品外观。",
+        "voiceover": "否气护手霜",
+        "music": "产品特性音效"
+      },
+      {
+        "time_axis": "00:11-00:17",
+        "shot_type": "人物特写和产品特点介绍",
+        "visual_description": "年轻男子再次出现，对着镜头说话，旁边是产品宣传海报。",
+        "voiceover": "逗我开心我就买东西。衣服开心点嘛，衣服。开心一点来，三瓜两枣都买一点啦，是不是？",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:19",
+        "shot_type": "产品特写和特点介绍",
+        "visual_description": "手持护手霜产品特写，展示产品的质地和包装。",
+        "voiceover": "否气护手霜。超好用又好闻的护手霜。",
+        "music": "产品特性音效"
+      },
+      {
+        "time_axis": "00:19-00:21",
+        "shot_type": "包包展示和产品放置",
+        "visual_description": "展示多个名牌包包，并将护手霜放入包中。",
+        "voiceover": "太贵了，哪里贵？我每个包包里都放一个。",
+        "music": "轻松音乐"
+      },
+      {
+        "time_axis": "00:21-00:26",
+        "shot_type": "产品使用演示",
+        "visual_description": "手部涂抹护手霜，展示使用效果。",
+        "voiceover": "不要逼我讲名人名言啊，是不是自己不努力啊，这几年在干什么？除了护手还能护甲呢。",
+        "music": "产品特性音效"
+      },
+      {
+        "time_axis": "00:26-00:29",
+        "shot_type": "产品使用演示和场景展示",
+        "visual_description": "展示Room Plus不同款式的护手霜，并演示涂抹过程，展示窗外景色。",
+        "voiceover": "冬天用它香，手都变得香香软软的。谁能不心动啊。",
+        "music": "产品特性音效"
+      },
+      {
+        "time_axis": "00:29-00:31",
+        "shot_type": "人物特写和产品促销",
+        "visual_description": "年轻男子再次出现，对着镜头说话，下方是产品信息介绍。",
+        "voiceover": "买点吧！",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 31,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 7,
+      "pacing_checked": 9,
+      "mean_chars_per_second": 5.65,
+      "max_chars_per_second": 8.0,
+      "distinct_shot_types": 9,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 6.0 chars/sec exceeds 4.0",
+      "shot 1: 7.7 chars/sec exceeds 4.0",
+      "shot 3: 5.7 chars/sec exceeds 4.0",
+      "shot 4: 7.5 chars/sec exceeds 4.0",
+      "shot 5: 8.0 chars/sec exceeds 4.0",
+      "shot 6: 7.0 chars/sec exceeds 4.0",
+      "shot 7: 6.7 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请生成适合短视频推广的分镜脚本框架，要求包含时间轴、镜头类型、画面描述、配音文案和背景音乐类型。产品「贝德美蓬松洗发水」具有以下特点：无硅油配方安全温和，含红山茶、何首乌等天然植萃成分，买洗发水送护发素。需解决用户头发全天油腻、洗发后不蓬松的问题，重点面向油性发质及头皮敏感人群，突出天然成分与长效蓬松效果的结合。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "产品展示",
+        "visual_description": "一只手拿着被气泡膜包裹的粉色洗发水瓶子，背景有装饰品和红色的“生”字。",
+        "voiceover": "这瓶洗发水我都舍不得用啊",
+        "music": "轻快、可爱的背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:03",
+        "shot_type": "使用效果展示",
+        "visual_description": "一个穿着棕色上衣的年轻女子正在用吹风机吹头发，面带微笑，展示蓬松柔顺的头发。",
+        "voiceover": "居然用它洗一次可以蓬好几天",
+        "music": "轻快、可爱的背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:07",
+        "shot_type": "产品特写",
+        "visual_description": "展示洗发水瓶子和产品介绍信息。",
+        "voiceover": "就是这瓶水晶般晶莹剔透的，贝德美新款蓬松洗发水",
+        "music": "轻快、可爱的背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:09",
+        "shot_type": "产品特点展示",
+        "visual_description": "产品包装盒和“放心用的无硅油配方”字样。",
+        "voiceover": "放心用的无硅油配方",
+        "music": "舒缓的背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:10",
+        "shot_type": "产品成分展示",
+        "visual_description": "手中展示丰富的泡沫。",
+        "voiceover": "搭配了红山茶天然植萃",
+        "music": "舒缓的背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:13",
+        "shot_type": "使用过程展示",
+        "visual_description": "女士用洗发水洗头发，脸带笑容，有字幕标出洗发水的成分。",
+        "voiceover": "何首乌，龙胆，还有进口的蓝甘菊",
+        "music": "舒缓的背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:15",
+        "shot_type": "质地展示",
+        "visual_description": "将洗发水倒在勺子上，展示其透明的质地。",
+        "voiceover": "全都是可以放心用的好东西",
+        "music": "舒缓的背景音乐"
+      },
+      {
+        "time_axis": "00:15-00:18",
+        "shot_type": "去油展示",
+        "visual_description": "展示黑长直女性的头发在水龙头下冲洗，头发干净顺滑。",
+        "voiceover": "这里面的清洁因子，真正的做到了去油不去水",
+        "music": "舒缓的背景音乐"
+      },
+      {
+        "time_axis": "00:18-00:22",
+        "shot_type": "使用效果展示",
+        "visual_description": "洗完头后的发根蓬松，发质顺滑。女子展示使用后的头发。",
+        "voiceover": "强韧发根，这洗完后的头发看的见的蓬松顺滑，再也不用天天洗头了",
+        "music": "轻快、可爱的背景音乐"
+      },
+      {
+        "time_axis": "00:22-00:24",
+        "shot_type": "赠品展示",
+        "visual_description": "手中拿着赠送的护发素。",
+        "voiceover": "现在活动还送护发素",
+        "music": "轻快、可爱的背景音乐"
+      },
+      {
+        "time_axis": "00:24-00:27",
+        "shot_type": "产品总结",
+        "visual_description": "展示多瓶洗发水，总结产品功效，引导购买。",
+        "voiceover": "头发总是软塌塌油腻腻的，赶紧来一瓶试试吧",
+        "music": "轻快、可爱的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 11,
+      "total_duration_sec": 27,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 11,
+      "pacing_checked": 11,
+      "mean_chars_per_second": 6.64,
+      "max_chars_per_second": 12.0,
+      "distinct_shot_types": 10,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "shot 0: 12.0 chars/sec exceeds 4.0",
+      "shot 1: 6.5 chars/sec exceeds 4.0",
+      "shot 2: 5.5 chars/sec exceeds 4.0",
+      "shot 3: 4.5 chars/sec exceeds 4.0",
+      "shot 4: 10.0 chars/sec exceeds 4.0",
+      "shot 5: 4.3 chars/sec exceeds 4.0",
+      "shot 6: 6.0 chars/sec exceeds 4.0",
+      "shot 7: 6.3 chars/sec exceeds 4.0",
+      "shot 8: 7.0 chars/sec exceeds 4.0",
+      "shot 9: 4.5 chars/sec exceeds 4.0",
+      "shot 10: 6.3 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请根据以下产品信息生成短视频带货脚本：康王防脱赋活洗发水。需标注时间轴、镜头类型、画面、旁白及配乐。产品特点：国家认证的防脱功效，含滋养毛囊的腺苷成分，购买正装赠送2个45ml旅行装。用户痛点：因脱发导致头发稀疏，影响生活自信。请通过对比镜头展示使用效果，并突出赠品信息。",
+    "output": [
+      {
+        "time_axis": "00:00-00:05",
+        "shot_type": "产品痛点",
+        "visual_description": "女士站在镜子前，用梳子梳理头发，表情无奈；特写镜头展示梳子上残留的大量脱发。",
+        "voiceover": "若是管你长不长的，就这个诺真不如不用了。",
+        "music": "低沉的背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:07",
+        "shot_type": "痛点强调",
+        "visual_description": "女士面部特写，皱眉，表示对脱发的苦恼。",
+        "voiceover": "因为不坚持反而会起反效果。",
+        "music": "低沉的背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:14",
+        "shot_type": "产品展示",
+        "visual_description": "女士手持康王防脱赋活洗发水，展示包装正面和文字，强调“防脱”字样。镜头拉近，突出包装上的“KANG WANG ANTI-HAIR LOSS SHAMPOO”字样。",
+        "voiceover": "如果用那么多洗发水都没啥用，你就去试一下康王的防脱洗发水。现在审核这么严，人家敢把防脱这两个字直接印在包装上了。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:16",
+        "shot_type": "资质展示",
+        "visual_description": "女士展示产品的国家特殊化妆品产品注册证，突出“康王防脱赋活洗发水”和“防脱类”字样。",
+        "voiceover": "因为它是有防脱特证的",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:20",
+        "shot_type": "成分介绍",
+        "visual_description": "女士手持洗发水，同时屏幕上出现产品成分介绍，文字高亮显示“腺苷”。",
+        "voiceover": "而且它里面有一个很好的成分腺苷。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:20-00:24",
+        "shot_type": "产品功效介绍",
+        "visual_description": "女士展示头发蓬松状态，同时屏幕上出现“水解酵母蛋白”和“11重氨基酸”字样。",
+        "voiceover": "就能很好的滋养我们的毛囊。还复配了水解酵母蛋白和11重的氨基酸。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:24-00:32",
+        "shot_type": "使用效果对比",
+        "visual_description": "女士抓起一撮头发，用力拉扯，没有头发掉落，展示使用后的防脱效果。手部特写，张开五指，手上无脱发。",
+        "voiceover": "这样咱的土壤更牢固了呀！洗完了之后真的蓬松还清爽，像我之前这个不是在地上就是在梳子上，反正就是不在头上。但你看我现在，使劲薅，这都没有。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:32-00:37",
+        "shot_type": "促销信息",
+        "visual_description": "女士展示康王洗发水正装，并展示加赠的两个旅行装。",
+        "voiceover": "现在就是他们家活动拉新价，买一瓶这样大的正装，还额外加赠两个45毫升的旅行装。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:37-00:41",
+        "shot_type": "总结推荐",
+        "visual_description": "女士对着镜头微笑，再次展示康王洗发水。",
+        "voiceover": "如果你也是有这方面离家出走烦恼的，一定要抓紧去试一下它。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 41,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 7,
+      "pacing_checked": 9,
+      "mean_chars_per_second": 6.07,
+      "max_chars_per_second": 7.62,
+      "distinct_shot_types": 9,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 1: 6.0 chars/sec exceeds 4.0",
+      "shot 2: 7.4 chars/sec exceeds 4.0",
+      "shot 3: 5.0 chars/sec exceeds 4.0",
+      "shot 5: 7.5 chars/sec exceeds 4.0",
+      "shot 6: 7.6 chars/sec exceeds 4.0",
+      "shot 7: 7.2 chars/sec exceeds 4.0",
+      "shot 8: 6.5 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请设计一个贝德美洗发水的短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品核心信息：升级版水晶瓶设计，添加植物蓬松因子和草本精华，发尾顺滑有光泽，价格实惠，洗后蓬松不油腻。目标用户关注点：假货泛滥、控油效果差、儿童洗护需求未被满足。重点场景：家庭日常洗护，尤其适合有孩子的家庭及预算有限的消费者。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "产品假货展示",
+        "visual_description": "画面展示假货产品图，配上“假的”文字。",
+        "voiceover": "假的，通通都是假的。",
+        "music": "搞怪音乐"
+      },
+      {
+        "time_axis": "00:01-00:07",
+        "shot_type": "产品展示及提问",
+        "visual_description": "展示博主化妆台上的贝德美洗发水正品，博主手持粉色瓶子，疑问是否有必要买假货。",
+        "voiceover": "最近很火的这个贝德美洗发水，出了很多假货，但是它正版已经很便宜了，有必要买假货吗？",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:12",
+        "shot_type": "产品升级版展示及洗后效果",
+        "visual_description": "手持升级版水晶瓶展示，展示洗完蓬松的头发，发丝干净蓬松。",
+        "voiceover": "而且他们家还出了升级版的水晶瓶，洗完更蓬松了，就每根发丝都是干干净净的。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:14",
+        "shot_type": "发尾展示",
+        "visual_description": "展示发尾顺滑有光泽。",
+        "voiceover": "而且发尾也很顺滑，很有光泽。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:17",
+        "shot_type": "品牌介绍",
+        "visual_description": "手持水晶瓶，介绍贝德美品牌。",
+        "voiceover": "贝德美是专业做儿童洗护的品牌，成分就很精简安心。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:21",
+        "shot_type": "成分介绍及洗后蓬松效果",
+        "visual_description": "手持产品展示成分，展示洗后头发蓬松效果。",
+        "voiceover": "它里面加了植物蓬松因子，洗完这颅顶天塌都不带塌的。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:25",
+        "shot_type": "成分介绍及洗发过程",
+        "visual_description": "展示洗发水成分，以及洗发过程。",
+        "voiceover": "还有何首乌、蓝甘菊、红山茶这种好东西来帮助我们滋润发丝。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:25-00:28",
+        "shot_type": "对比",
+        "visual_description": "洗发水产品展示，对比成人洗发水。",
+        "voiceover": "儿童洗发水真的比那些成人强控油洗发水好用太多了。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:28-00:37",
+        "shot_type": "使用前后效果对比，再次强调产品优势",
+        "visual_description": "洗发过程，使用后发质，葡萄柚香味，母婴品牌。",
+        "voiceover": "坚持用下来这个发质感觉强了很多，而且洗完还是那种很好闻的葡萄柚香，主要它也不贵，这么一大瓶，你看才多少钱，母婴品牌真的巨良心。",
+        "music": "舒缓背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 37,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 9,
+      "pacing_checked": 9,
+      "mean_chars_per_second": 6.68,
+      "max_chars_per_second": 8.0,
+      "distinct_shot_types": 9,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 8.0 chars/sec exceeds 4.0",
+      "shot 1: 6.2 chars/sec exceeds 4.0",
+      "shot 2: 6.6 chars/sec exceeds 4.0",
+      "shot 3: 6.0 chars/sec exceeds 4.0",
+      "shot 4: 7.3 chars/sec exceeds 4.0",
+      "shot 5: 5.8 chars/sec exceeds 4.0",
+      "shot 6: 6.2 chars/sec exceeds 4.0",
+      "shot 7: 7.7 chars/sec exceeds 4.0",
+      "shot 8: 6.3 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要创建一个短视频带货分镜脚本，包含时间轴、镜头类型、画面描述、画外音及背景音乐。产品详情：阿道夫精油香氛洗发水，销量已超一亿，深受用户喜爱。用户需求是寻找高性价比洗发产品，适用场景为生日聚会。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "场景展示",
+        "visual_description": "直播带货场景，背景是生日快乐的字样和一些礼物。主播站在中间，周围站着几个工作人员。",
+        "voiceover": "让辛巴再豪横一次吧！",
+        "music": "热闹的背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:08",
+        "shot_type": "主播激情推销",
+        "visual_description": "主播对着镜头大喊，展示产品宣传图，背景是玫瑰花瓣和拱门。",
+        "voiceover": "给我上1000万单，前无古人后无来者，一生要的就是他妈面子，上车！",
+        "music": "激昂的背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:09",
+        "shot_type": "产品展示",
+        "visual_description": "展示阿道夫精油香氛洗发水。",
+        "voiceover": "辛选 辛巴好物推荐",
+        "music": "节奏感强的背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:12",
+        "shot_type": "产品特写",
+        "visual_description": "阿道夫精油香氛洗发水瓶身特写，展示产品logo和名称。",
+        "voiceover": "精油香氛洗发水",
+        "music": "节奏感强的背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:19",
+        "shot_type": "产品使用展示",
+        "visual_description": "手部挤出洗发水，展示洗发水质地。",
+        "voiceover": "辛选 辛巴好物推荐",
+        "music": "节奏感强的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 19,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 3,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 4.92,
+      "max_chars_per_second": 9.0,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 9.0 chars/sec exceeds 4.0",
+      "shot 1: 4.1 chars/sec exceeds 4.0",
+      "shot 2: 8.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请为飞虎牌儿童氨基酸洗发水设计短视频分镜脚本，需包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品核心卖点是金盏花油、橄榄叶与柠檬酸的天然植萃成分，能温和滋养儿童头皮。目标用户是担心普通洗发水刺激孩子头皮、导致头发干涩的家长，重点突出日常温和清洁与养护需求。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "头发特写（产品效果）",
+        "visual_description": "一个长头发的小女孩背对着镜头，头发乌黑顺滑，富有光泽。一只手轻轻抓住头发。",
+        "voiceover": "毛不躁，",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:05",
+        "shot_type": "产品展示",
+        "visual_description": "一只手拿着飞虎牌儿童氨基酸洗发水，产品包装上有卡通老虎图案和花朵。",
+        "voiceover": "我给孩子用的就是飞虎牌的儿童氨基酸洗发水。给孩子用呢，",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:08",
+        "shot_type": "产品信息展示",
+        "visual_description": "一只手拿着飞虎牌儿童氨基酸洗发水，展示产品背面的成分表等信息。",
+        "voiceover": "还是要选用专业的儿童洗发水。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:10",
+        "shot_type": "产品成分信息展示",
+        "visual_description": "一只手拿着飞虎牌儿童氨基酸洗发水，展示产品背面的成分表等信息。",
+        "voiceover": "它里面添加了",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:13",
+        "shot_type": "成分展示",
+        "visual_description": "显示三种成分的图片：金盏花，橄榄叶，柠檬",
+        "voiceover": "金盏花油橄榄叶柠檬酸",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:14",
+        "shot_type": "产品质地展示",
+        "visual_description": "一只手掌上挤出洗发水，展示洗发水的质地，透明。",
+        "voiceover": "天然植萃深入滋养头皮。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:16",
+        "shot_type": "产品展示",
+        "visual_description": "一只手拿着飞虎牌儿童氨基酸洗发水，背景是装饰品。",
+        "voiceover": "我们更放心。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:20",
+        "shot_type": "头发特写（产品效果）",
+        "visual_description": "一个长头发的小女孩背对着镜头，头发乌黑顺滑，富有光泽。一只手轻轻抓住头发。",
+        "voiceover": "清爽柔顺，不毛不燥，我给孩子用的就是飞虎牌的儿童氨基酸洗发水。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:20-00:23",
+        "shot_type": "产品展示",
+        "visual_description": "一只手拿着飞虎牌儿童氨基酸洗发水，产品包装上有卡通老虎图案和花朵。",
+        "voiceover": "给孩子用呢，还是要选用专业的儿童洗发水。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:23-00:26",
+        "shot_type": "产品信息展示",
+        "visual_description": "一只手拿着飞虎牌儿童氨基酸洗发水，展示产品背面的成分表等信息。",
+        "voiceover": "还是要选用专业的儿童洗发水。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:26-00:29",
+        "shot_type": "成分展示",
+        "visual_description": "显示三种成分的图片：金盏花，橄榄叶，柠檬",
+        "voiceover": "它里面添加了金盏花，油橄榄叶柠檬酸，天然植萃。",
+        "music": "舒缓背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 11,
+      "total_duration_sec": 29,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 7,
+      "pacing_checked": 11,
+      "mean_chars_per_second": 5.18,
+      "max_chars_per_second": 10.0,
+      "distinct_shot_types": 6,
+      "duplicate_descriptions": 5
+    },
+    "quality_warnings": [
+      "shot 1: 8.3 chars/sec exceeds 4.0",
+      "shot 2: 4.3 chars/sec exceeds 4.0",
+      "shot 5: 10.0 chars/sec exceeds 4.0",
+      "shot 7: 7.0 chars/sec exceeds 4.0",
+      "shot 8: 6.0 chars/sec exceeds 4.0",
+      "shot 9: 4.3 chars/sec exceeds 4.0",
+      "shot 10: 6.7 chars/sec exceeds 4.0",
+      "5 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "请生成欧莱雅洗发水的短视频带货分镜脚本，要求包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品卖点为：透明质地温和不刺激、泡沫绵密如雪、滋养成分深入发丝、香味清新持久。用户痛点包括普通洗发水清洁不彻底、残留导致头皮负担、香味无法持久留香。目标用户为注重生活品质、追求优雅气质的女性消费者。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "情景引入",
+        "visual_description": "一位女士站在户外，背景是绿树和天空，她闻着自己的头发。",
+        "voiceover": "洗完头闻一闻，整个人像掉进了蓝风铃花海。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:05",
+        "shot_type": "产品质地展示",
+        "visual_description": "手臂特写，展示洗发水的质地，透明液体。",
+        "voiceover": "这款欧莱雅洗发水，轻轻一揉。",
+        "music": "无音乐或环境音"
+      },
+      {
+        "time_axis": "00:05-00:07",
+        "shot_type": "产品介绍",
+        "visual_description": "女士再次出镜，介绍产品。",
+        "voiceover": "这款欧莱雅洗发水，轻轻一揉，",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:08",
+        "shot_type": "起泡效果展示",
+        "visual_description": "泡沫在头发上，展示泡沫的绵密程度。",
+        "voiceover": "泡沫就像雪一样绵密，",
+        "music": "洗发水特性相关音效"
+      },
+      {
+        "time_axis": "00:08-00:09",
+        "shot_type": "使用过程展示",
+        "visual_description": "洗发过程，头发被泡沫包裹。",
+        "voiceover": "瞬间包裹每一根发丝。",
+        "music": "洗发水特性相关音效"
+      },
+      {
+        "time_axis": "00:09-00:11",
+        "shot_type": "洗后效果展示",
+        "visual_description": "洗后的头发柔顺光滑。",
+        "voiceover": "香味清新淡雅，仿佛自带仙女气质。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:13",
+        "shot_type": "产品展示",
+        "visual_description": "欧莱雅洗发水系列产品展示。",
+        "voiceover": "香味清新淡雅，仿佛自带仙女气质。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:17",
+        "shot_type": "不同系列产品展示",
+        "visual_description": "展示不同颜色的欧莱雅洗发水，并特写洗发水的质地。",
+        "voiceover": "连风都忍不住绕着你转。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:20",
+        "shot_type": "效果强调",
+        "visual_description": "女士站在户外，介绍产品。",
+        "voiceover": "特别适合追求精致优雅的女士，洗完头后，头发不仅干净清爽，",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:20-00:21",
+        "shot_type": "使用过程展示",
+        "visual_description": "泡沫在头上，展示泡沫的绵密程度。",
+        "voiceover": "特别适合追求精致优雅的女士，洗完头后，头发不仅干净清爽，",
+        "music": "洗发水特性相关音效"
+      },
+      {
+        "time_axis": "00:21-00:23",
+        "shot_type": "使用过程展示",
+        "visual_description": "洗发过程，头发被泡沫包裹。",
+        "voiceover": "还能持续散发迷人的香味，",
+        "music": "洗发水特性相关音效"
+      },
+      {
+        "time_axis": "00:23-00:25",
+        "shot_type": "效果展示及推荐",
+        "visual_description": "展示使用后的柔顺头发。",
+        "voiceover": "赶快试试，让头发和心情一起绽放吧！",
+        "music": "轻柔的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 12,
+      "total_duration_sec": 25,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 10,
+      "pacing_checked": 12,
+      "mean_chars_per_second": 8.99,
+      "max_chars_per_second": 25.0,
+      "distinct_shot_types": 10,
+      "duplicate_descriptions": 1
+    },
+    "quality_warnings": [
+      "shot 0: 18.0 chars/sec exceeds 4.0",
+      "shot 2: 6.0 chars/sec exceeds 4.0",
+      "shot 3: 9.0 chars/sec exceeds 4.0",
+      "shot 4: 9.0 chars/sec exceeds 4.0",
+      "shot 5: 7.0 chars/sec exceeds 4.0",
+      "shot 6: 7.0 chars/sec exceeds 4.0",
+      "shot 8: 8.3 chars/sec exceeds 4.0",
+      "shot 9: 25.0 chars/sec exceeds 4.0",
+      "shot 10: 5.5 chars/sec exceeds 4.0",
+      "shot 11: 7.5 chars/sec exceeds 4.0",
+      "1 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "请生成一个短视频分镜脚本，要素包括时间轴、镜头类型、画面描述、旁白和背景音乐。产品为卡诗控油蓬松洗发水，需解决以下痛点：头发扁塌、出油快、洗后不蓬松。通过对比实验、产品成分特写和用户使用场景（如健身房、办公室），展示酵母锌成分的控油效果和持久蓬松优势。",
+    "output": [
+      {
+        "time_axis": "00:00-00:04",
+        "shot_type": "产品效果展示",
+        "visual_description": "女士对着镜头展示头发，将头发举起，展示头发蓬松度。",
+        "voiceover": "你看这洗发水我还敢用吗？第二天晚上呢，还这么蓬松。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:08",
+        "shot_type": "产品效果展示",
+        "visual_description": "女士对着镜头展示头发，用手拨弄头发，展示头发的蓬松度，对着镜头微笑。",
+        "voiceover": "就这个状态啊，明天再撑一天，三天不洗啊，完全都没有问题。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:12",
+        "shot_type": "产品展示",
+        "visual_description": "女士手持产品，展示产品包装。",
+        "voiceover": "他敢把这几个字啊，直接打在包装上啊，证明啊他是真的有点实力的。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:17",
+        "shot_type": "产品成分介绍",
+        "visual_description": "女士手持产品，展示产品包装，特写展示产品包装上的“酵母锌”字样。",
+        "voiceover": "而且我还科普了一下，它这里面啊，给我们添加了一个好东西，就是酵母锌。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:19",
+        "shot_type": "用户痛点介绍",
+        "visual_description": "女士展示油性头发，从源头上控油",
+        "voiceover": "针对细软塌，从源头上控油",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:19-00:23",
+        "shot_type": "产品使用过程展示",
+        "visual_description": "女士按压洗发水，展示洗发水泡沫的丰富绵密，并上头使用。",
+        "voiceover": "每次自己这么一小泵啊，打出来的泡沫又绵密又丰富，上头啊真的很舒服。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:23-00:25",
+        "shot_type": "产品使用效果展示",
+        "visual_description": "女士展示洗完后的头发，发根分明，头发柔顺。",
+        "voiceover": "洗完啊，根根分明。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:25-00:33",
+        "shot_type": "产品优势介绍",
+        "visual_description": "女士对着镜头展示头发，并用手拨弄头发，展示头发的柔顺度，展示产品包装。",
+        "voiceover": "就我这头发都第二天了，还带着一股很高级又清香的蓝风铃，三天不洗啊，轻松拿捏，直接和大油头啊说拜拜。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:33-00:41",
+        "shot_type": "产品促销信息",
+        "visual_description": "女士展示两瓶洗发水，展示产品包装，并指向屏幕。",
+        "voiceover": "更何况啊，是哪个大怨种花99买的这两瓶，你看看我这个链接，直接跟对方砍价格了，相当的炸裂，你们刷到的话，直接闭眼冲。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 41,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 8,
+      "pacing_checked": 9,
+      "mean_chars_per_second": 5.88,
+      "max_chars_per_second": 7.5,
+      "distinct_shot_types": 8,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 5.5 chars/sec exceeds 4.0",
+      "shot 1: 6.0 chars/sec exceeds 4.0",
+      "shot 2: 7.0 chars/sec exceeds 4.0",
+      "shot 3: 6.0 chars/sec exceeds 4.0",
+      "shot 4: 5.5 chars/sec exceeds 4.0",
+      "shot 5: 7.5 chars/sec exceeds 4.0",
+      "shot 7: 5.5 chars/sec exceeds 4.0",
+      "shot 8: 6.4 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要撰写一个短视频带货分镜脚本，要求要素包含：时间轴（精确到秒）、镜头类型、画面描述、画外音文案及背景音乐选择。产品信息：阿道夫洗发水，卖点为：①高山火绒草等天然成分 ②深层清洁去屑 ③香水级持久留香。用户痛点：头油分泌快、头皮屑明显、洗后头发干枯等问题。请通过产品使用过程展示、成分可视化呈现及用户使用效果对比，设计有吸引力的脚本结构，并在结尾设置限时优惠引导。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "产品展示",
+        "visual_description": "一瓶阿道夫洗发水正对镜头，背景是橙色。",
+        "voiceover": "别再买贵的阿道夫了",
+        "music": "流行音乐"
+      },
+      {
+        "time_axis": "00:01-00:04",
+        "shot_type": "成分展示",
+        "visual_description": "洗发水瓶口特写，白色乳液状洗发水被取出，同时展示高山火绒草、神经酰胺、薄荷醇等成分。",
+        "voiceover": "高山火绒草、神经酰胺、薄荷醇，精油香氛护理洗发水",
+        "music": "流行音乐"
+      },
+      {
+        "time_axis": "00:04-00:06",
+        "shot_type": "使用效果展示",
+        "visual_description": "一位女士展示她乌黑亮丽的秀发。",
+        "voiceover": "头油、头屑、雪花头，清洁去屑清爽持久留香",
+        "music": "流行音乐"
+      },
+      {
+        "time_axis": "00:06-00:07",
+        "shot_type": "产品展示",
+        "visual_description": "手持阿道夫洗发水，展示产品包装。",
+        "voiceover": "官方正品洗护套装，轻柔丝滑洗发水",
+        "music": "流行音乐"
+      },
+      {
+        "time_axis": "00:07-00:09",
+        "shot_type": "使用演示",
+        "visual_description": "一位女士正在使用阿道夫洗发水洗头，产生丰富的泡沫。",
+        "voiceover": "深层清洁头皮头发，改善油腻分叉",
+        "music": "流行音乐"
+      },
+      {
+        "time_axis": "00:09-00:11",
+        "shot_type": "冲洗头发",
+        "visual_description": "用清水冲洗头发",
+        "voiceover": "错过这次就要等明年了",
+        "music": "流行音乐"
+      },
+      {
+        "time_axis": "00:11-00:13",
+        "shot_type": "产品展示",
+        "visual_description": "阿道夫洗发水特写展示。",
+        "voiceover": "点击下方链接即可进入",
+        "music": "流行音乐"
+      },
+      {
+        "time_axis": "00:13-00:17",
+        "shot_type": "产品质地展示",
+        "visual_description": "用化妆刷蘸取洗发水，展示洗发水的质地和泡沫。",
+        "voiceover": "官方旗舰店购买，这款阿道夫，香水级香氛洗发水",
+        "music": "流行音乐"
+      },
+      {
+        "time_axis": "00:17-00:22",
+        "shot_type": "使用场景展示",
+        "visual_description": "阿道夫洗发水瓶身周围摆放着粉色花瓣，一位女士正在用阿道夫洗发水洗头。",
+        "voiceover": "让你拥有迷人香气，洗完整个房间都是香香的",
+        "music": "流行音乐"
+      },
+      {
+        "time_axis": "00:22-00:29",
+        "shot_type": "产品总结及促销",
+        "visual_description": "阿道夫洗发水瓶身特写，摆放在花瓣中。",
+        "voiceover": "而且香味持久不腻，趁着阿道夫做活动，赶紧多囤几套吧",
+        "music": "流行音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 10,
+      "total_duration_sec": 29,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 8,
+      "pacing_checked": 10,
+      "mean_chars_per_second": 6.86,
+      "max_chars_per_second": 15.0,
+      "distinct_shot_types": 8,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "shot 0: 9.0 chars/sec exceeds 4.0",
+      "shot 1: 7.0 chars/sec exceeds 4.0",
+      "shot 2: 8.5 chars/sec exceeds 4.0",
+      "shot 3: 15.0 chars/sec exceeds 4.0",
+      "shot 4: 7.0 chars/sec exceeds 4.0",
+      "shot 5: 5.0 chars/sec exceeds 4.0",
+      "shot 6: 5.0 chars/sec exceeds 4.0",
+      "shot 7: 5.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要一份短视频带货分镜脚本，包含时间轴、镜头类型、画面描述、旁白和背景音乐。产品是欧莱雅玻尿酸洗发水，核心卖点为改善头发油腻扁塌和头皮瘙痒，特别适合忙碌的妈妈或追剧爱好者日常使用。请确保脚本能直观展示产品效果。",
+    "output": [
+      {
+        "time_axis": "00:00-00:05",
+        "shot_type": "主播推荐",
+        "visual_description": "主播在直播间推荐玻尿酸洗发水套装，背景是商品宣传海报。",
+        "voiceover": "等我发工资了，要把你直播间的东西都买一遍。我直播间所有姐妹，有需要的买，没有需要的不要买。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:06",
+        "shot_type": "产品展示",
+        "visual_description": "展示欧莱雅玻尿酸洗发水瓶身。",
+        "voiceover": "欧莱雅玻尿酸洗发水。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:10",
+        "shot_type": "用户展示使用效果",
+        "visual_description": "用户展示使用洗发水后的头发状态，蓬松柔顺。",
+        "voiceover": "你看，清爽蓬松，持久不塌。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:14",
+        "shot_type": "产品展示",
+        "visual_description": "展示欧莱雅玻尿酸洗发水正品。",
+        "voiceover": "追剧或者带娃，导致头发又油又塌还很痒？",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:19",
+        "shot_type": "主播强调",
+        "visual_description": "主播在直播间强调女性要存钱的重要性。",
+        "voiceover": "女人一定要存钱，一定要存钱，一定要存钱。为什么？",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:19-00:21",
+        "shot_type": "产品展示",
+        "visual_description": "展示欧莱雅玻尿酸洗发水。",
+        "voiceover": "欧莱雅这款玻尿酸洗发水啊，你真的不要错过它。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:25",
+        "shot_type": "用户展示使用效果",
+        "visual_description": "用户展示使用洗发水后的头发状态，蓬松。",
+        "voiceover": "你是像我一样的，头发爱出油的，但是呢又想要这种头包脸的感觉？",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 7,
+      "total_duration_sec": 25,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 5,
+      "pacing_checked": 7,
+      "mean_chars_per_second": 6.36,
+      "max_chars_per_second": 10.0,
+      "distinct_shot_types": 4,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 8.0 chars/sec exceeds 4.0",
+      "shot 1: 9.0 chars/sec exceeds 4.0",
+      "shot 3: 4.2 chars/sec exceeds 4.0",
+      "shot 5: 10.0 chars/sec exceeds 4.0",
+      "shot 6: 6.8 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请生成一个短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品信息如下：贝德美儿童洗发水专为6岁以上儿童设计，添加进口蓝甘菊精粹等植物成分，能形成云朵般绵密泡沫，有效清洁头皮油脂并调节水油平衡，洗后自带清新发香。目标用户痛点是孩子头发油腻、头痒且有异味，且普通成人洗发水不适合儿童使用。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "产品展示",
+        "visual_description": "一只手拿起被气泡膜包裹的粉色洗发水瓶子，旁边是洗发水外包装的盒子。",
+        "voiceover": "要是你家孩子头发上的小雪花跟下雪似的",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:04",
+        "shot_type": "问题呈现",
+        "visual_description": "一个孩子趴在盆边洗头，头发看起来油腻。",
+        "voiceover": "头油头痒还有股难闻的味道",
+        "music": "较为低沉的背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:07",
+        "shot_type": "问题强调",
+        "visual_description": "另一个人用水瓢往孩子头上浇水",
+        "voiceover": "真的不要再给他用大人的洗发水了",
+        "music": "较为低沉的背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:13",
+        "shot_type": "产品展示",
+        "visual_description": "展示贝德美儿童洗发水，粉色瓶身，蓝色按压泵头，贴有小雏菊贴纸。手指向外包装盒，特写展示盒上的成分信息。",
+        "voiceover": "是时候给孩子换上专为他们设计的贝德美儿童洗发水了，它里面添加了进口蓝甘菊精粹等植萃成分",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:16",
+        "shot_type": "使用展示",
+        "visual_description": "孩子正在用洗发水洗头，脸上露出笑容。",
+        "voiceover": "可以把头油小雪花洗得服服帖帖的",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:21",
+        "shot_type": "使用效果展示",
+        "visual_description": "特写展示丰富绵密的泡沫，并用水冲洗干净。展示洗后的头发。",
+        "voiceover": "云朵泡沫丰富又绵密，清洁头皮油脂污垢的同时调节水油平衡，用它洗完的头发蓬松清爽又顺滑",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:26",
+        "shot_type": "效果展示及推荐",
+        "visual_description": "展示孩子洗完头后的效果，头发柔顺，看起来干净清爽。",
+        "voiceover": "还自带发香，孩子上六年纪了，就得用自己专属的洗发水",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:26-00:30",
+        "shot_type": "产品推荐",
+        "visual_description": "展示洗发水瓶子和外包装盒。",
+        "voiceover": "咱给孩子选贝德美准没错",
+        "music": "轻快活泼的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 8,
+      "total_duration_sec": 30,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 7,
+      "pacing_checked": 8,
+      "mean_chars_per_second": 5.92,
+      "max_chars_per_second": 9.0,
+      "distinct_shot_types": 7,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 9.0 chars/sec exceeds 4.0",
+      "shot 1: 6.0 chars/sec exceeds 4.0",
+      "shot 2: 5.0 chars/sec exceeds 4.0",
+      "shot 3: 7.0 chars/sec exceeds 4.0",
+      "shot 4: 5.0 chars/sec exceeds 4.0",
+      "shot 5: 8.0 chars/sec exceeds 4.0",
+      "shot 6: 4.6 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要制作一段15秒的洗发水带货视频脚本，要求明确标注时间轴（00:00-00:15）、镜头类型、画面内容、旁白文案和背景音乐类型。产品EHD洗发水主打：1. 洗后蓬松不塌陷 2. 专利防脱技术 3. 天然植萃配方 4. 控油净澈头皮。目标受众包括：每天掉发严重的人群、头顶容易出油的发量焦虑者。请突出产品性价比优势。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "产品展示",
+        "visual_description": "女士举起蓬松的头发，同时展示EHD洗发水",
+        "voiceover": "你对发量越在意，你就越爱这个洗发水",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:07",
+        "shot_type": "产品特写",
+        "visual_description": "手持EHD洗发水，展示产品包装和品牌标识。",
+        "voiceover": "这个EHD的洗发水，直接把这几个大字印在瓶子上，你就知道是什么实力了",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:08",
+        "shot_type": "资质证明",
+        "visual_description": "展示EHD洗发水的防脱特证",
+        "voiceover": "而且还是实打实的有这个防脱特征",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:12",
+        "shot_type": "使用演示",
+        "visual_description": "女士在卫生间使用EHD洗发水洗头",
+        "voiceover": "我也是用了一段时间才敢给你们推荐的",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:12-00:15",
+        "shot_type": "成分展示",
+        "visual_description": "展示EHD洗发水的成分，当归，苦参，葡萄籽，何首乌等草本植物",
+        "voiceover": "现在它里面添加了当归，苦参，葡萄籽，何首乌等草本植萃",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:15-00:17",
+        "shot_type": "洗发后展示",
+        "visual_description": "洗完头后用梳子梳头",
+        "voiceover": "来滋养我们的发根",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:22",
+        "shot_type": "成分展示",
+        "visual_description": "展示EHD洗发水的成分，Oct和含柳树皮",
+        "voiceover": "还有两个特别牛的成分，Oct和含柳树皮，就是用来净化我们头皮多余的油脂",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:22-00:25",
+        "shot_type": "痛点展示",
+        "visual_description": "展示地面上掉落的头发，以及油腻的头皮",
+        "voiceover": "很多人不知道满地掉毛的根本就是油脂分泌过剩，堵塞毛孔造成的",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:25-00:29",
+        "shot_type": "洗发后展示",
+        "visual_description": "洗完头后用梳子梳头，头发蓬松",
+        "voiceover": "每次用它洗完真的巨蓬松，感觉整个头皮都会呼吸一样",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:29-00:35",
+        "shot_type": "产品促销",
+        "visual_description": "女士展示EHD洗发水，推荐购买。",
+        "voiceover": "如果你特别在意发量的，想保住这里的，现在这个价格到手两瓶，比普通的洗发水还要便宜，真的可以去试一试",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 10,
+      "total_duration_sec": 35,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 9,
+      "pacing_checked": 10,
+      "mean_chars_per_second": 8.14,
+      "max_chars_per_second": 16.0,
+      "distinct_shot_types": 8,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "shot 0: 16.0 chars/sec exceeds 4.0",
+      "shot 1: 5.3 chars/sec exceeds 4.0",
+      "shot 2: 15.0 chars/sec exceeds 4.0",
+      "shot 3: 4.2 chars/sec exceeds 4.0",
+      "shot 4: 7.7 chars/sec exceeds 4.0",
+      "shot 6: 6.6 chars/sec exceeds 4.0",
+      "shot 7: 9.3 chars/sec exceeds 4.0",
+      "shot 8: 5.8 chars/sec exceeds 4.0",
+      "shot 9: 7.5 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请为英氏黑宝瓶设计15秒短视频脚本，需包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品特点：明星同款洗发水，挪威黑云杉成分调节油脂，控油因子抑制出油，何首乌马齿苋植萃养护。目标用户：油性发质且脱发较少人群，解决洗发后2小时就扁塌的问题。场景要突出日常护理场景，需展示产品使用效果对比。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "对话场景",
+        "visual_description": "一位女士坐在桌旁，桌上有餐具，她面带微笑，对着镜头说话。她的朋友坐在她旁边，镜头聚焦在说话的女士。",
+        "voiceover": "几天不洗，还这么蓬松？",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:06",
+        "shot_type": "产品展示和推荐",
+        "visual_description": "镜头拉远，显示三位女士坐在桌旁，桌子上有餐具、盒子、包包和一瓶洗发水。一位女士拿起洗发水，向朋友们展示。",
+        "voiceover": "我记得你之前没两天就油了。我只不过是用对了洗发水。我一直在用我们公司的王牌产品，英氏黑宝瓶。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:07",
+        "shot_type": "产品特写",
+        "visual_description": "镜头聚焦在洗发水瓶子上，展示产品的外观和品牌标识。",
+        "voiceover": "英氏黑宝瓶",
+        "music": "强调产品特性的音效"
+      },
+      {
+        "time_axis": "00:07-00:13",
+        "shot_type": "对话场景和产品评价",
+        "visual_description": "镜头回到对话场景，另一位女士正在评价这款产品。",
+        "voiceover": "英氏这牌子我听过，很多明星推荐过，你这效果不比雅尘，去沙龙店做的大几千护理差呀。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:17",
+        "shot_type": "使用演示",
+        "visual_description": "一位女士正在洗头，镜头展示洗发水的泡沫和清洗过程。之后展示头发吹干后的状态。",
+        "voiceover": "它里面添加的挪威黑云杉，能够调节水油平衡，改善出油问题。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:21",
+        "shot_type": "产品成分和功效",
+        "visual_description": "展示洗完吹干后的头发，以及用纸巾擦拭头皮的动作，强调控油效果。镜头重叠显示洗发水瓶子。",
+        "voiceover": "再搭配控油因子，精准锁定出油区域，直接从源头拧紧头皮出油的阀门。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:31",
+        "shot_type": "使用体验分享",
+        "visual_description": "镜头回到对话场景，推荐洗发水的女士分享使用体验。",
+        "voiceover": "自从用了它呀，我直接从一天一洗变成了三天一洗，还有何首乌马齿苋这些植萃养护，洗完头发又顺又滑，每次洗头都像做护理一样。头发也是越洗越好。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:31-00:33",
+        "shot_type": "购买意愿",
+        "visual_description": "最初说话的女士表示想购买这款洗发水。",
+        "voiceover": "那我这个大油头可要买一些试试。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:33-00:36",
+        "shot_type": "促销信息和购买方式",
+        "visual_description": "展示手机屏幕，显示洗发水的购买页面和促销活动。",
+        "voiceover": "现在还有宠粉活动呢，这也太划算了。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 36,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 9,
+      "pacing_checked": 9,
+      "mean_chars_per_second": 6.41,
+      "max_chars_per_second": 10.5,
+      "distinct_shot_types": 9,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 4.5 chars/sec exceeds 4.0",
+      "shot 1: 10.5 chars/sec exceeds 4.0",
+      "shot 2: 5.0 chars/sec exceeds 4.0",
+      "shot 3: 6.0 chars/sec exceeds 4.0",
+      "shot 4: 6.2 chars/sec exceeds 4.0",
+      "shot 5: 7.2 chars/sec exceeds 4.0",
+      "shot 6: 6.2 chars/sec exceeds 4.0",
+      "shot 7: 7.0 chars/sec exceeds 4.0",
+      "shot 8: 5.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请为蜂花洗发护发产品设计一个短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音及背景音乐。产品定位：国货经典品牌，男女适用，泡沫绵密易冲洗。核心卖点需突出与护发素搭配使用后头发柔顺亮泽的效果。目标用户痛点：消费者正面临洗护产品更换需求，但对高价产品犹豫不决。场景要体现日常家庭护理场景，建议通过对比实验展示产品优势。",
+    "output": [
+      {
+        "time_axis": "00:00-00:04",
+        "shot_type": "开场/产品介绍",
+        "visual_description": "美女主播站在户外背景前，展示两款蜂花洗发护发产品。背景是城市建筑和树木。",
+        "voiceover": "家人们，蜂花洗发水终于搞活动了！",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:09",
+        "shot_type": "产品特点介绍",
+        "visual_description": "美女主播继续介绍产品，同时画面定格在两款产品上，展示其包装。",
+        "voiceover": "作为国货老品牌，品质那就叫一个靠谱，男女通用。轻轻一搓，泡沫丰富细腻。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:13",
+        "shot_type": "洗发效果展示",
+        "visual_description": "美女主播继续介绍使用感受。",
+        "voiceover": "洗完后头皮清爽，发丝轻盈，还特别好冲洗。再搭配同系列护发素一起使用。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:16",
+        "shot_type": "护发效果展示",
+        "visual_description": "美女主播展示使用护发素的效果",
+        "voiceover": "效果更是惊艳，头发柔顺亮泽，一梳到底。用过的都说好。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:18",
+        "shot_type": "促销引导",
+        "visual_description": "美女主播引导用户购买。",
+        "voiceover": "家人们趁活动价格划算，点击下方小黄车赶紧去拍。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 18,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 6.97,
+      "max_chars_per_second": 10.5,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 1: 6.0 chars/sec exceeds 4.0",
+      "shot 2: 7.5 chars/sec exceeds 4.0",
+      "shot 3: 7.3 chars/sec exceeds 4.0",
+      "shot 4: 10.5 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请生成一个短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品是淡紫色樱花香洗发水，核心卖点包括持久高级的樱花香气，以及买两瓶赠试用装的优惠。目标用户存在头发扁塌、出油快、脱发困扰等问题，适用场景是日常护理和解决发质问题。",
+    "output": [
+      {
+        "time_axis": "00:00-00:04",
+        "shot_type": "产品展示",
+        "visual_description": "女生手持两瓶淡紫色洗发水，面带微笑，展示洗发水的包装和外观。",
+        "voiceover": "真的是超级喜欢它这个香味，",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:09",
+        "shot_type": "气味展示+头发质感",
+        "visual_description": "女生打开洗发水瓶盖，凑近闻气味，然后展示洗发后的蓬松柔顺的头发。",
+        "voiceover": "一打开就能够闻见它那股特别高级的樱花香，就是用它洗完头发，不管是你的发丝上还是你的衣服上，",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:14",
+        "shot_type": "香味描述",
+        "visual_description": "女生用手势强调香味的持久和柔和。",
+        "voiceover": "都有这股很高贵的樱花香味，它这个香型呢，就是属于那种香而持久，但是呢也不会特别的浓烈，就刚刚好。",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:19",
+        "shot_type": "促销信息和赠品展示",
+        "visual_description": "女生展示两瓶洗发水，然后展示附赠的试用装小样。",
+        "voiceover": "关键是它现在这个价位，到手整整两瓶，还送你这么多试用装。",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:19-00:26",
+        "shot_type": "产品推荐",
+        "visual_description": "女生整理头发，再次展示两瓶洗发水。",
+        "voiceover": "如果你跟我之前一样细软塌大油头还没有高颅顶，我真心推荐你们试试这款洗发水，一定不会让你们失望的。",
+        "music": "轻快活泼的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 26,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 6.29,
+      "max_chars_per_second": 8.6,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 1: 8.4 chars/sec exceeds 4.0",
+      "shot 2: 8.6 chars/sec exceeds 4.0",
+      "shot 3: 5.0 chars/sec exceeds 4.0",
+      "shot 4: 6.4 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请为红KAN.S Mini 洗发水（暂定）撰写短视频营销分镜脚本，包含时间轴、镜头类型、画面描述、旁白及背景音乐配置。产品核心信息：采用与正装相同的黑松露多肽复合成分，实现控油蓬松效果；专为差旅场景设计，50g便携装解决大瓶携带痛点；对比酒店洗发水，提供更专业的头皮清洁体验。需通过视觉化呈现产品优势与使用场景。",
+    "output": [
+      {
+        "time_axis": "00:00-00:03",
+        "shot_type": "人物展示",
+        "visual_description": "女士手拿两瓶红色KANS迷你洗发水，展示给观众。",
+        "voiceover": "韩束，你也太懂我们这些娇情的女生了吧。",
+        "music": "轻松愉快的背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:07",
+        "shot_type": "痛点展示",
+        "visual_description": "从女士手上的迷你洗发水切换到两瓶正装洗发水，强调正装洗发水体积大不方便携带。",
+        "voiceover": "出差啊或者是出门旅游的时候，就必须带着他家那个正装，真的是又大又不方便。",
+        "music": "轻松愉快的背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:09",
+        "shot_type": "痛点展示",
+        "visual_description": "女士拿着两瓶迷你洗发水，强调酒店的洗发水不好用。",
+        "voiceover": "就酒店那个洗发水，我真的是用不了一点。",
+        "music": "轻松愉快的背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:13",
+        "shot_type": "产品特写",
+        "visual_description": "两瓶KANS迷你洗发水特写，背景有鲜花、纸袋等装饰。",
+        "voiceover": "他家也太懂我们这些女生了，立刻就出了这种迷你装的。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:18",
+        "shot_type": "产品成分特写",
+        "visual_description": "KANS迷你洗发水成分展示，特写标签上的文字：莲松肽、黑松露、多肽α角蛋白。",
+        "voiceover": "成分真的和那个正装一模一样，莲松肽、黑松露、多肽角蛋白。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:18-00:23",
+        "shot_type": "使用效果展示",
+        "visual_description": "女士展示蓬松的头发，并撩起头发。",
+        "voiceover": "从根源控油的同时啊，还巨蓬松。我的高颅顶啊，我这还没撩起来呢，撩起来个个都在站军姿。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:23-00:29",
+        "shot_type": "使用效果展示",
+        "visual_description": "女士展示干净的头皮。",
+        "voiceover": "用它洗完的头发真的是巨干净，随便扒出每一处啊，都是干干净净的。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:29-00:34",
+        "shot_type": "产品参数和使用场景",
+        "visual_description": "产品包装盒上的信息，每瓶50克。展示差旅场景。",
+        "voiceover": "每一瓶是50克的，一盒是两瓶，在出差或出门旅游你就带着它。",
+        "music": "轻柔的背景音乐"
+      },
+      {
+        "time_axis": "00:34-00:41",
+        "shot_type": "总结推荐",
+        "visual_description": "女士手拿两瓶迷你洗发水，再次推荐产品。",
+        "voiceover": "真的不要太方便，我就好喜欢这种又可爱又便捷的东西，刷到了还有货啊，一定要备起来。",
+        "music": "轻松愉快的背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 41,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 9,
+      "pacing_checked": 9,
+      "mean_chars_per_second": 6.15,
+      "max_chars_per_second": 8.5,
+      "distinct_shot_types": 7,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 5.7 chars/sec exceeds 4.0",
+      "shot 1: 8.2 chars/sec exceeds 4.0",
+      "shot 2: 8.5 chars/sec exceeds 4.0",
+      "shot 3: 5.8 chars/sec exceeds 4.0",
+      "shot 4: 4.8 chars/sec exceeds 4.0",
+      "shot 5: 7.4 chars/sec exceeds 4.0",
+      "shot 6: 4.7 chars/sec exceeds 4.0",
+      "shot 7: 5.2 chars/sec exceeds 4.0",
+      "shot 8: 5.1 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请为飞虎牌儿童氨基酸洗发水设计短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音及背景音乐。产品核心卖点为无硅油温和配方，含金盏花精华和氨基酸表活，泡沫绵密且带有淡淡花果香。目标用户是孩子存在头皮敏感、洗发后干涩问题的家长群体，需突出产品在儿童日常洗护及礼品场景中的适用性。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "产品展示",
+        "visual_description": "双手拿着一瓶儿童洗发水，瓶身主体为白色，底部是紫色渐变，上面有卡通小熊图案和菊花，产品名称为“飞虎牌 儿童氨基酸洗发水”",
+        "voiceover": "我也不想买啊",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:04",
+        "shot_type": "产品展示及质地",
+        "visual_description": "用洗发水的泵头挤出洗发水在手上，洗发水呈透明液体",
+        "voiceover": "可是妈妈们都在分享",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:06",
+        "shot_type": "产品特点介绍",
+        "visual_description": "展示两瓶儿童洗发水，瓶身主体为白色，底部是紫色渐变，上面有卡通小熊图案和菊花",
+        "voiceover": "孩子们都在用，洗完头发很柔顺，金盏花精华和多种氨基酸表活",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:11",
+        "shot_type": "产品特点介绍",
+        "visual_description": "手持洗发水进行展示，强调瓶身卡通图案，展示瓶身侧面",
+        "voiceover": "这一瓶里都有，而且无硅油，很温和泡沫绵密细腻",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:13",
+        "shot_type": "产品质地",
+        "visual_description": "将洗发水挤到白色小碗里，用勺子搅拌",
+        "voiceover": "洗完还有淡淡的花果香",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:16",
+        "shot_type": "产品特点介绍",
+        "visual_description": "将洗发水揉搓出泡沫，展示泡沫的丰富细腻",
+        "voiceover": "这么大瓶能用很久，给孩子养护发丝",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:18",
+        "shot_type": "总结推荐",
+        "visual_description": "手持洗发水进行展示",
+        "voiceover": "一定要选儿童专用的",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 7,
+      "total_duration_sec": 18,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 5,
+      "pacing_checked": 7,
+      "mean_chars_per_second": 5.79,
+      "max_chars_per_second": 13.0,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 6.0 chars/sec exceeds 4.0",
+      "shot 2: 13.0 chars/sec exceeds 4.0",
+      "shot 4: 5.0 chars/sec exceeds 4.0",
+      "shot 5: 5.0 chars/sec exceeds 4.0",
+      "shot 6: 4.5 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请生成若也植萃洗发水的15秒带货视频分镜方案，包含时间节点、镜头类型、画面描述和配音文案，背景音乐需与情绪匹配。产品信息如下：采用9种天然植萃成分，大容量按压瓶设计，可解决油性发质的两大痛点——头屑多和出油快，且一瓶用量相当于普通洗发水两瓶。需通过镜头语言直观展示产品优势和使用场景。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "产品展示",
+        "visual_description": "产品瓶身展示，配有手指点击屏幕动画，强调“大大大瓶装的来了”的文字。",
+        "voiceover": "大大大瓶装的来了！",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:02",
+        "shot_type": "产品特性介绍",
+        "visual_description": "产品瓶身旋转展示，强调品牌logo“Roye”，以及“植萃洗发水控油去屑”的文案。",
+        "voiceover": "若也全新升级。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:03",
+        "shot_type": "产品特性介绍",
+        "visual_description": "两个产品瓶身并排展示，强调“大瓶按压装”的文案。",
+        "voiceover": "大瓶按压装。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:04",
+        "shot_type": "产品特性介绍",
+        "visual_description": "产品瓶身展示，强调“一瓶顶两瓶”的文案。",
+        "voiceover": "一瓶顶两瓶。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:06",
+        "shot_type": "产品成分介绍和痛点解决",
+        "visual_description": "展示按压洗发水的动作，随后是头皮特写，展示使用前头皮屑多的情况。",
+        "voiceover": "内含九种植物成分，温和去屑。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:07",
+        "shot_type": "使用效果展示",
+        "visual_description": "使用产品后头发干净柔顺的展示。",
+        "voiceover": "针对油头。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:09",
+        "shot_type": "产品特性介绍",
+        "visual_description": "手部按压洗发水，展示泡沫。",
+        "voiceover": "长效控油，12月12日全新上线。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:10",
+        "shot_type": "产品促销",
+        "visual_description": "产品在浴室场景展示，配有其他系列产品。",
+        "voiceover": "量的手半带走一次顶半年",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:13",
+        "shot_type": "产品展示和系列产品展示",
+        "visual_description": "展示包括大瓶洗发水和系列护发产品。",
+        "voiceover": "直播间等你呦。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 13,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 7,
+      "pacing_checked": 9,
+      "mean_chars_per_second": 6.0,
+      "max_chars_per_second": 11.0,
+      "distinct_shot_types": 6,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 8.0 chars/sec exceeds 4.0",
+      "shot 1: 6.0 chars/sec exceeds 4.0",
+      "shot 2: 5.0 chars/sec exceeds 4.0",
+      "shot 3: 5.0 chars/sec exceeds 4.0",
+      "shot 4: 6.0 chars/sec exceeds 4.0",
+      "shot 6: 7.0 chars/sec exceeds 4.0",
+      "shot 7: 11.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "我需要一份青蒿植物温和洗发水的短视频销售脚本，要求包含时间轴、镜头类型、画面描述、旁白和背景音乐。产品卖点：控油去屑、止痒护理、泡沫绵密、植物配方安全；用户需求：解决油性发质、头皮敏感、头屑困扰。请设计镜头展示产品使用前后的对比效果，并突出大容量包装优势。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "产品展示",
+        "visual_description": "一只手拿着灰色方形洗发水瓶子，展示给观众看，背景是洗漱台和各种洗护用品。",
+        "voiceover": "我从来没见过这个大瓶包装的洗发水。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:03",
+        "shot_type": "产品展示",
+        "visual_description": "手挤压洗发水泵头，挤出洗发水到手心。",
+        "voiceover": "若也真有你的。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:07",
+        "shot_type": "产品功效介绍",
+        "visual_description": "一个化好妆的女性用梳子梳理头发。",
+        "voiceover": "他这一瓶洗发水，就是能改善头屑，能控头油，能止痒，就是多效合一。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:07-00:08",
+        "shot_type": "产品功效介绍",
+        "visual_description": "一只手拿着灰色方形洗发水瓶子，展示给观众看，背景是洗漱台和各种洗护用品。",
+        "voiceover": "而且还能让你头发柔顺光亮。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:11",
+        "shot_type": "产品功效介绍",
+        "visual_description": "一个化好妆的女性展示自己的发根。",
+        "voiceover": "但是你放心，不是你想象的刺激性的洗剂。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:15",
+        "shot_type": "产品功效介绍",
+        "visual_description": "女性用洗发水清洁头发，产生大量泡沫。",
+        "voiceover": "它是用植物青蒿代替化学成分的，非常温和安全。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:15-00:17",
+        "shot_type": "产品功效介绍",
+        "visual_description": "一只手拿着灰色方形洗发水瓶子，挤出洗发水。",
+        "voiceover": "细腻质地，泡沫非常的丰富绵密。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:18",
+        "shot_type": "产品功效介绍",
+        "visual_description": "女性用洗发水清洁头发。",
+        "voiceover": "能够很好清理我们毛囊里的脏东西。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:18-00:22",
+        "shot_type": "产品效果对比",
+        "visual_description": "一个化好妆的女性展示未使用洗发水前油腻有头屑的头发，再展示使用后干净蓬松的头发。",
+        "voiceover": "你看我之前的头发油腻掉小雪花，你再看看现在呢？",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:22-00:24",
+        "shot_type": "产品推荐",
+        "visual_description": "一个化好妆的女性展示使用后干净蓬松的头发。",
+        "voiceover": "没用过的姐妹一定要去试试。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:24-00:26",
+        "shot_type": "产品促销",
+        "visual_description": "洗漱台上堆满了产品，包括大瓶洗发水和各种小样。",
+        "voiceover": "直播间到手的两大瓶，可以用很久。",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 11,
+      "total_duration_sec": 26,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 11,
+      "pacing_checked": 11,
+      "mean_chars_per_second": 7.56,
+      "max_chars_per_second": 15.0,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 1
+    },
+    "quality_warnings": [
+      "shot 0: 8.0 chars/sec exceeds 4.0",
+      "shot 1: 6.0 chars/sec exceeds 4.0",
+      "shot 2: 6.8 chars/sec exceeds 4.0",
+      "shot 3: 12.0 chars/sec exceeds 4.0",
+      "shot 4: 5.7 chars/sec exceeds 4.0",
+      "shot 5: 5.0 chars/sec exceeds 4.0",
+      "shot 6: 6.5 chars/sec exceeds 4.0",
+      "shot 7: 15.0 chars/sec exceeds 4.0",
+      "shot 8: 5.2 chars/sec exceeds 4.0",
+      "shot 9: 6.0 chars/sec exceeds 4.0",
+      "shot 10: 7.0 chars/sec exceeds 4.0",
+      "1 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "需要制作一段自动卷发棒的带货视频脚本，要求明确标注时间轴、镜头类型、画面内容、配音文案和背景音乐。产品特点包括操作简单、价格亲民，尤其适合发量稀少、发质脆弱容易扁塌的用户。请重点呈现解决头发难造型的痛点，并展示在约会、聚会等场合提升气质的使用场景。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "产品展示",
+        "visual_description": "一只手拿着一个白色的自动卷发棒，上面有四个白色的塑料爪子，手按下电源键。",
+        "voiceover": "好用又便宜的自动卷",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:08",
+        "shot_type": "使用演示",
+        "visual_description": "一位女士用自动卷发棒卷头发，展示卷发效果。",
+        "voiceover": "简直就是手残党的救星，发量少，细软塌的姐妹赶紧冲。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:08-00:11",
+        "shot_type": "效果对比",
+        "visual_description": "对比卷发前后的效果，展示卷发后的洋气感。",
+        "voiceover": "对比一下，卷发是不是更洋气？",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:15",
+        "shot_type": "局部使用演示",
+        "visual_description": "再次用自动卷发棒卷头顶的头发，做出蓬松效果。",
+        "voiceover": "再来个高颅顶就完美了！",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:15-00:19",
+        "shot_type": "总结",
+        "visual_description": "展示卷发后的整体效果。",
+        "voiceover": "难怪美女都喜欢卷发，真的只有零次和无数次。",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 19,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 2,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 3.88,
+      "max_chars_per_second": 4.75,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 4.5 chars/sec exceeds 4.0",
+      "shot 4: 4.8 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请生成一个短视频分镜脚本，包含时间轴、镜头类型、画面描述、旁白和背景音乐。产品是英氏黑宝瓶洗发水，其卖点为丰富绵密的泡沫、有效控油去屑及护发滋养。目标用户是孩子头发干燥、易出油或使用不适合产品导致毛躁的家长，专为青少年设计，解决油性发质、毛躁和头发养护需求。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "人物特写（产品痛点）",
+        "visual_description": "妈妈正在给女儿扎头发，女儿头发看起来毛躁。",
+        "voiceover": "我女儿5天没有洗头了",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:06",
+        "shot_type": "人物主观镜头+产品特写",
+        "visual_description": "妈妈拿着一款黑色的洗发水瓶子，展示给观众看，瓶子上印有“yeehoQ”字样和兔子图案。",
+        "voiceover": "一点都不臭，它真的好牛啊，就这个英氏的黑宝瓶",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:09",
+        "shot_type": "产品使用过程",
+        "visual_description": "妈妈正在给女儿洗头，将洗发水挤到女儿湿的头发上。",
+        "voiceover": "我就给我女儿用了一次",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:14",
+        "shot_type": "人物主观镜头+产品推荐",
+        "visual_description": "妈妈拿着黑色的洗发水瓶子，对着镜头说话，推荐这款洗发水。",
+        "voiceover": "就给我身边所有的姐妹都给她推荐了，用完之后呀，都说后悔没有多买几瓶，都说好用",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:16",
+        "shot_type": "产品特写",
+        "visual_description": "洗发水挤出在玻璃容器里，展示洗发水的质地。",
+        "voiceover": "连护发素都省了",
+        "music": "强调产品特性的音效"
+      },
+      {
+        "time_axis": "00:16-00:22",
+        "shot_type": "产品成分介绍",
+        "visual_description": "妈妈拿着黑色的洗发水瓶子，介绍洗发水的成分，包括黑灵芝、何首乌、马齿苋等。",
+        "voiceover": "是专为青少年研制的配方，里面添加了罗威黑灵芝，搭配何首乌和马齿苋",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:22-00:26",
+        "shot_type": "产品使用过程",
+        "visual_description": "给女儿洗头的过程，泡沫丰富绵密，女儿一脸享受。",
+        "voiceover": "控油去屑的同时还能滋养护发，泡沫丰富绵密",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:26-00:33",
+        "shot_type": "使用效果展示+推荐",
+        "visual_description": "展示洗完后的头发，干净蓬松又顺滑，妈妈拿着洗发水瓶子，再次推荐。",
+        "voiceover": "洗完头发呀，干净蓬松又顺滑，味道特别的好闻啊，油头的宝宝们啊，放心的去冲",
+        "music": "舒缓背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 8,
+      "total_duration_sec": 33,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 5,
+      "pacing_checked": 8,
+      "mean_chars_per_second": 5.27,
+      "max_chars_per_second": 10.0,
+      "distinct_shot_types": 7,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 10.0 chars/sec exceeds 4.0",
+      "shot 3: 7.0 chars/sec exceeds 4.0",
+      "shot 5: 5.0 chars/sec exceeds 4.0",
+      "shot 6: 4.8 chars/sec exceeds 4.0",
+      "shot 7: 4.6 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请设计一个短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音及背景音乐。产品为Pantene洗发水，需突出以下要素：产品含维他命原B5与发芯复合因子，能显著改善油顶塌发型；用户反馈普通洗发水效果差；当前促销为买一送一（500ml装）；目标受众是注重高效护发的日常使用者。请用自然流畅的中文描述分镜结构。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "产品展示",
+        "visual_description": "Pantene洗发水产品置于画面中央，周围环绕产品功效及卖点图文介绍。",
+        "voiceover": "日用必备，强烈推荐",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:03",
+        "shot_type": "对比展示",
+        "visual_description": "文字说明使用普通洗发水10次不如使用该产品3天，突出产品效果。",
+        "voiceover": "用普通洗发水洗十次，都不如用它三天洗一次",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:04",
+        "shot_type": "效果展示",
+        "visual_description": "文字说明从油顶塌变成高颅顶，暗示产品能改善发型。",
+        "voiceover": "从油顶塌变成高颅顶，你就用它",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:05",
+        "shot_type": "产品推荐",
+        "visual_description": "多个角度展示产品及相关系列产品。",
+        "voiceover": "自用好物推荐，真的好润啊",
+        "music": "轻快活泼的背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:07",
+        "shot_type": "促销信息",
+        "visual_description": "重点展示买一送一的促销活动。",
+        "voiceover": "关键现在买一瓶还送一瓶，还是500毫升大容量的",
+        "music": "欢快音乐"
+      },
+      {
+        "time_axis": "00:07-00:10",
+        "shot_type": "产品成分介绍",
+        "visual_description": "图文介绍产品富含维他命原B5、发芯复合因子等。",
+        "voiceover": "里面富含维他命原B5发芯复合因子",
+        "music": "柔和音乐"
+      },
+      {
+        "time_axis": "00:10-00:12",
+        "shot_type": "好物推荐",
+        "visual_description": "展示产品图片及相关卖点。",
+        "voiceover": "良心好物分享，出门必备的幸福感好物",
+        "music": "欢快音乐"
+      },
+      {
+        "time_axis": "00:12-00:14",
+        "shot_type": "多产品推荐",
+        "visual_description": "展示多个不同款式的产品。",
+        "voiceover": "博主推荐，好物分享，明星同款",
+        "music": "欢快音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 8,
+      "total_duration_sec": 14,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 8,
+      "pacing_checked": 8,
+      "mean_chars_per_second": 8.98,
+      "max_chars_per_second": 13.0,
+      "distinct_shot_types": 8,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 8.0 chars/sec exceeds 4.0",
+      "shot 1: 9.5 chars/sec exceeds 4.0",
+      "shot 2: 13.0 chars/sec exceeds 4.0",
+      "shot 3: 11.0 chars/sec exceeds 4.0",
+      "shot 4: 11.0 chars/sec exceeds 4.0",
+      "shot 5: 5.3 chars/sec exceeds 4.0",
+      "shot 6: 8.0 chars/sec exceeds 4.0",
+      "shot 7: 6.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "需要制作生姜洗发水的短视频营销脚本，要求分镜包含时间轴、镜头类型、画面描述、旁白和背景音乐。产品卖点需重点呈现：生姜精华配方、头皮护理、发丝加固、减少脱发、洗后蓬松感。需针对脱发困扰和头皮敏感人群，结合车内场景展示实际使用效果。",
+    "output": [
+      {
+        "time_axis": "00:00-00:05",
+        "shot_type": "产品展示",
+        "visual_description": "手持黑色瓶子的洗发水，展示产品包装，背景有绿色植物。",
+        "voiceover": "就是用它洗了个头，同事就问我用了什么洗发露，头发如此丝滑蓬松。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:08",
+        "shot_type": "产品特写及使用展示",
+        "visual_description": "展示洗发水瓶子外观，然后按压瓶口，挤出洗发水，展示洗发水质地，双手揉搓起泡。",
+        "voiceover": "就是这瓶生姜洗发水，含有生姜精华。",
+        "music": "产品特性音效"
+      },
+      {
+        "time_axis": "00:08-00:09",
+        "shot_type": "使用效果展示",
+        "visual_description": "车内展示洗发后的头发效果，柔顺有光泽。",
+        "voiceover": "能够养护头皮",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:11",
+        "shot_type": "全系列产品展示",
+        "visual_description": "展示该品牌全系列洗护产品，包括洗发水、护发素等。",
+        "voiceover": "能够养护头皮。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:11-00:16",
+        "shot_type": "使用效果展示",
+        "visual_description": "车内展示洗发后的头发效果，柔顺有光泽，并扎起头发。",
+        "voiceover": "能够强韧发丝，一梳到底，轻松拿捏，头发蓬松柔顺。",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 16,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 3,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 4.72,
+      "max_chars_per_second": 6.0,
+      "distinct_shot_types": 4,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 5.6 chars/sec exceeds 4.0",
+      "shot 1: 5.0 chars/sec exceeds 4.0",
+      "shot 2: 6.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请设计一个贝德美蓝甘菊洗发露（蓬松型）的短视频分镜脚本，需包含时间轴、镜头类型、画面描述、画外音和背景音乐。产品核心卖点是山茶花与蓝甘菊精华的双重养护，控油同时无需护发素。目标用户是担心洗发过频伤害头皮的宝妈，以及需要解决发根易油问题的儿童和成人。请突出'6天不洗头不油腻'的痛点场景，并自然融入产品适用场景的展示。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "痛点展示",
+        "visual_description": "一位女士背对镜头，展示蓬松而有光泽的棕色长发。她用手拨弄头发，展示头发的质感。字幕：“我已经6天没洗头了，一点都不油也不臭。”",
+        "voiceover": "我已经6天没洗头了，一点都不油也不臭",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:05",
+        "shot_type": "产品特写",
+        "visual_description": "一只手拿着一瓶粉色瓶身的儿童洗发露（贝德美蓝甘菊洗发露），蓝色瓶盖，瓶身上有一个小雏菊花朵装饰。接下来展示两瓶并排的洗发露。字幕：“它好厉害啊。就是这个贝德美蓝甘菊洗发露（蓬松型）。”",
+        "voiceover": "它好厉害啊，就是这个贝德美蓝甘菊水晶瓶",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:14",
+        "shot_type": "使用演示",
+        "visual_description": "一位女士正在给一个小女孩洗头。首先，将洗发露挤在小女孩湿润的头发上，然后揉搓出丰富的泡沫，泡沫覆盖了小女孩的整个头部。字幕：“我给女儿用了2次，就给我身边所有的宝妈都推荐了，用完都后悔没有多囤几瓶，都说太好用了，连护发素都省了。”",
+        "voiceover": "我给女儿用了2次，就给我身边所有的宝妈都推荐了，用完都后悔没有多囤几瓶，都说太好用了，连护发素都省了",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:16",
+        "shot_type": "产品成分介绍",
+        "visual_description": "特写展示产品包装盒上的成分说明，字幕：“专为儿童精心研制的配方。”",
+        "voiceover": "专为儿童精心研制的配方",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:23",
+        "shot_type": "产品功效强调和使用",
+        "visual_description": "一个可爱的小女孩，妈妈正在给她洗头，用洗发露揉搓出丰富的泡沫。接着用清水冲洗头发。特写展示泡沫的丰富和绵密。字幕：“山茶花精华，蓝甘菊精华，根源控油的同时还能滋养护发，泡沫丰富绵密。”",
+        "voiceover": "山茶花精华，蓝甘菊精华，根源控油的同时还能滋养护发，泡沫丰富绵密",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:23-00:28",
+        "shot_type": "效果展示",
+        "visual_description": "一位女士背对镜头，展示洗完后蓬松柔顺的棕色长发。她拨弄头发，展示头发的质感。字幕：“洗完头发干净蓬松又顺滑，味道特别好闻，油头的宝子们放心冲。”",
+        "voiceover": "洗完头发干净蓬松又顺滑，味道特别好闻，油头的宝子们放心冲",
+        "music": "轻柔背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 6,
+      "total_duration_sec": 28,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 6,
+      "pacing_checked": 6,
+      "mean_chars_per_second": 5.74,
+      "max_chars_per_second": 8.5,
+      "distinct_shot_types": 6,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 8.5 chars/sec exceeds 4.0",
+      "shot 1: 6.0 chars/sec exceeds 4.0",
+      "shot 2: 5.1 chars/sec exceeds 4.0",
+      "shot 3: 5.5 chars/sec exceeds 4.0",
+      "shot 4: 4.1 chars/sec exceeds 4.0",
+      "shot 5: 5.2 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请设计一个短视频分镜脚本，用于推广海飞丝洗发水。脚本需包含时间轴、镜头类型、画面描述、画外音和背景音乐五个要素。产品核心优势包括：63年专业头皮护理经验、香氛洗发水的多层香味设计。目标用户面临头发油腻异味、头屑困扰及毛躁问题，适用场景为家庭和个人日常护理。请确保内容突出产品专业性和香味特色，同时解决用户痛点。",
+    "output": [
+      {
+        "time_axis": "00:00-00:03",
+        "shot_type": "产品展示",
+        "visual_description": "女士站在货架前，展示海飞丝洗发水，面前的旋转展示台上有几个大瓶和小瓶的海飞丝洗发水。",
+        "voiceover": "来这个洗发水啊，洗发水，其实大家应该都知道吧，海飞丝不需要我多讲，老品牌了，那么多年了对不对？",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:04",
+        "shot_type": "产品特写",
+        "visual_description": "女士的手展示海飞丝洗发水瓶身。",
+        "voiceover": "...",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:09",
+        "shot_type": "产品介绍",
+        "visual_description": "女士站在货架前，展示海飞丝洗发水，面前的旋转展示台上有几个大瓶和小瓶的海飞丝洗发水，用手势强调。",
+        "voiceover": "对真正做的是非常专业，63年专修，专为头皮的啊。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:15",
+        "shot_type": "问题展示",
+        "visual_description": "女士手拿图册，展示油头、头屑多的问题，图册上有头皮的特写照片。",
+        "voiceover": "如果你的头发有头油，头油是不是会有味，头屑多，头屑满天飞，是不是很尴尬？",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:15-00:18",
+        "shot_type": "产品特写",
+        "visual_description": "展示海飞丝洗发水瓶身。",
+        "voiceover": "...",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:18-00:22",
+        "shot_type": "问题展示",
+        "visual_description": "女士手拿图册，展示头发贴头皮、毛躁的问题，图册上有头皮的特写照片。",
+        "voiceover": "头痒的啊，头发干枯的，头发贴头皮的，只要你有这些问题，你全部去用。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:22-00:26",
+        "shot_type": "产品强调",
+        "visual_description": "女士站在货架前，展示海飞丝洗发水，面前的旋转展示台上有几个大瓶和小瓶的海飞丝洗发水。",
+        "voiceover": "重点是你知道它有多牛吗？宝贝，大家是不是都知道香味很重要？",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:26-00:34",
+        "shot_type": "气味强调",
+        "visual_description": "女士手拿图册，展示洗发水的香味成分，图册上有花朵和水果的图案。",
+        "voiceover": "是海飞丝的香氛洗发水，它是能跟你做到小苍兰，非常高级的香。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:34-00:41",
+        "shot_type": "总结",
+        "visual_description": "女士手拿图册，展示洗发水的香味成分，面前的旋转展示台上有几个大瓶和小瓶的海飞丝洗发水。",
+        "voiceover": "一款洗发水能给你做出前调还有中调，还有后调，牛不牛？",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 9,
+      "total_duration_sec": 41,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 5,
+      "pacing_checked": 7,
+      "mean_chars_per_second": 6.15,
+      "max_chars_per_second": 13.67,
+      "distinct_shot_types": 7,
+      "duplicate_descriptions": 1
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 13.7 chars/sec exceeds 4.0",
+      "shot 2: 4.2 chars/sec exceeds 4.0",
+      "shot 3: 5.2 chars/sec exceeds 4.0",
+      "shot 5: 7.0 chars/sec exceeds 4.0",
+      "shot 6: 6.5 chars/sec exceeds 4.0",
+      "1 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "请设计一个短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、旁白及背景音乐。产品名称为高缇氨基酸洗发水，核心卖点是热销且用户重复购买率高，针对产后脱发女性用户群体。请重点突出产品解决脱发问题的场景化应用。",
+    "output": [
+      {
+        "time_axis": "00:00-00:04",
+        "shot_type": "场景介绍",
+        "visual_description": "女性手持手机自拍，背景为店铺内景，另一位女性蹲在地上整理纸箱中的商品，周围散落着已拆箱的瓶装产品。店外有机动车行驶。",
+        "voiceover": "姐妹们，看看咱家这堆的高提呀，是特地给你们囤了多少呀，哎呀。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:16",
+        "shot_type": "产品介绍",
+        "visual_description": "自拍女性展示手中的瓶装产品，背景中另一位女性继续整理纸箱。镜头拉近展示产品包装。",
+        "voiceover": "时下啊，顾客来咱四球球总公司。咱的是卖的特别好，回来回来再回来，之后都要卖空的，对，就是回购的。",
+        "music": "欢快背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:28",
+        "shot_type": "产品特点",
+        "visual_description": "镜头聚焦在自拍女性的面部，另一位女性将整理好的纸箱放置到沙发上。自拍女性继续展示手中的产品。",
+        "voiceover": "推荐的，姐妹用的好东西。的话对行业对的都是特别好哈，买到的是超级超级好。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:28-00:36",
+        "shot_type": "产品优势",
+        "visual_description": "两位女性同时面对镜头，其中一位拿着产品。强调产品的特点。",
+        "voiceover": "味道也好闻，然后是清香味的，泡沫也丰富，非常好用啊，尤其是对掉头发的，生完孩子掉头发。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:36-00:44",
+        "shot_type": "购买方式",
+        "visual_description": "自拍女性再次单独面对镜头，展示手中的产品，并介绍购买方式。",
+        "voiceover": "可以来店里面拿，也可以到咱们的小黄车下单啊，都可以。",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 5,
+      "total_duration_sec": 44,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 2,
+      "pacing_checked": 5,
+      "mean_chars_per_second": 4.02,
+      "max_chars_per_second": 6.5,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 6.5 chars/sec exceeds 4.0",
+      "shot 3: 4.6 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请撰写短视频带货分镜脚本，包含时间轴、镜头类型、画面描述、画外音及音乐选择。产品为海飞丝洗发水，核心优势是：无需揉搓的绵密泡沫（如动物奶油）、深层控油同时滋养发根、洗后24小时蓬松不扁塌。需直击油性发质用户痛点——洗发后头发油腻、脱发加剧、普通洗发水清洁力不足，场景聚焦日常洗发体验。",
+    "output": [
+      {
+        "time_axis": "00:00-00:01",
+        "shot_type": "产品展示",
+        "visual_description": "一只手按压洗发水的泵头，挤出泡沫在另一只手上。",
+        "voiceover": "一泵，轻松发泡。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:01-00:02",
+        "shot_type": "问题展示",
+        "visual_description": "头顶特写，展示头发油腻扁塌。",
+        "voiceover": "两泵，控油滋养。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:02-00:03",
+        "shot_type": "产品展示",
+        "visual_description": "一只手按压洗发水的泵头，挤出泡沫在另一只手上。",
+        "voiceover": "三泵，清爽蓬松。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:05",
+        "shot_type": "效果展示",
+        "visual_description": "女士用手拨弄头发，展示头发蓬松效果。",
+        "voiceover": "随便你怎么抓怎么造。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:10",
+        "shot_type": "产品特写",
+        "visual_description": "手持海飞丝洗发水瓶，展示产品包装上的“控油止痒”字样。",
+        "voiceover": "敢把控油止痒直接写在包装上，不愧是国际大品牌海飞丝。",
+        "music": "产品特性强调音效"
+      },
+      {
+        "time_axis": "00:10-00:14",
+        "shot_type": "效果展示",
+        "visual_description": "女士展示洗后蓬松的头发。",
+        "voiceover": "你们看，我就洗了一次的头发，这个头发蓬的像戴个帽子一样。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:14-00:18",
+        "shot_type": "痛点展示",
+        "visual_description": "浴室水槽，拍摄水槽内遗留的脱发。",
+        "voiceover": "以前我每次洗完头发呀，那个浴室，卧室，哪儿哪儿都是头发。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:18-00:21",
+        "shot_type": "效果展示",
+        "visual_description": "女士展示洗后头发蓬松不油腻。",
+        "voiceover": "哎，就是不在我这个细软塌的头发上。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:27",
+        "shot_type": "产品使用展示",
+        "visual_description": "洗发水特写，挤出泡沫，展示泡沫的绵密。",
+        "voiceover": "这个海飞丝的泡沫洗发水，是直接按压出泡的，泡沫绵密的像那个动物奶油一样，挤出来就可以直接上头。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:27-00:31",
+        "shot_type": "痛点对比",
+        "visual_description": "展示用普通洗发水洗头后脱发的现象。",
+        "voiceover": "区别于普通洗发水，手搓不仅浪费时间，还伤头发。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:31-00:33",
+        "shot_type": "产品使用展示",
+        "visual_description": "将泡沫涂抹在头发上。",
+        "voiceover": "吸油力也是普通洗发水不能比的。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:33-00:36",
+        "shot_type": "效果展示",
+        "visual_description": "吹干头发，展示头发蓬松效果。",
+        "voiceover": "帮助你控油去屑的同时，还很蓬松。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:36-00:44",
+        "shot_type": "产品推荐",
+        "visual_description": "女士展示蓬松的头发和海飞丝洗发水。",
+        "voiceover": "真的很离谱，三天了，你自己瞅瞅还是这样的，买了很多洗发水就是拿不到结果的，真的，你真的可以给他一个机会。",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 13,
+      "total_duration_sec": 44,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 13,
+      "pacing_checked": 13,
+      "mean_chars_per_second": 5.7,
+      "max_chars_per_second": 7.17,
+      "distinct_shot_types": 8,
+      "duplicate_descriptions": 1
+    },
+    "quality_warnings": [
+      "shot 0: 6.0 chars/sec exceeds 4.0",
+      "shot 1: 6.0 chars/sec exceeds 4.0",
+      "shot 2: 6.0 chars/sec exceeds 4.0",
+      "shot 3: 4.5 chars/sec exceeds 4.0",
+      "shot 4: 4.8 chars/sec exceeds 4.0",
+      "shot 5: 6.2 chars/sec exceeds 4.0",
+      "shot 6: 6.0 chars/sec exceeds 4.0",
+      "shot 7: 5.0 chars/sec exceeds 4.0",
+      "shot 8: 7.2 chars/sec exceeds 4.0",
+      "shot 9: 5.0 chars/sec exceeds 4.0",
+      "shot 10: 7.0 chars/sec exceeds 4.0",
+      "shot 11: 4.7 chars/sec exceeds 4.0",
+      "shot 12: 5.8 chars/sec exceeds 4.0",
+      "1 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "需要一份净屑清透泡沫洗发水的短视频脚本，要求明确标注时间轴、镜头类型、画面描述、旁白和背景音乐。产品信息：①创新泡沫技术，挤出即用无需搓泡；②1.5倍去屑因子+微米泡沫，深层清洁不刺激；③洗后持续蓬松控油，3天不油腻；④温和配方可安全洗脸。用户痛点包括传统洗发水起泡慢、清洁不彻底、洗后扁塌、油头困扰等。请通过对比实验、使用过程特写和效果展示，突出产品省时省力、高效清洁、温和护发的优势，吸引时间紧张或油性发质消费者。",
+    "output": [
+      {
+        "time_axis": "00:00-00:03",
+        "shot_type": "挑战展示",
+        "visual_description": "女士展示泡沫洗发水，挤在手上，然后快速洗头，用计时器计时，展示洗完头后的蓬松效果。",
+        "voiceover": "一挤，二搓，三冲洗，30秒洗完全头，挑战成功。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:06",
+        "shot_type": "产品特写",
+        "visual_description": "女士手持洗发水，展示挤出的泡沫，特写泡沫的细腻程度。",
+        "voiceover": "能直接挤出泡沫的洗发水，泡沫就像动物奶油一样很绵密。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:06-00:09",
+        "shot_type": "产品成分介绍",
+        "visual_description": "女士用泡沫洗头，着重展示泡沫的丰富度。展示产品包装上的文字介绍。",
+        "voiceover": "里面含有1.5倍高活去屑因子，搭配微米级泡沫。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:13",
+        "shot_type": "使用过程展示",
+        "visual_description": "女士用泡沫洗头，并进行冲洗，展示洗发过程。",
+        "voiceover": "就像一颗颗小磁铁，精准的吸附你头皮上的脏东西，不给你留死角，真正做到边清洁边养护。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:17",
+        "shot_type": "使用感受",
+        "visual_description": "女士用洗发水洗脸，展示洗完后的效果。",
+        "voiceover": "成分安心到直接上脸也不辣眼，每次洗头顺带把脸也一起洗了。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:21",
+        "shot_type": "使用后效果展示",
+        "visual_description": "女士吹干头发，梳头，展示头发的蓬松效果。",
+        "voiceover": "味道就是那种很安心的草本清香，帮助你去控油的同时还很蓬松。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:21-00:26",
+        "shot_type": "产品优势总结",
+        "visual_description": "女士整理头发，展示头发的蓬松度和清爽感，特写头皮状态。",
+        "voiceover": "随便你怎么抓怎么造，好几天不洗还是一粒不倒，想要快速洗头的，头发洗了上午就油的。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:26-00:28",
+        "shot_type": "产品展示和推荐",
+        "visual_description": "展示两瓶洗发水产品。",
+        "voiceover": "相信我，你真的可以给它一次机会！",
+        "music": "欢快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 8,
+      "total_duration_sec": 28,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 8,
+      "pacing_checked": 8,
+      "mean_chars_per_second": 7.17,
+      "max_chars_per_second": 9.25,
+      "distinct_shot_types": 8,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 6.0 chars/sec exceeds 4.0",
+      "shot 1: 8.0 chars/sec exceeds 4.0",
+      "shot 2: 6.7 chars/sec exceeds 4.0",
+      "shot 3: 9.2 chars/sec exceeds 4.0",
+      "shot 4: 6.5 chars/sec exceeds 4.0",
+      "shot 5: 6.8 chars/sec exceeds 4.0",
+      "shot 6: 7.2 chars/sec exceeds 4.0",
+      "shot 7: 7.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请创建潘婷护发素的短视频带货脚本，要求包含时间轴、镜头类型、画面描述、画外音及配乐。产品信息：潘婷乳液修护护发素，核心功能为：瞬间抚平毛躁、顺滑易梳、修复受损发质、提升发丝水光感。用户痛点包括头发干枯、打结难梳、白发增多。请通过分镜展示产品在洗护、护理、修复等场景的应用，并用对比手法呈现使用效果。",
+    "output": [
+      {
+        "time_axis": "00:00-00:02",
+        "shot_type": "痛点展示",
+        "visual_description": "一个穿着牛仔裤的女性背对镜头站立，她把胳膊抬起放在脑后，然后用手拨开头发，展示头发蓬松自然垂直的状态。",
+        "voiceover": "如果你也想背影自带女神滤镜",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:02-00:04",
+        "shot_type": "痛点展示",
+        "visual_description": "一只手拨动着一头干枯毛躁的头发，能看到很多白发",
+        "voiceover": "奈何一头长发不给力",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:04-00:07",
+        "shot_type": "产品特写",
+        "visual_description": "一只手拿着一瓶潘婷乳液修护护发素，展示产品包装和品牌logo。",
+        "voiceover": "不妨试试这个潘婷护发素吧",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:07-00:09",
+        "shot_type": "效果展示",
+        "visual_description": "将护发素涂抹在头发上",
+        "voiceover": "炸毛秒变绸缎秀发",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:09-00:11",
+        "shot_type": "产品特写",
+        "visual_description": "一只手拿着一瓶潘婷乳液修护护发素，展示护发素挤出来的状态",
+        "voiceover": "一梳顺到底",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:11-00:12",
+        "shot_type": "产品特写",
+        "visual_description": "一只手拿着一瓶潘婷乳液修护护发素，淋浴。",
+        "voiceover": "烫染枯发原地复活",
+        "music": "轻柔音乐"
+      },
+      {
+        "time_axis": "00:12-00:14",
+        "shot_type": "效果展示",
+        "visual_description": "展示使用后头发水润光泽的效果。",
+        "voiceover": "水光拉满",
+        "music": "轻柔音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 7,
+      "total_duration_sec": 14,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 3,
+      "pacing_checked": 7,
+      "mean_chars_per_second": 4.5,
+      "max_chars_per_second": 8.0,
+      "distinct_shot_types": 3,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 6.5 chars/sec exceeds 4.0",
+      "shot 1: 4.5 chars/sec exceeds 4.0",
+      "shot 5: 8.0 chars/sec exceeds 4.0"
+    ]
+  },
+  {
+    "input": "请生成半亩花田洗发水的短视频分镜方案，需明确时间轴、镜头类型、画面描述、画外音及背景音乐。产品卖点包括：天然成分温和护发、持久留香、蓬松效果显著。目标用户为头发易出油、洗后干涩、追求自然蓬松的群体，请在脚本中通过场景化展示解决这些痛点。",
+    "output": [
+      {
+        "time_axis": "00:00-00:03",
+        "shot_type": "产品展示",
+        "visual_description": "手持一瓶半亩花田洗发水，背景是浴缸，浴缸里漂浮着玫瑰花瓣，旁边有其他护肤品。",
+        "voiceover": "我一用这个洗发水，就会被别人问喷的什么香水，真的很香。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:03-00:05",
+        "shot_type": "头发状态展示",
+        "visual_description": "一个女人躺在床上，展示她又黑又亮的长发。",
+        "voiceover": "而且你看，泡沫非常的绵密。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:05-00:09",
+        "shot_type": "蓬松效果展示",
+        "visual_description": "女人对着镜子，用手把头发抓蓬松，展示头发的蓬松效果。",
+        "voiceover": "关键是用它洗完，真的巨巨巨蓬松。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:09-00:10",
+        "shot_type": "蓬松效果展示",
+        "visual_description": "女人对着镜子，用手把头发抓蓬松，展示头发的蓬松效果。",
+        "voiceover": "每根发丝就跟被雷劈了一样，根根分明。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:13",
+        "shot_type": "成分展示",
+        "visual_description": "手拿着半亩花田洗发水，镜头放大，展示洗发水的成分，并将洗发水倒在手背上。",
+        "voiceover": "看一下它的成分啊，真的很牛，天然霜植萃和玫瑰纯露因子。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:13-00:16",
+        "shot_type": "使用方法展示",
+        "visual_description": "女人用洗发水洗头，展示泡沫丰富，然后用水冲洗干净。",
+        "voiceover": "都是护肤的，拿来直接给你洗头了，就很养头皮。",
+        "music": "舒缓背景音乐"
+      },
+      {
+        "time_axis": "00:16-00:17",
+        "shot_type": "产品推荐",
+        "visual_description": "手持一瓶半亩花田洗发水，背景是浴缸，浴缸里漂浮着玫瑰花瓣，旁边有其他护肤品。",
+        "voiceover": "爱出油的宝子你就用它。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:20",
+        "shot_type": "控油效果展示",
+        "visual_description": "女人用手指分开头发，展示发根的蓬松状态，以及头发的清洁程度。",
+        "voiceover": "只要头皮养好了，就没那么爱出油了。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:20-00:22",
+        "shot_type": "最终效果展示",
+        "visual_description": "女人对着镜子，展示头发的蓬松和柔顺效果。",
+        "voiceover": "发根自然就站起来了，而且它洗完一点也不干涩。",
+        "music": "轻柔背景音乐"
+      },
+      {
+        "time_axis": "00:22-00:24",
+        "shot_type": "产品推荐",
+        "visual_description": "手持一瓶半亩花田洗发水，背景是浴缸，浴缸里漂浮着玫瑰花瓣，旁边有其他护肤品。",
+        "voiceover": "只要你用过一次，其他洗发水都不会再考虑了。",
+        "music": "轻柔背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 10,
+      "total_duration_sec": 24,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 9,
+      "pacing_checked": 10,
+      "mean_chars_per_second": 8.18,
+      "max_chars_per_second": 16.0,
+      "distinct_shot_types": 8,
+      "duplicate_descriptions": 3
+    },
+    "quality_warnings": [
+      "shot 0: 8.0 chars/sec exceeds 4.0",
+      "shot 1: 5.5 chars/sec exceeds 4.0",
+      "shot 3: 16.0 chars/sec exceeds 4.0",
+      "shot 4: 8.0 chars/sec exceeds 4.0",
+      "shot 5: 6.3 chars/sec exceeds 4.0",
+      "shot 6: 10.0 chars/sec exceeds 4.0",
+      "shot 7: 5.0 chars/sec exceeds 4.0",
+      "shot 8: 10.0 chars/sec exceeds 4.0",
+      "shot 9: 9.5 chars/sec exceeds 4.0",
+      "3 duplicate visual_description(s)"
+    ]
+  },
+  {
+    "input": "设计青蛙王子宝宝洗发水的短视频推广脚本，包含时间轴、镜头类型等五个要素。产品卖点：1.牛奶蛋白精华+马齿苋提取物配方 2.温和清洁 3.紫罗兰铃兰复合香型。需重点解决家长对0-6岁儿童洗发产品刺激性担忧的问题，突出适用年龄段和天然成分优势。",
+    "output": [
+      {
+        "time_axis": "00:00-00:04",
+        "shot_type": "产品介绍",
+        "visual_description": "一个男人站在桌子前，展示两瓶儿童洗发水，背景是节日装饰。",
+        "voiceover": "叫做青蛙王子宝宝的洗发水，是我们的牛奶蛋白精华加我们的马齿苋提取物的。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:04-00:10",
+        "shot_type": "产品介绍",
+        "visual_description": "男人用手指向自己的头发，并指向洗发水。",
+        "voiceover": "首先它这一款呢，就是如果大家在平时如果想要洗头发，能够比较好的清洁呢。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:10-00:17",
+        "shot_type": "产品优势",
+        "visual_description": "男人用手比划，强调产品的温和性。",
+        "voiceover": "而且很多小朋友他因为年纪比较小嘛，他其实是需要去比较温和这种清洁的。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:17-00:22",
+        "shot_type": "产品气味",
+        "visual_description": "男人闻洗发水，并展示享受的表情。",
+        "voiceover": "它这款呢实际上是泡沫的，这样这个先闻下什么味道。好香啊。",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:22-00:38",
+        "shot_type": "产品特点",
+        "visual_description": "男人用纸巾擦拭手，并介绍洗发水的香味。",
+        "voiceover": "哎，这很像以前那个某一款的洗发水的味道，就很香，它是有有一个复合香味，它有点紫罗兰和铃兰的香气，",
+        "music": "轻快背景音乐"
+      },
+      {
+        "time_axis": "00:38-00:46",
+        "shot_type": "适用年龄",
+        "visual_description": "男人用手指示意。",
+        "voiceover": "适合几岁呢？它这种适合是比如说六岁，六岁以下就是零岁到六岁之间。",
+        "music": "轻快背景音乐"
+      }
+    ],
+    "quality": {
+      "n_shots": 6,
+      "total_duration_sec": 46,
+      "gaps": 0,
+      "overlaps": 0,
+      "zero_duration": 0,
+      "bad_time": 0,
+      "empty_voiceover": 0,
+      "empty_music": 0,
+      "pacing_violations": 4,
+      "pacing_checked": 6,
+      "mean_chars_per_second": 4.91,
+      "max_chars_per_second": 8.25,
+      "distinct_shot_types": 5,
+      "duplicate_descriptions": 0
+    },
+    "quality_warnings": [
+      "fewer than 10 shots (app prompt asks for >= 10)",
+      "shot 0: 8.2 chars/sec exceeds 4.0",
+      "shot 1: 5.3 chars/sec exceeds 4.0",
+      "shot 2: 4.6 chars/sec exceeds 4.0",
+      "shot 3: 5.0 chars/sec exceeds 4.0"
+    ]
+  }
+]

@@ -1,84 +1,182 @@
-# SFT vs DPO vs BASE 效果对比评估报告
+# P0 修复与数据/评测报告
 
-> 测试环境：AutoDL RTX 3090 24GB，Gemma3 12B bf16
-> 测试脚本：`src/finetune/gemma3/eval_base.py`（base）、`eval_compare.py`（SFT/DPO）
-> 统一配置：temperature=0.8, top_p=0.9, max_new_tokens=700, use_cache=False
-> 客观指标：`src/evaluation/metrics.py`（可复现，无人工判断）
-> 原始输出日志：`evaluation/logs/cmp_base.log`、`cmp_sft.log`、`cmp_dpo.log`
+本报告记录 2026-10 这次 P0 修复的**可复现证据**。它替代原来的 3-prompt 报告（已移到
+`evaluation/legacy/REPORT_3PROMPT.md`）。
 
-## 一、测试提示词（3 个，覆盖不同业务难度）
+> 说明：本机没有 GPU / transformers，未在本机复跑 12B 模型。下面的“真实结果”包括：
+> 数据清洗、旧日志重打分、30-prompt harness 自检；真实模型 30-prompt 运行命令在最后，
+> 需要在 AutoDL/GPU 机器上执行。
 
-1. 海飞丝洗发水带货脚本，卖点去屑，需展示头皮清洁痛点（常规）
-2. 婴儿洗发水脚本，无泪配方温和，妈妈放心（情感向）
-3. 控油蓬松男士洗发水，目标用户油性头皮上班族，需突出性价比和即时效果（最难的细分人群题）
+---
 
-## 二、客观机器指标（`python3 src/evaluation/metrics.py <TAG> <log>`，谁跑都一样）
+## 1. 修复清单
 
-| 提示词 | 模型 | #镜头 | JSON合法 | 卖点命中 | 类型多样性 | 时间轴单调 | 空口播 | 品牌虚构 |
-|---|---|---|---|---|---|---|---|---|
-| 海飞丝 | **BASE** | 6 | ❌截断 | 3/3 | 3 | ✅ | 0 | 无 |
-| 海飞丝 | SFT | 5 | ✅ | 3/3 | 2 | ✅ | 0 | 无 |
-| 海飞丝 | DPO | **7** | ❌截断 | 2/3 | 3 | ✅ | 0 | 无 |
-| 婴儿 | **BASE** | 6 | ❌截断 | 4/4 | 3 | ✅ | 0 | 无 |
-| 婴儿 | SFT | 7 | ✅ | 3/4 | 3 | ✅ | 0 | **有(贝德美)** |
-| 婴儿 | DPO | **7** | ❌截断 | **4/4** | 3 | ✅ | 0 | 无 |
-| 男士 | **BASE** | 6 | ❌截断 | 3/4 | 4 | ✅ | 0 | 无 |
-| 男士 | SFT | 8 | ✅ | 2/4 | **5** | ✅ | 0 | 无 |
-| 男士 | DPO | 6 | ❌截断 | 3/4 | 3 | ✅ | 0 | 无 |
+| 问题 | 修复 |
+|---|---|
+| `run_app.py` import 不存在的 `demo` | `build_app()` 工厂；`run_app` 只 import 工厂 |
+| `form_ui.py` 缺 `import os` | 改为 `chat_ui` 兼容包装 |
+| 异常无限递归重试 | 有限次重试；失败返回结构化错误 |
+| Demo 用 Ollama base 冒充微调模型 | 新增 Ollama / transformers 双后端；支持 SFT+DPO |
+| DPO 只保存新 adapter，eval 只 load DPO | 保存 `sft_adapter/` + `dpo_adapter/` + `composition.json`；新增 merge 脚本 |
+| `transformers<4.49` 不支持 Gemma 3 | 训练依赖改为 `transformers>=4.50,<4.52` |
+| config 是 DeepSeek-1.5B | 统一为 Gemma 3 配置 |
+| 旧 unsloth/3-prompt 脚本误导 | 移到 `legacy/` |
+| 数据空口播/0 秒/时间断裂 | `scripts/clean_data.py` 质量门 |
+| DPO val 来自 SFT train | DPO train/val 分别从清洗后的 SFT train/val 构造 |
+| `temperature` 无 `do_sample` | `TransformersBackend` 显式 `do_sample=True` |
+| 旧 metrics 把截断当合法/把字段完整当时间单调 | 重写 `src/evaluation/metrics.py` |
 
-> JSON"合法"列的 ❌ 均为 **700 tokens 截断**（镜头写到一半被切断），不是格式错误——
-> base 和 DPO 都输出更长、更完整，SFT 输出较短所以在 700 内写完。截断本身说明内容密度更高。
-> **机器指标中最有价值的客观差异：base 含 3 个"成分占位符"（如 `[核心成分，例如：新一代去屑活性成分]`），SFT/DPO 全部填实。SFT 婴儿题虚构了"贝德美"品牌（唯一虚构案例）。**
+---
 
-## 三、SFT 是否有收益（base 对照结论）
+## 2. 数据清洗结果（真实运行）
 
-| 维度 | BASE | SFT | 结论 |
-|---|---|---|---|
-| 成分占位符 | **3 个**（`[核心成分，例如：...]`） | 0 | **SFT 有收益**（学会填实成分） |
-| 品牌虚构 | 无 | **有（贝德美）** | SFT 倒退（唯一硬伤） |
-| 镜头数 | 6/6/6 | 5/7/8 | 相当 |
-| 镜头类型多样性 | 3/3/4 | 2/3/5 | 相当 |
-| 卖点命中 | 3/3,4/4,3/4 | 3/3,3/4,2/4 | 相当 |
-
-**结论：SFT 有真实收益——消除了占位符（输出从"半成品"变"成品"），但代价是婴儿题虚构品牌。DPO 在 SFT 基础上修复了品牌虚构，同时保持成分填实、卖点命中最高。**
-
-## 五、业务质量评估（5 分制，AI 评审：读日志逐镜头打分，用户可复核原始日志）
-
-| 维度 | SFT | DPO | 说明 |
-|---|---|---|---|
-| 痛点开场真实性 | 2 | **5** | SFT 直接展示产品；DPO 用"挠头皮+表情痛苦+镜子前沮丧"真实具象 |
-| 广告叙事完整度（AIDA） | 2 | **5** | SFT 常"痛点未立住就上产品"；DPO 三题均"痛点→引入→使用→效果"闭环 |
-| 分镜语言专业性 | 3 | **4** | DPO 用 CU/MS/WS/ECU 且类型多样；SFT 大量"产品展示"重复 |
-| 目标用户共情 | 2 | **5** | 男士题 SFT 沦为直播间话术"把关筛选下单"；DPO 精准抓住"上班族每天半小时整理头发" |
-| 品牌合规（不虚构） | 3 | **5** | SFT 婴儿题编造"贝德美"品牌；DPO 用"[产品名称]"占位 |
-| 音乐/节奏匹配 | 2 | **4** | SFT 全程单一背景音乐；DPO 逐镜头情绪递进 |
-
-**加权总分（痛点 20% + 叙事 25% + 分镜 15% + 共情 20% + 合规 10% + 音乐 10%）**
-
-- SFT：2×0.2 + 2×0.25 + 3×0.15 + 2×0.2 + 3×0.1 + 2×0.1 = **2.25**
-- DPO：5×0.2 + 5×0.25 + 4×0.15 + 5×0.2 + 5×0.1 + 4×0.1 = **4.75**
-
-**结论：DPO 在广告业务质量上显著优于 SFT（2.25 → 4.75）。**
-
-## 六、结论与限制
-
-1. **微调（SFT）有收益**：消除了 base 的"成分占位符"（`[核心成分，例如：...]`）半成品输出；
-   base 本身分镜能力不差（痛点开场、镜头语言都在线），但会留占位符、格式不稳定。
-2. **DPO 在 SFT 基础上修复了品牌虚构**：SFT 婴儿题编造"贝德美"，DPO 无虚构，
-   且卖点命中最高（4/4）。DPO 业务质量显著优于 SFT（AI 评审 2.25 → 4.75）。
-3. **数据限制**：DPO 偏好数据是程序注入缺陷的合成对（见 `src/data/prepare_dpo_data.py`），
-   模型学到的主要是"避免空口播/黑屏转场/时间轴断裂"等硬伤，这是提升的核心来源；
-   "叙事更好"部分是避免缺陷的副产品。若需更强的广告创意提升，建议 RLAIF 或人工偏好标注。
-4. **工程限制**：bf16 推理单段生成上限 700 tokens（24GB 显存天花板），DPO/base 长输出会截断；
-   后续可分段续写或升级显存/量化方案解决。
-
-## 七、复现方法
+命令：
 
 ```bash
-python src/finetune/gemma3/eval_base.py > evaluation/logs/cmp_base.log
-python src/finetune/gemma3/eval_compare.py <sft_adapter> SFT > evaluation/logs/cmp_sft.log
-python src/finetune/gemma3/eval_compare.py <dpo_adapter> DPO > evaluation/logs/cmp_dpo.log
-python src/evaluation/metrics.py BASE evaluation/logs/cmp_base.log
-python src/evaluation/metrics.py SFT  evaluation/logs/cmp_sft.log
-python src/evaluation/metrics.py DPO  evaluation/logs/cmp_dpo.log
+python scripts/clean_data.py
 ```
+
+质量门：≥5 镜、五字段非空、时间轴连续、时长 > 0；口播 3–4 字/秒默认只警告。
+
+| 数据集 | 原始 | 保留 | 剔除 | 通过率 |
+|---|---:|---:|---:|---:|
+| SFT train | 1,275 | **528** | 735 | 41.8% |
+| SFT val | 142 | **59** | 83 | 41.5% |
+| DPO train | — | **528 对** | 0 | — |
+| DPO val | — | **59 对** | 0 | — |
+
+> 12 条重复输出被去重，所以 `528 + 735 = 1,263`，不是 1,275。
+
+原始数据的机械问题（清洗前）：
+
+| 检查项 | 数量 |
+|---|---:|
+| 空/占位口播 | 1,023 / 10,334 镜头（9.9%） |
+| 音乐缺失/“无” | 2,034 / 10,334（19.7%） |
+| 0 秒镜头 | 177 |
+| 时间轴断裂 / 重叠 | 216 / 35 |
+| 口播 >4 字/秒 | 7,477 / 9,580（78.0%）；中位 5.75 字/秒 |
+| ≥10 镜 | 346 / 1,275（27.1%） |
+| ≥10 镜 + 五字段 + 连续（语速只警告） | 95 / 1,275（7.5%） |
+| 再加语速 ≤4 字/秒硬门槛 | 0 / 1,275 |
+
+清洗后的残留问题：
+
+| 指标 | 清洗后 |
+|---|---:|
+| 空口播 / 0 秒 / 时间断裂 | 0（已被质量门过滤） |
+| 口播 >4 字/秒 | **3,328 / 4,049（82.2%）** |
+| ≥10 镜 | **95 / 528（18.0%）** |
+
+所以清洗解决的是“空/断/0 秒”这类硬伤，**没有解决节奏和结构**；后者需要重写口播/重新分配时间轴，不能靠过滤。
+
+完整报告：`data/clean/QUALITY_REPORT.md`；机器可读：`data/clean/quality_report.json`。
+
+**重要**：清洗只解决“能不能拍”的机械问题，不解决“创意好不好”。528 条仍偏小，
+下一步应补充人工精选/改写，而不是继续放大 DPO 轮数。
+
+---
+
+## 3. 旧日志重打分（真实运行）
+
+用新指标重打 `evaluation/logs/cmp_*.log`：
+
+| 模型 | JSON 合法 | Schema 合法 | 完整脚本（≥10 镜） | 截断 | 平均镜头 |
+|---|---:|---:|---:|---:|---:|
+| BASE | 0/3 | 0/3 | 0/3 | 3/3 | 0 |
+| SFT | 3/3 | 3/3 | 0/3 | 0/3 | 6.67 |
+| DPO | 0/3 | 0/3 | 0/3 | 3/3 | 0 |
+
+结论：
+
+- 旧报告说“DPO 业务质量 4.75，显著优于 SFT 2.25”，但 DPO 的 3 条输出全部是**截断的非法 JSON**；
+  对产品来说这是硬失败，不是“内容密度更高”。
+- SFT 的优势是格式：3/3 合法，但平均只有 6.67 镜，不满足 app prompt 的 ≥10。
+- 旧 DPO 日志的风格（fenced JSON、`0:00`、`CU`）也更像 base，而不是 SFT；与
+  “DPO adapter 单独 load 到 base”的代码路径一致。
+
+重打分结果（本地生成，gitignore）：`evaluation/results/legacy_rescored/*.json`。
+
+---
+
+## 4. 30-prompt 评测集
+
+文件：`evaluation/prompts_30.json`。30 条，覆盖：
+
+- 品牌：海飞丝、清扬、潘婷、霸王
+- 人群：男士、儿童、婴儿、孕产、学生党、上班族
+- 功效：去屑、控油、蓬松、修护、防脱（合规约束）
+- 场景：旅行、健身房、夏季、冬季、直播、新品、对比
+- 风险：白牌不得虚构品牌、防脱不得医疗承诺、英文输入要求中文 JSON
+
+每条包含：`id`、`category`、`prompt`、`expected_brand`、`required_keywords`、
+`forbidden_brands`、`min_shots`、`target_duration_sec`、`notes`。
+
+### Harness 自检（mock，不代表模型质量）
+
+```bash
+python scripts/run_eval.py --backend mock --out-dir evaluation/results/mock_30
+```
+
+30 条全部跑通；mock 故意一半合法、一半截断，得到：
+
+| 指标 | 值 |
+|---|---:|
+| JSON 合法率 | 50.0% |
+| 完整脚本率 | 50.0% |
+| 截断率 | 50.0% |
+| 平均镜头数 | 5.0 |
+
+这验证了“截断会被识别为失败”，而不是被当成合法 JSON。
+
+### 真实模型运行（待 GPU）
+
+```bash
+python scripts/run_eval.py --backend transformers \
+  --base-model /root/autodl-tmp/models/LLM-Research--gemma-3-12b-it/snapshots/master \
+  --sft-adapter /root/autodl-tmp/outputs/gemma3_sft/final \
+  --dpo-adapter /root/autodl-tmp/outputs/gemma3_dpo/final/dpo_adapter \
+  --max-new-tokens 700 \
+  --out-dir evaluation/results/sft_dpo
+```
+
+建议同时跑：
+
+1. `--merged-model`：最终部署组合。
+2. `--backend ollama --model ...`：Demo 实际模型。
+3. base（不带 adapter）：确认 SFT/DPO 的增量。
+
+---
+
+## 5. 指标定义
+
+| 指标 | 含义 |
+|---|---|
+| `json_valid` | 完整 JSON 可解析；截断为 false |
+| `schema_valid` | 五字段、时间轴、空口播/空音乐等机械校验 |
+| `complete_script` | schema 合法且镜头数 ≥ prompt 的 `min_shots` |
+| `truncated` | `finish_reason=length` 或明显未闭合 JSON |
+| `gaps` / `overlaps` | 时间轴断裂/重叠 |
+| `zero_duration` | 0 秒或负时长镜头 |
+| `pacing_violations` | 去掉标点后 >4 字/秒的镜头数 |
+| `keyword_coverage` | 只从合法 JSON 内容统计，避免正文“提到关键词”骗分 |
+| `forbidden_brand_hits` | prompt 未指定品牌时，输出中出现的品牌 |
+| `latency_p50/p95` | 端到端生成延迟 |
+
+---
+
+## 6. 验收
+
+```bash
+python -m unittest discover -s tests -v       # 23 passed
+python scripts/clean_data.py                  # 528 / 59 + DPO 528 / 59
+python scripts/run_eval.py --backend mock --out-dir evaluation/results/mock_30
+```
+
+通过标准：
+
+- 测试全绿；
+- `data/clean` 可重复生成，`quality_report.json` hash 稳定；
+- mock 30 条能完整跑完并输出 report；
+- `scripts/run_app.py` 在安装 `requirements.txt` 后可 import/启动；
+- 真实 30-prompt 结果出来后，报告 `summary.json` 而不是只贴 3 条样本。
