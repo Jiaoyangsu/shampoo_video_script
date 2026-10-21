@@ -1,0 +1,3 @@
+# Apple Silicon (MLX) small-model experiments only; not for the 12B Gemma run.
+-r requirements.txt
+mlx-lm>=0.32.0,<1.0.0
