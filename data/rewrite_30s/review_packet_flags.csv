@@ -1,0 +1,16 @@
+id,split,flags_for_after_review
+rw-0009-4ca70b06,train,
+rw-0014-51681d76,train,
+rw-0031-54411f2e,train,
+rw-0013-91d36de5,train,
+rw-0044-0007da99,train,generic_cta
+rw-0018-e0314f1d,train,generic_cta
+rw-0026-65c2275f,train,generic_cta
+rw-0032-cbaa463d,train,short_visual
+rw-0016-dd6f7bc2,train,short_visual
+rw-0023-1aed6e62,train,"generic_cta,short_visual"
+rw-0004-3ea4249f,val,
+rw-0013-48037e16,val,
+rw-0000-850e2e39,val,generic_cta
+rw-0007-02423ecf,val,generic_cta
+rw-0005-e2fd377b,val,short_visual

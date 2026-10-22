@@ -222,6 +222,12 @@ python scripts/summarize_rewrite.py --dir data/rewrite_30s --split train
 `generic_cta` 33/50、`short_visual` 23/50、`duplicate_voiceover` 3/50。
 这说明它已经是“能拍的格式草稿”，但还不是“能直接用的好文案”。
 
+抽检入口：
+
+- 阅读/评分包：[data/rewrite_30s/review_packet.md](data/rewrite_30s/review_packet.md)
+- 填写表：[data/rewrite_30s/review_packet.csv](data/rewrite_30s/review_packet.csv)
+- 抽检方法：[data/rewrite_30s/REVIEW_GUIDE.md](data/rewrite_30s/REVIEW_GUIDE.md)
+
 ### Mac 训练可行性
 
 - 12B QLoRA：Mac 24GB **不可行**（权重 + 4bit/CUDA 依赖）。
