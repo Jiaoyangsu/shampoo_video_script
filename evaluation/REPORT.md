@@ -77,6 +77,27 @@ python scripts/clean_data.py
 
 ---
 
+## 2.5 30 秒重写 pilot（真实运行）
+
+针对“82.2% 语速超标 / 只有 18% ≥10 镜”的问题，新增了 `scripts/rewrite_data.py`：
+
+- 输入：`data/clean`
+- 模型：本地 `qwen2.5:14b`（Ollama JSON schema）
+- 目标：30 秒、10–12 镜、每镜 8–12 字、≤4 字/秒
+- 后处理：按目标时长确定性重排时间轴；口播太长导致放不下的样本会被拒绝
+- 输出：`data/rewrite_30s/`
+
+pilot 结果：
+
+| split | 接受 | 拒绝 | 机械校验 |
+|---|---:|---:|---|
+| train | 50 | 0 | 10–12 镜、30s、0 语速超标 |
+| val | 15 | 0 | 10–12 镜、30s、0 语速超标 |
+
+抽检表：`data/rewrite_30s/train_review.csv`、`val_review.csv`。
+当前 flags：`generic_cta` 33/50、`short_visual` 23/50、`duplicate_voiceover` 3/50。
+这说明它已经是可拍的格式草稿，但**创意质量仍需人工抽检**；抽检后再扩到 200 条并重训。
+
 ## 3. 旧日志重打分（真实运行）
 
 用新指标重打 `evaluation/logs/cmp_*.log`：
@@ -168,7 +189,7 @@ python scripts/run_eval.py --backend transformers \
 ## 6. 验收
 
 ```bash
-python -m unittest discover -s tests -v       # 23 passed
+python -m unittest discover -s tests -v       # 27 passed
 python scripts/clean_data.py                  # 528 / 59 + DPO 528 / 59
 python scripts/run_eval.py --backend mock --out-dir evaluation/results/mock_30
 ```

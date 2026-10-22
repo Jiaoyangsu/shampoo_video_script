@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-10-22T03:44:21.831413+00:00",
+  "split": "train",
+  "accepted": 50,
+  "rejected": 0,
+  "accept_rate": 1.0,
+  "failure_reasons": {},
+  "config": {
+    "target_duration_sec": 30,
+    "min_shots": 10,
+    "max_shots": 12
+  }
+}

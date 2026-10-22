@@ -14,7 +14,7 @@
 4. **修依赖/配置/入口的三套系统**：`requirements.txt` 只放核心工具，训练依赖拆到 `requirements-train.txt`；`config/finetune_config.yaml` 统一为 Gemma 3；`scripts/run_finetune.py` 真正调度 Gemma 3 SFT/DPO。
 5. **数据清洗 + 质量门**：`scripts/clean_data.py` 过滤空口播、0 秒镜头、时间轴断裂、空音乐等问题，并从清洗后的 SFT train/val 分别构造 DPO，修掉原 DPO val 泄漏。
 6. **30-prompt 可复现评测**：新增 `evaluation/prompts_30.json`、`scripts/run_eval.py`、重写的 `src/evaluation/metrics.py`；记录 seed、prompt hash、git commit、延迟、finish_reason，输出 `raw.jsonl` / `summary.json` / `report.md`。
-7. **测试与 CI**：23 个 stdlib `unittest`，覆盖 schema、数据清洗、DPO 构造、指标、prompt 文件、入口 import；GitHub Actions 跑测试 + 数据检查 + mock 评测。
+7. **测试与 CI**：27 个 stdlib `unittest`，覆盖 schema、数据清洗、DPO 构造、指标、prompt 文件、入口 import；GitHub Actions 跑测试 + 数据检查 + mock 评测。
 8. **旧代码隔离**：原 3-prompt 评测、旧 unsloth 脚本移到 `legacy/` 和 `evaluation/legacy/`，避免继续误导。
 
 ---
@@ -35,6 +35,8 @@ shampoo_video_script/
 ├── legacy/                       # 旧 unsloth / 3-prompt 脚本（不维护）
 ├── scripts/
 │   ├── clean_data.py             # 数据清洗 + 构造 DPO
+│   ├── rewrite_data.py           # 30s/10-12 镜重写（Ollama）
+│   ├── summarize_rewrite.py      # 重写结果汇总 + 人工抽检表
 │   ├── run_eval.py               # 30-prompt 评测入口
 │   ├── run_app.py                # Gradio 入口
 │   ├── run_inference.py          # 单次推理
@@ -194,6 +196,32 @@ python scripts/run_app.py
 - **未解决**：口播时长（82.2% 仍 >4 字/秒）和镜头数（只有 18.0% ≥10 镜）。
 - 这两个问题不能靠过滤解决：≥10 镜的 95 条，按 4 字/秒重排时间轴后中位数需要 **52 秒**，超过 30 秒目标；必须重写更短的口播或接受更长视频。
 
+### 30 秒重写数据（草稿）
+
+在 `data/clean` 之上新增了 `data/rewrite_30s/`：
+
+```bash
+# 试点 20 条（可断点续跑）
+python scripts/rewrite_data.py --limit 20 --out-dir data/rewrite_30s --resume
+# 汇总 + 生成人工抽检表
+python scripts/summarize_rewrite.py --dir data/rewrite_30s --split train
+```
+
+重写目标：10–12 镜、28–32 秒、每镜 8–12 字口播、≤4 字/秒、只输出 JSON。
+生成后会用 `src/script_schema.py` 自动校验，不合格会重试；时间轴会按目标时长
+做确定性重排。
+
+当前 pilot 结果：
+
+| split | 接受 | 拒绝 | 机械校验 |
+|---|---:|---:|---|
+| train | 50 | 0 | 10–12 镜、30s、0 语速超标 |
+| val | 15 | 0 | 10–12 镜、30s、0 语速超标 |
+
+**内容仍需人工抽检**，抽检表在 `data/rewrite_30s/train_review.csv`。当前 flags：
+`generic_cta` 33/50、`short_visual` 23/50、`duplicate_voiceover` 3/50。
+这说明它已经是“能拍的格式草稿”，但还不是“能直接用的好文案”。
+
 ### Mac 训练可行性
 
 - 12B QLoRA：Mac 24GB **不可行**（权重 + 4bit/CUDA 依赖）。
@@ -241,7 +269,7 @@ python scripts/run_app.py
 ## 验收命令
 
 ```bash
-python -m unittest discover -s tests -v       # 23 passed
+python -m unittest discover -s tests -v       # 27 passed
 python scripts/clean_data.py                  # 528 / 59 + DPO 528 / 59
 python scripts/run_eval.py --backend mock --out-dir evaluation/results/mock_30
 python -c "from scripts.run_app import build_app; print(callable(build_app))"
