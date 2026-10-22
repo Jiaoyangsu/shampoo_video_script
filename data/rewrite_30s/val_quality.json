@@ -1,9 +1,10 @@
 {
-  "created_at": "2026-10-22T03:44:21.877883+00:00",
+  "created_at": "2026-10-22T07:31:08.640529+00:00",
   "split": "val",
   "accepted": 15,
   "rejected": 0,
-  "accept_rate": 1.0,
+  "excluded_by_human_review": 1,
+  "accept_rate": 0.9333,
   "failure_reasons": {},
   "config": {
     "target_duration_sec": 30,

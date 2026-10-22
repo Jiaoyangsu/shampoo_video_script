@@ -28,6 +28,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from src.data.rewrite import (  # noqa: E402
     OllamaRewriteClient,
     convert_for_training,
+    detect_explicit_duration,
     rewrite_one,
 )
 
@@ -133,6 +134,28 @@ def main(argv: Sequence[str] | None = None) -> int:
         row_id = _row_id(row, args.offset + index - 1)
         if row_id in done_ids:
             print("[%d/%d] skip %s" % (index, len(selected), row_id))
+            continue
+        explicit_duration = detect_explicit_duration(row.get("input", ""))
+        if explicit_duration and abs(explicit_duration - args.target_duration) > 5:
+            item = {
+                "id": row_id,
+                "source_index": args.offset + index - 1,
+                "input": row["input"],
+                "attempts": [
+                    {
+                        "attempt": 0,
+                        "ok": False,
+                        "errors": [
+                            "duration conflict: brief asks %ss, target is %ss"
+                            % (explicit_duration, args.target_duration)
+                        ],
+                    }
+                ],
+                "model": args.model,
+            }
+            rejected.append(item)
+            _append_jsonl(rejected_path, item)
+            print("  SKIP duration conflict %ss" % explicit_duration, flush=True)
             continue
         print("[%d/%d] rewrite %s" % (index, len(selected), row_id), flush=True)
         result = rewrite_one(

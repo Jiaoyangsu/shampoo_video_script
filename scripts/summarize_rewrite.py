@@ -28,12 +28,26 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dir", default="data/rewrite_30s")
     parser.add_argument("--split", default="train")
+    parser.add_argument(
+        "--review",
+        default=None,
+        help="review_packet.csv; rows with decision=reject are excluded",
+    )
     args = parser.parse_args(argv)
 
     root = Path(args.dir)
     accepted = read_jsonl(root / ("%s_accepted.jsonl" % args.split))
     rejected = read_jsonl(root / ("%s_rejected.jsonl" % args.split))
-    train = convert_for_training(accepted)
+    review_rejects = set()
+    review_path = Path(args.review) if args.review else (root / "review_packet.csv")
+    if review_path.exists():
+        with review_path.open(encoding="utf-8", newline="") as handle:
+            for row in csv.DictReader(handle):
+                if row.get("decision", "").strip().lower() == "reject":
+                    review_rejects.add(row["id"])
+    kept = [row for row in accepted if row["id"] not in review_rejects]
+    excluded = len(accepted) - len(kept)
+    train = convert_for_training(kept)
     (root / ("%s.json" % args.split)).write_text(
         json.dumps(train, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -51,7 +65,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         "split": args.split,
         "accepted": len(accepted),
         "rejected": len(rejected),
-        "accept_rate": round(len(accepted) / max(1, len(accepted) + len(rejected)), 4),
+        "excluded_by_human_review": excluded,
+        "accept_rate": round(len(kept) / max(1, len(accepted) + len(rejected)), 4),
         "failure_reasons": reasons,
         "config": {
             "target_duration_sec": 30,
@@ -79,7 +94,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 "input",
             ]
         )
-        for row in accepted:
+        for row in kept:
             shots = row.get("output", [])
             metrics = validate_script(
                 shots, min_shots=1, require_music=True, enforce_pacing=False

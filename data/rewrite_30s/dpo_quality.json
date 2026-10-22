@@ -1,0 +1,32 @@
+{
+  "train": {
+    "pairs": 54,
+    "skipped": 0,
+    "defect_counts": {
+      "empty_voiceover": 6,
+      "missing_music": 7,
+      "zero_duration": 8,
+      "broken_time": 6,
+      "wrong_shot_type": 7,
+      "shuffle_order": 9,
+      "duplicate_shot": 7,
+      "bad_pacing": 4
+    },
+    "seed": 3407
+  },
+  "val": {
+    "pairs": 14,
+    "skipped": 0,
+    "defect_counts": {
+      "empty_voiceover": 1,
+      "missing_music": 1,
+      "zero_duration": 2,
+      "broken_time": 1,
+      "wrong_shot_type": 4,
+      "shuffle_order": 1,
+      "duplicate_shot": 4,
+      "bad_pacing": 0
+    },
+    "seed": 3408
+  }
+}

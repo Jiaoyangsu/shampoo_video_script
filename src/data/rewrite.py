@@ -142,6 +142,19 @@ class RewriteResult:
         }
 
 
+def detect_explicit_duration(text: str) -> Optional[int]:
+    """Return an explicit duration in seconds, if the brief states one."""
+    import re
+
+    match = re.search(r"(\d{1,3})\s*(?:秒|s\b)", text or "", re.I)
+    if match:
+        return int(match.group(1))
+    match = re.search(r"00:00\s*-\s*00:(\d{2})", text or "")
+    if match:
+        return int(match.group(1))
+    return None
+
+
 def _brands_in(text: str) -> List[str]:
     lower = (text or "").lower()
     return [brand for brand in KNOWN_BRANDS if brand.lower() in lower]

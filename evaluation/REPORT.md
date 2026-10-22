@@ -91,11 +91,11 @@ pilot 结果：
 
 | split | 接受 | 拒绝 | 机械校验 |
 |---|---:|---:|---|
-| train | 50 | 0 | 10–12 镜、30s、0 语速超标 |
-| val | 15 | 0 | 10–12 镜、30s、0 语速超标 |
+| train | 57 accepted → 54 after review | 3 by review | 10–12 镜、30s、0 语速超标 |
+| val | 15 accepted → 14 after review | 1 by review | 10–12 镜、30s、0 语速超标 |
 
 抽检表：`data/rewrite_30s/train_review.csv`、`val_review.csv`。
-当前 flags：`generic_cta` 33/50、`short_visual` 23/50、`duplicate_voiceover` 3/50。
+当前 flags：`generic_cta` 37/54、`short_visual` 22/54、`duplicate_voiceover` 4/54。
 这说明它已经是可拍的格式草稿，但**创意质量仍需人工抽检**；抽检后再扩到 200 条并重训。
 
 ## 3. 旧日志重打分（真实运行）

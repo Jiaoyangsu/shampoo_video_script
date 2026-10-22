@@ -215,11 +215,12 @@ python scripts/summarize_rewrite.py --dir data/rewrite_30s --split train
 
 | split | 接受 | 拒绝 | 机械校验 |
 |---|---:|---:|---|
-| train | 50 | 0 | 10–12 镜、30s、0 语速超标 |
-| val | 15 | 0 | 10–12 镜、30s、0 语速超标 |
+| train | 57 accepted → **54 after review** | 3 by review | 10–12 镜、30s、0 语速超标 |
+| val | 15 accepted → **14 after review** | 1 by review | 10–12 镜、30s、0 语速超标 |
 
 **内容仍需人工抽检**，抽检表在 `data/rewrite_30s/train_review.csv`。当前 flags：
-`generic_cta` 33/50、`short_visual` 23/50、`duplicate_voiceover` 3/50。
+`generic_cta` 37/54、`short_visual` 22/54、`duplicate_voiceover` 4/54。
+人工抽检 15 条：`11 edit / 4 reject`，`pass + edit = 73.3%`。
 这说明它已经是“能拍的格式草稿”，但还不是“能直接用的好文案”。
 
 抽检入口：
@@ -227,6 +228,7 @@ python scripts/summarize_rewrite.py --dir data/rewrite_30s --split train
 - 阅读/评分包：[data/rewrite_30s/review_packet.md](data/rewrite_30s/review_packet.md)
 - 填写表：[data/rewrite_30s/review_packet.csv](data/rewrite_30s/review_packet.csv)
 - 抽检方法：[data/rewrite_30s/REVIEW_GUIDE.md](data/rewrite_30s/REVIEW_GUIDE.md)
+- 当前训练状态：[docs/TRAINING_STATUS.md](docs/TRAINING_STATUS.md)
 
 ### Mac 训练可行性
 
