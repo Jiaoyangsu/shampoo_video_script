@@ -14,8 +14,9 @@
 4. **修依赖/配置/入口的三套系统**：`requirements.txt` 只放核心工具，训练依赖拆到 `requirements-train.txt`；`config/finetune_config.yaml` 统一为 Gemma 3；`scripts/run_finetune.py` 真正调度 Gemma 3 SFT/DPO。
 5. **数据清洗 + 质量门**：`scripts/clean_data.py` 过滤空口播、0 秒镜头、时间轴断裂、空音乐等问题，并从清洗后的 SFT train/val 分别构造 DPO，修掉原 DPO val 泄漏。
 6. **30-prompt 可复现评测**：新增 `evaluation/prompts_30.json`、`scripts/run_eval.py`、重写的 `src/evaluation/metrics.py`；记录 seed、prompt hash、git commit、延迟、finish_reason，输出 `raw.jsonl` / `summary.json` / `report.md`。
-7. **测试与 CI**：27 个 stdlib `unittest`，覆盖 schema、数据清洗、DPO 构造、指标、prompt 文件、入口 import；GitHub Actions 跑测试 + 数据检查 + mock 评测。
+7. **测试与 CI**：29 个 stdlib `unittest`，覆盖 schema、数据清洗、DPO 构造、指标、prompt 文件、入口 import；GitHub Actions 跑测试 + 数据检查 + mock 评测。
 8. **旧代码隔离**：原 3-prompt 评测、旧 unsloth 脚本移到 `legacy/` 和 `evaluation/legacy/`，避免继续误导。
+9. **训练配置修正**：自动选择 bf16/fp16；system prompt 压缩到 592 字符；duration/shots 进入 SFT/DPO prompt；DPO 长度改为 2048/1024；eval/save 改为 5 步。
 
 ---
 
@@ -277,7 +278,7 @@ python scripts/summarize_rewrite.py --dir data/rewrite_30s --split train
 ## 验收命令
 
 ```bash
-python -m unittest discover -s tests -v       # 27 passed
+python -m unittest discover -s tests -v       # 29 passed
 python scripts/clean_data.py                  # 528 / 59 + DPO 528 / 59
 python scripts/run_eval.py --backend mock --out-dir evaluation/results/mock_30
 python -c "from scripts.run_app import build_app; print(callable(build_app))"

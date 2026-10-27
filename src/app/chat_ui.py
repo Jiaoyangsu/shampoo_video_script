@@ -14,6 +14,7 @@ from typing import Any, Optional, Tuple
 
 import gradio as gr
 
+from src.finetune.prompting import build_user_content
 from src.inference.backends import (
     Backend,
     BackendConfigError,
@@ -31,14 +32,8 @@ DEFAULT_MAX_NEW_TOKENS = int(os.environ.get("SCRIPT_MAX_NEW_TOKENS", "700"))
 
 
 def _instruction(description: str, duration: int) -> str:
-    return (
-        "请基于以下产品介绍，创作一个短视频带货分镜脚本，时长约 %ds。\n"
-        "脚本需包含多个镜头，每个镜头都要有 time_axis（时间轴）、"
-        "shot_type（镜头类型）、visual_description（画面描述）、"
-        "voiceover（口播）和 music（背景音乐）。\n"
-        "只输出 JSON 列表，不要输出任何额外文本。\n\n"
-        "产品介绍：\n%s" % (duration, description.strip())
-    )
+    # Same shape as SFT/DPO training: target duration/shots + product brief.
+    return build_user_content(description, duration=duration, shots="10–12")
 
 
 def _parse(raw: str) -> Tuple[Optional[Any], str]:

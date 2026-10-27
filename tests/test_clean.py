@@ -46,6 +46,8 @@ class CleanTests(unittest.TestCase):
             self.assertGreater(pair["rejected_defects"], pair["chosen_defects"])
             self.assertIn(pair["defect"], DEFECT_TYPES)
             self.assertEqual(pair["chosen"], rows[pairs.index(pair)]["output"])
+            self.assertEqual(pair["target_duration_sec"], 30)
+            self.assertEqual(pair["target_shots"], 10)
 
 
 if __name__ == "__main__":

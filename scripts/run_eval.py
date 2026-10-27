@@ -49,6 +49,7 @@ from src.evaluation.metrics import (  # noqa: E402
     score_output,
     summarize,
 )
+from src.finetune.prompting import build_user_content  # noqa: E402
 from src.inference.backends import (  # noqa: E402
     BackendConfigError,
     MockBackend,
@@ -162,9 +163,17 @@ def run(args: argparse.Namespace) -> Dict[str, Any]:
             started = time.time()
             error = None
             try:
+                target_duration = spec.get("target_duration_sec", 30)
+                if isinstance(target_duration, (list, tuple)):
+                    target_duration = int(sum(target_duration) / len(target_duration))
+                user_prompt = build_user_content(
+                    spec["prompt"],
+                    duration=int(target_duration),
+                    shots="%s–12" % spec.get("min_shots", 10),
+                )
                 result = backend.generate(
                     system_prompt,
-                    spec["prompt"],
+                    user_prompt,
                     max_new_tokens=args.max_new_tokens,
                     temperature=args.temperature,
                     top_p=args.top_p,

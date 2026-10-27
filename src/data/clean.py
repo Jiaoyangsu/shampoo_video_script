@@ -288,6 +288,8 @@ def build_dpo_rows(
                     "defect": defect,
                     "chosen_defects": chosen_defects,
                     "rejected_defects": count_hard_defects(rejected),
+                    "target_duration_sec": row.get("target_duration_sec", 30),
+                    "target_shots": row.get("target_shots", len(chosen)),
                 }
             )
             defect_counts[defect] += 1

@@ -2,6 +2,7 @@
 
 ## 已完成
 
+- 训练代码已修：自动 bf16/fp16、system prompt 压缩到 592 字符、duration/shots 进入 prompt、DPO 长度 2048/1024、eval/save 5 步。
 - 15 条盲评抽检：`11 edit / 4 reject`，`pass + edit = 73.3%`。
 - 3 条 train + 1 条 val 被人工 review 剔除。
 - 当前 30s rewrite 数据：**54 train / 14 val**（不是 200–300）。

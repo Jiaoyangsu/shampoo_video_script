@@ -175,7 +175,9 @@
     ],
     "defect": "empty_voiceover",
     "chosen_defects": 0,
-    "rejected_defects": 12
+    "rejected_defects": 12,
+    "target_duration_sec": 30,
+    "target_shots": 12
   },
   {
     "input": "请编写百雀羚三生花精油洗发露的15秒带货分镜脚本，需包含时间轴/镜头类型/画面/旁白/音乐。产品特性：①玫瑰茉莉精华深层滋养 ②山茶花香48小时持久 ③无硅油配方改善分叉。目标用户场景：长发人士日常护理、办公室头发打理、约会前造型准备。需通过视觉化呈现解决‘发尾毛躁’‘香气易散’‘频繁喷香水’等使用痛点。",
@@ -339,7 +341,9 @@
     ],
     "defect": "zero_duration",
     "chosen_defects": 0,
-    "rejected_defects": 2
+    "rejected_defects": 2,
+    "target_duration_sec": 30,
+    "target_shots": 11
   },
   {
     "input": "需要制作一段海飞丝洗发水的视频脚本，需包含大品牌质量背书、超大规格装的性价比优势，以及官方自营渠道的正品保证。要解决用户担心错过促销的心理，同时覆盖网购下单和日常洗发的使用场景，语言风格需具备促销感染力。",
@@ -517,7 +521,9 @@
     ],
     "defect": "wrong_shot_type",
     "chosen_defects": 0,
-    "rejected_defects": 1
+    "rejected_defects": 1,
+    "target_duration_sec": 30,
+    "target_shots": 12
   },
   {
     "input": "帮我构思一个短视频带货脚本，产品是P&O发胶。需要包含时间轴、镜头类型、画面描述、画外音和背景音乐。这款发胶价格亲民，特别适合头发稀少、发量少的人，能轻松打造蓬松发型。用户常遇到头发不蓬松和预算不足的问题，日常造型时需要增加发量感，这些都能通过本产品解决。",
@@ -695,7 +701,9 @@
     ],
     "defect": "wrong_shot_type",
     "chosen_defects": 0,
-    "rejected_defects": 1
+    "rejected_defects": 1,
+    "target_duration_sec": 30,
+    "target_shots": 12
   },
   {
     "input": "需要生成清扬男士洗发水的短视频销售分镜，要求包含时间轴、镜头类型、画面内容、画外音和背景音乐。产品信息：该产品已售出超百万瓶，获得K总重点推荐，主打高效成分与性价比优势。需解决消费者对售后处理不完善、购买渠道不可靠、男性洗发水效果存疑的问题，目标受众为追求高性价比、成分安全及可靠售后保障的男性消费者。",
@@ -852,7 +860,9 @@
     ],
     "defect": "duplicate_shot",
     "chosen_defects": 0,
-    "rejected_defects": 1
+    "rejected_defects": 1,
+    "target_duration_sec": 30,
+    "target_shots": 10
   },
   {
     "input": "请生成贝德美蓝甘菊洗发露的短视频营销脚本框架，包含时间分段、镜头类型、视觉元素、配音文案和音乐风格。产品卖点需突出：①蓝甘菊成分强韧发根 ②红山茶精华控油护理 ③洗后蓬松不油腻。用户场景：3-6岁儿童头发易扁塌，妈妈需要安全有效洗护方案。请用问题-方案-效果的三段式结构呈现",
@@ -1016,7 +1026,9 @@
     ],
     "defect": "wrong_shot_type",
     "chosen_defects": 0,
-    "rejected_defects": 1
+    "rejected_defects": 1,
+    "target_duration_sec": 30,
+    "target_shots": 11
   },
   {
     "input": "请为半亩花田洗发水设计短视频带货分镜脚本，需包含时间轴、镜头类型、画面描述、画外音及背景音乐。产品核心卖点是玫瑰纯露成分、蓬松效果和限时优惠价，目标用户是发质细软易塌、头皮易出油且清爽感不足的人群。请重点突出产品如何解决用户头发扁塌、控油和头皮护理问题，并自然融入促销信息。",
@@ -1173,7 +1185,9 @@
     ],
     "defect": "duplicate_shot",
     "chosen_defects": 0,
-    "rejected_defects": 1
+    "rejected_defects": 1,
+    "target_duration_sec": 30,
+    "target_shots": 10
   },
   {
     "input": "需要制作一段洗发水推广视频的分镜方案，要求明确标注时间轴、镜头类型、画面内容、旁白台词和背景音乐。产品卖点需突出：家庭装优惠价、温和细腻质地、绵密泡沫体验。需解决用户对高价的顾虑，强调限时优惠的紧迫感，并展示产品在家用和个人护理中的适用性。",
@@ -1323,7 +1337,9 @@
     ],
     "defect": "wrong_shot_type",
     "chosen_defects": 0,
-    "rejected_defects": 1
+    "rejected_defects": 1,
+    "target_duration_sec": 30,
+    "target_shots": 10
   },
   {
     "input": "需要创建一个带货短视频的分镜头方案，要求明确标注时间轴、镜头类型、画面内容、旁白文案及背景音乐。产品为绿色泡沫洗发水，主打1%二硫化硒温和控屑，同时添加蜂蜜保湿和薄荷清凉成分。目标用户痛点是因洗发频率低导致的头皮屑、瘙痒和油腻，需通过场景化展示解决这些问题，并突出产品在日常洗护中的独特优势。",
@@ -1473,7 +1489,9 @@
     ],
     "defect": "zero_duration",
     "chosen_defects": 0,
-    "rejected_defects": 2
+    "rejected_defects": 2,
+    "target_duration_sec": 30,
+    "target_shots": 10
   },
   {
     "input": "设计屑康王洗发液的15秒短视频分镜脚本，需覆盖时间轴、镜头类型、画面描述、画外音及背景音乐。产品信息：专利土茯苓配方，可根治头皮螨虫引发的头屑问题，使用后头发蓬松顺滑且控油效果长达72小时。用户痛点描述：每日洗头仍无法抑制头屑，头皮泛红瘙痒影响社交，尝试过药用洗发水未见效。请通过可视化对比（如显微镜头展示螨虫减少）和用户证言形式呈现，结尾强调限时优惠信息。",
@@ -1658,7 +1676,9 @@
     ],
     "defect": "duplicate_shot",
     "chosen_defects": 0,
-    "rejected_defects": 1
+    "rejected_defects": 1,
+    "target_duration_sec": 30,
+    "target_shots": 12
   },
   {
     "input": "需要创建一个产品推广视频的分镜大纲，要求包含五个要素：时间分段、镜头形式、画面内容、配音文案和背景音乐类型。产品信息如下：泰国黑姜洗发水，核心优势是让头发呈现自然蓬松感，解决洗后头发贴头皮、频繁掉发的困扰，适合上班族、学生党等需要维持良好形象的人群。请设计从问题呈现到解决方案的叙事结构，并突出使用后的视觉效果变化。",
@@ -1836,7 +1856,9 @@
     ],
     "defect": "broken_time",
     "chosen_defects": 0,
-    "rejected_defects": 2
+    "rejected_defects": 2,
+    "target_duration_sec": 30,
+    "target_shots": 12
   },
   {
     "input": "设计一个短视频的分镜脚本，需包括时间轴、镜头类型、画面描述、画外音及背景音乐。产品为三生花精油香氛洗发露，以天然植物成分如侧柏叶和姜根油，解决头发脆弱、脱落及头皮敏感问题，适用于脱发困扰和天然护发需求的用户。",
@@ -2021,7 +2043,9 @@
     ],
     "defect": "duplicate_shot",
     "chosen_defects": 0,
-    "rejected_defects": 1
+    "rejected_defects": 1,
+    "target_duration_sec": 30,
+    "target_shots": 12
   },
   {
     "input": "请设计一个短视频分镜脚本，包含时间轴、镜头类型、画面描述、旁白和背景音乐。产品是袋鼠妈妈孕产妇专用洗护三件套，产品特点包括无水杨酸配方，富含15种氨基酸和小麦胚芽，护发乳修复受损发丝，洗发露温和清洁。目标用户是怀孕或产后女性，她们因担心普通洗发水对胎儿或身体有害，需要安全的洗护产品。请通过画面和语言突出产品温和性与专业性。",
@@ -2199,7 +2223,9 @@
     ],
     "defect": "shuffle_order",
     "chosen_defects": 0,
-    "rejected_defects": 11
+    "rejected_defects": 11,
+    "target_duration_sec": 30,
+    "target_shots": 12
   },
   {
     "input": "请规划一款发胶蓬松喷雾的短视频带货分镜方案，需标注时间轴、镜头类型、画面内容、配音和音乐类型。产品优势：空气感蓬松效果、持妆12小时不塌、喷头精准定位。目标人群痛点：发根扁塌显老气、运动后发型变形、发量少想假装浓密。建议使用场景：约会前急救造型、健身前固定发髻、日常通勤快速打理。",
@@ -2363,6 +2389,8 @@
     ],
     "defect": "missing_music",
     "chosen_defects": 0,
-    "rejected_defects": 10
+    "rejected_defects": 10,
+    "target_duration_sec": 30,
+    "target_shots": 11
   }
 ]

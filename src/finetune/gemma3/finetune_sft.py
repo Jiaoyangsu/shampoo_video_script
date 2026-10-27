@@ -21,15 +21,39 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.finetune.config import load_config, read_system_prompt, resolve_path  # noqa: E402
+from src.finetune.precision import detect_precision  # noqa: E402
+from src.finetune.prompting import build_user_content  # noqa: E402
 
 SYSTEM_PROMPT = read_system_prompt()
+
+RESPONSE_TEMPLATE = "<start_of_turn>model\n"
+
+
+def _contains_response_template(tokenizer, text: str, template: str) -> bool:
+    text_ids = tokenizer.encode(text, add_special_tokens=False)
+    template_ids = tokenizer.encode(template, add_special_tokens=False)
+    if not template_ids:
+        return False
+    size = len(template_ids)
+    return any(
+        text_ids[index : index + size] == template_ids
+        for index in range(0, len(text_ids) - size + 1)
+    )
 
 
 def build_example(example, tokenizer):
     messages = [
         {
             "role": "user",
-            "content": "%s\n\n%s" % (SYSTEM_PROMPT.strip(), example["input"].strip()),
+            "content": "%s\n\n%s"
+            % (
+                SYSTEM_PROMPT.strip(),
+                build_user_content(
+                    example["input"],
+                    duration=int(example.get("target_duration_sec", 30)),
+                    shots="10–12",
+                ),
+            ),
         }
     ]
     prompt = tokenizer.apply_chat_template(
@@ -73,7 +97,6 @@ def main() -> None:
     grad_accum = args.grad_accum or int(sft_cfg["grad_accum"])
     learning_rate = args.learning_rate or float(sft_cfg["learning_rate"])
 
-    import torch
     from datasets import load_dataset
     from peft import LoraConfig, prepare_model_for_kbit_training
     from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
@@ -86,13 +109,15 @@ def main() -> None:
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
+    precision, compute_dtype = detect_precision()
+    print("precision:", precision, flush=True)
     bnb_config = None
     if model_cfg.get("load_in_4bit", True):
         bnb_config = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_use_double_quant=True,
             bnb_4bit_quant_type="nf4",
-            bnb_4bit_compute_dtype=torch.bfloat16,
+            bnb_4bit_compute_dtype=compute_dtype,
         )
 
     print("Loading model...")
@@ -100,7 +125,7 @@ def main() -> None:
         base_model,
         quantization_config=bnb_config,
         device_map="auto",
-        torch_dtype=torch.bfloat16,
+        torch_dtype=compute_dtype,
         attn_implementation=model_cfg.get("attn_implementation", "sdpa"),
     )
     if bnb_config is not None:
@@ -131,15 +156,29 @@ def main() -> None:
     print("train=%d val=%d" % (len(train_ds), len(val_ds)))
 
     data_collator = None
-    try:
-        from trl import DataCollatorForCompletionOnlyLM
-
-        # Train only on the assistant JSON; the prompt tokens become -100.
-        data_collator = DataCollatorForCompletionOnlyLM(
-            response_template="<start_of_turn>model\n", tokenizer=tokenizer
+    sample_text = train_ds[0]["text"]
+    template_found = _contains_response_template(
+        tokenizer, sample_text, RESPONSE_TEMPLATE
+    )
+    if not template_found:
+        print(
+            "WARNING: response template %r not found in tokenized sample; "
+            "training on full text instead of completion-only loss."
+            % RESPONSE_TEMPLATE
         )
-    except Exception as exc:  # pragma: no cover - version dependent
-        print("Completion-only collator unavailable (%s); training on full text" % exc)
+    else:
+        try:
+            from trl import DataCollatorForCompletionOnlyLM
+
+            # Train only on the assistant JSON; the prompt tokens become -100.
+            data_collator = DataCollatorForCompletionOnlyLM(
+                response_template=RESPONSE_TEMPLATE, tokenizer=tokenizer
+            )
+        except Exception as exc:  # pragma: no cover - version dependent
+            print(
+                "Completion-only collator unavailable (%s); training on full text"
+                % exc
+            )
 
     sft_config = SFTConfig(
         per_device_train_batch_size=batch_size,
@@ -157,7 +196,8 @@ def main() -> None:
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
         greater_is_better=False,
-        bf16=True,
+        bf16=precision == "bf16",
+        fp16=precision == "fp16",
         lr_scheduler_type="linear",
         seed=3407,
         data_seed=3407,

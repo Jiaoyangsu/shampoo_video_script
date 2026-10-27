@@ -16,6 +16,7 @@ import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence
 
 from src.script_schema import (
@@ -58,8 +59,10 @@ ALLOWED_SHOT_TYPES = {
     "产品促销",
 }
 
-SYSTEM_PROMPT = """你是一位资深带货短视频编导，擅长把产品介绍改写成可拍摄的 30 秒分镜脚本。
-你只输出 JSON，不输出解释、Markdown 或代码围栏。"""
+SYSTEM_PROMPT = (
+    Path(__file__).resolve().parents[1] / "app" / "system_prompt.md"
+).read_text(encoding="utf-8")
+
 
 SHOT_SCHEMA = {
     "type": "array",

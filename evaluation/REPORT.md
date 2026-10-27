@@ -189,7 +189,7 @@ python scripts/run_eval.py --backend transformers \
 ## 6. 验收
 
 ```bash
-python -m unittest discover -s tests -v       # 27 passed
+python -m unittest discover -s tests -v       # 29 passed
 python scripts/clean_data.py                  # 528 / 59 + DPO 528 / 59
 python scripts/run_eval.py --backend mock --out-dir evaluation/results/mock_30
 ```

@@ -17,6 +17,10 @@ class PromptTests(unittest.TestCase):
             if prompt.get("expected_brand"):
                 self.assertNotIn(prompt["expected_brand"], prompt["forbidden_brands"])
 
+    def test_system_prompt_is_short_enough(self):
+        text = Path("src/app/system_prompt.md").read_text(encoding="utf-8")
+        self.assertLess(len(text), 1200)
+
     def test_prompt_file_is_json(self):
         data = json.loads(Path("evaluation/prompts_30.json").read_text(encoding="utf-8"))
         self.assertIsInstance(data, list)

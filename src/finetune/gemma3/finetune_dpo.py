@@ -30,17 +30,28 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.finetune.config import load_config, read_system_prompt, resolve_path  # noqa: E402
+from src.finetune.precision import detect_precision  # noqa: E402
+from src.finetune.prompting import build_user_content  # noqa: E402
 
 SYSTEM_PROMPT = read_system_prompt()
 
 
 def format_dpo(examples, tokenizer):
     prompts = []
-    for item in examples["input"]:
+    durations = examples.get("target_duration_sec") or [30] * len(examples["input"])
+    for item, duration in zip(examples["input"], durations):
         messages = [
             {
                 "role": "user",
-                "content": "%s\n\n%s" % (SYSTEM_PROMPT.strip(), item.strip()),
+                "content": "%s\n\n%s"
+                % (
+                    SYSTEM_PROMPT.strip(),
+                    build_user_content(
+                        item,
+                        duration=int(duration or 30),
+                        shots="10–12",
+                    ),
+                ),
             }
         ]
         prompts.append(
@@ -100,7 +111,6 @@ def main() -> None:
     max_length = args.max_length or int(dpo_cfg["max_length"])
     max_prompt_length = args.max_prompt_length or int(dpo_cfg["max_prompt_length"])
 
-    import torch
     from datasets import load_dataset
     from peft import LoraConfig, PeftModel
     from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
@@ -113,17 +123,20 @@ def main() -> None:
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
+    precision, compute_dtype = detect_precision()
+    print("precision:", precision, flush=True)
     bnb = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_use_double_quant=True,
         bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=torch.bfloat16,
+        bnb_4bit_compute_dtype=compute_dtype,
     )
     print("Loading base + SFT adapter...")
     model = AutoModelForCausalLM.from_pretrained(
         base_model,
         quantization_config=bnb,
         device_map="auto",
+        torch_dtype=compute_dtype,
         attn_implementation=model_cfg.get("attn_implementation", "sdpa"),
     )
     model = PeftModel.from_pretrained(model, sft_adapter)
@@ -171,7 +184,8 @@ def main() -> None:
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
         greater_is_better=False,
-        bf16=True,
+        bf16=precision == "bf16",
+        fp16=precision == "fp16",
         lr_scheduler_type="linear",
         seed=3407,
         data_seed=3407,

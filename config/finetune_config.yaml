@@ -21,11 +21,11 @@ lora:
     - "down_proj"
 
 data:
-  # Output of: python scripts/clean_data.py
-  train_file: "data/clean/shampoo_train.json"
-  val_file: "data/clean/shampoo_val.json"
-  dpo_train_file: "data/clean/dpo_train.json"
-  dpo_val_file: "data/clean/dpo_val.json"
+  # Output of: python scripts/rewrite_data.py + scripts/summarize_rewrite.py
+  train_file: "data/rewrite_30s/train.json"
+  val_file: "data/rewrite_30s/val.json"
+  dpo_train_file: "data/rewrite_30s/dpo_train.json"
+  dpo_val_file: "data/rewrite_30s/dpo_val.json"
 
 sft:
   output_dir: "outputs/gemma3_sft"
@@ -36,8 +36,8 @@ sft:
   warmup_ratio: 0.1
   weight_decay: 0.01
   logging_steps: 5
-  eval_steps: 50
-  save_steps: 50
+  eval_steps: 5
+  save_steps: 5
   save_total_limit: 3
 
 dpo:
@@ -48,10 +48,10 @@ dpo:
   learning_rate: 5.0e-6
   beta: 0.1
   warmup_ratio: 0.1
-  max_length: 1536
-  max_prompt_length: 768
+  max_length: 2048
+  max_prompt_length: 1024
   precompute_ref_batch_size: 1
   logging_steps: 5
-  eval_steps: 50
-  save_steps: 50
+  eval_steps: 5
+  save_steps: 5
   save_total_limit: 3
